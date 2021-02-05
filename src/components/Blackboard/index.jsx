@@ -5,7 +5,7 @@ function BlackBoard(props) {
         <div id="blackboard" className="">
             {props.children}
         </div>
-    )
+    );
 }
 
 export default BlackBoard;

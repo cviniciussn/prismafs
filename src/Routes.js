@@ -5,16 +5,17 @@ import {
     Route
 } from 'react-router-dom'
 
-import Home from './Pages/0. home'
-import PermissaoDoTrabalho from './Pages/1. permissaoDoTrabalho';
+import "./components/index"
 
+import Introducao from "./pages/Introducao";
+import PermissaoDoTrabalho from "./pages/PermissaoDoTrabalho";
 
 const Routes = () => {
   return (
       <Router>
           <Switch>
               <Route path='/' exact>
-                  <Home />
+                  <Introducao />
               </Route>
               <Route path='/permissao-do-trabalho' exact>
                   <PermissaoDoTrabalho/>
