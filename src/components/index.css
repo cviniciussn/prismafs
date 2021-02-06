@@ -20,13 +20,6 @@ body {
     line-height: 4rem;
 }
 
-#content {
-    /* background-color: aquamarine; */
-    border: 0;
-    margin: 6rem 8rem 10rem;
-    position: relative;
-}
-
 #blackboard {
     background: #36343540;
     height: 75vh;
@@ -57,6 +50,7 @@ body {
 }
 
 #nav-bar {
+    font-family: Arial, Helvetica, sans-serif;
     background: #363435;
     /* font-size: 1rem; */
 }
@@ -74,7 +68,7 @@ nav li {
 }
 
 nav li a {
-    color: #d1d1d1;
+    color: #fff;
     font-weight: lighter;
     flex-grow: 1;
     padding: 0.5rem 1rem;
@@ -82,11 +76,13 @@ nav li a {
 
 nav li a:hover {
     color: #fff;
-    background: #5eaf18;
+    background: #000;
+    /* background: #5eaf18; */
     text-decoration: none;
     /* padding-top: 0.8rem; */
 }
 
 i {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-right: 10px;
 }
