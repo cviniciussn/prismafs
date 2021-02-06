@@ -18,7 +18,8 @@ export default function SideBar() {
 							<i className="fa fa-bars"></i>
 						</button>
 					</div>
-					{/* <img className="logo" src={logo} alt="BSBios" /> */}
+					<span id="containerLogo"></span>
+					<img id="logotype" className="logo" src={logo} alt="BSBios" />
 					<ul data-spy="scroll" data-offset="0" className="scrollspy-nav components m-0">
 						<li>
 							<Link to="/">

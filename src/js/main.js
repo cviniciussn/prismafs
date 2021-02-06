@@ -1,5 +1,7 @@
 import $ from 'jquery';
 
+// import logo from '../img/logo_top4.PNG';
+
 $(document).ready(function () {
 
 	// "use strict";
@@ -16,9 +18,12 @@ $(document).ready(function () {
 	
 	$('#sidebarCollapse').on('click', function () {
 		$('#sidebar').toggleClass('active');
-		$('#content').toggleClasse()
 	});
 
-	$()
+	// if (($(window).width()) < 767) {
+	// 	$(`<img id="logotype" className="logo" src=${logo} alt="BSBios" />`).appendTo("#containerLogo");
+	// } else {
+	// 	$("#logotype").remove();
+	// 	}
 	
 });

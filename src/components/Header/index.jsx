@@ -7,7 +7,7 @@ function Header() {
     <div id="header" className="container-fluid fixed-top">
       <div className="row">
         <div className="col w-100">
-          <img id="logo" src={logo} alt="" />
+          <img className="logotype" src={logo} alt="" />
         </div>
       </div>
     </div>
