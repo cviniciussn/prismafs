@@ -13,12 +13,26 @@ body {
 }
 
 #header {
-    background: #5eaf18;
+    background: #60b019;
     color: white;
     font-weight: bold;
-    height: 5rem;
-    line-height: 4rem;
+    z-index: -1;
+    text-align: center;
+
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
+
+    @media (max-width: 767px) {
+        #header {
+            margin-top: -150px;
+        }
+    }
+
+    #header #logo {
+        margin: 10px auto;
+    }
 
 #blackboard {
     background: #36343540;
@@ -82,7 +96,7 @@ nav li a:hover {
     /* padding-top: 0.8rem; */
 }
 
-i {
+#sidebar i {
     font-size: 1rem;
     margin-right: 10px;
 }

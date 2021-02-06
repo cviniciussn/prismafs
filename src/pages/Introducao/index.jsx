@@ -14,7 +14,7 @@ function Introducao() {
 
     return (
         <Container>
-            {/* <Header /> */}
+            <Header />
             <SideBar />
             {/* <Content>
             </Content> */}

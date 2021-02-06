@@ -1,9 +1,8 @@
 import $ from 'jquery';
 
-
 $(document).ready(function () {
 
-	"use strict";
+	// "use strict";
 	
 	var fullHeight = function() {
 	
@@ -16,7 +15,10 @@ $(document).ready(function () {
 	fullHeight();
 	
 	$('#sidebarCollapse').on('click', function () {
-	  $('#sidebar').toggleClass('active');
-
+		$('#sidebar').toggleClass('active');
+		$('#content').toggleClasse()
 	});
+
+	$()
+	
 });

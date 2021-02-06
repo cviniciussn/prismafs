@@ -3,8 +3,6 @@ import Content from "./Content";
 import Header from "./Header";
 import Nav from "./Nav";
 import Blackboard from "./Blackboard";
-import Slider from "./Slider";
-
 import SideBar from "./SideBar";
 
 import Introducao from "../pages/Introducao"
@@ -17,7 +15,6 @@ export {
     Header,
     Nav,
     Blackboard,
-    Slider,
     SideBar,
 
     // pages
