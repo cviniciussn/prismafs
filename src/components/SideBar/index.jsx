@@ -7,8 +7,18 @@ import logo from '../../img/logo_top4.PNG'
 
 import { Link } from 'react-router-dom'
 
+import $ from 'jquery'
 
 export default function SideBar() {
+
+	// $("#ddd").on("click", function(){
+	// 	$("#menuBottom").scrollLeft	+= 100;
+	// });
+
+	$("#ddd").on("click", function () {
+		document.getElementById("menuBottom").scrollLeft += 50;
+	});
+
 	return (
 		<div>
 			<div className="wrapper d-flex align-items-stretch">
@@ -18,55 +28,65 @@ export default function SideBar() {
 							<i className="fa fa-bars"></i>
 						</button>
 					</div>
-					<span id="containerLogo"></span>
-					<img id="logotype" className="logo" src={logo} alt="BSBios" />
-					<ul data-spy="scroll" data-offset="0" className="scrollspy-nav components m-0">
+				
+					<a type="button" className="arrow arrowLeft">
+						<i className="bi bi-caret-left-fill"></i>
+					</a>
+					<a type="button" id="ddd" className="arrow arrowRight">
+						<i className="bi bi-caret-right-fill"></i>
+					</a>
+
+
+					<img id="logotype" className="logotype" src={logo} alt="BSBios" />
+
+					<ul id="menuBottom" data-spy="scroll" data-offset="0" className="components m-0">
 						<li>
-							<Link to="/">
-								<span><i className="bi bi-house-door-fill"></i></span>
-								{/* <br/> */}
+							<Link to="#">
+								<span><i className="bi bi-house-door"></i></span>
+								<br/>
                         			Introdução
 								</Link>
 						</li>
 						<li>
-							<Link to="permissao-do-trabalho">
-								<span><i>1.</i></span>
-								{/* <br/> */}
-									Permissão do trabalho
+							<Link to="#">
+								<span><i className="bi bi-clipboard-check"></i></span>
+								<br/>
+									Permissão de trabalho
 								</Link>
 						</li>
 						<li>
 							<a href="#">
-								<span><i>2.</i></span>
-								{/* <br/> */}
+								<span><i className="bi bi-slash-circle"></i></span>
+								<br/>
                         			Bloqueio eletromecânico
 								</a>
 						</li>
 						<li>
 							<a href="#">
-								<span><i>3.</i></span>
-								{/* <br/> */}
+								<span><i className="bi bi-tools"></i></span>
+								<br/>
                         			Tipos de trabalho
 								</a>
 						</li>
 						<li>
 							<a href="#">
-								<span><i>4.</i></span>
-								{/* <br/> */}
+								<span><i className="bi bi-arrows-angle-contract"></i></span>
+								<br/>
                         			Espaço confinado
 								</a>
 						</li >
 						<li>
 							<a href="#">
-								<span><i>5.</i></span>
-								{/* <br/> */}
+								{/* <span><i className="bi bi-gear"></i></span> */}
+								<span><i className="bi bi-truck"></i></span>
+								<br/>
                         			Movimentação de cargas
 								</a>
 						</li >
 						<li>
 							<a href="#">
-								<span><i>6.</i></span>
-								{/* <br/> */}
+								<span><i className="bi bi-geo"></i></span>
+								<br/>
                         			Operadores de máquinas
 								</a>
 						</li >
@@ -79,29 +99,29 @@ export default function SideBar() {
 						</li >
 						<li>
 							<a href="#">
-								<span><i>8.</i></span>
-								{/* <br/> */}
+								<span><i className="bi bi-exclamation-triangle"></i></span>
+								<br/>
                         			Plano de Ação e Emergência
 								</a>
 						</li >
 						<li>
 							<a href="#">
-								<span><i>9.</i></span>
-								{/* <br/> */}
+								<span><i className="bi bi-lightbulb"></i></span>
+								<br/>
                         			Regras Gerais e Dicas
 								</a>
 						</li >
 						<li>
 							<a href="#">
-								<span><i>10.</i></span>
-								{/* <br/> */}
+								<span><i className="bi bi-book"></i></span>
+								<br/>
                         			Testando Conhecimentos
 								</a>
 						</li >
 						<li>
 							<a href="#">
 								<span><i className="bi bi-bullseye">.</i></span>
-								{/* <br/> */}
+								<br/>
                         			Conclusão
 								</a>
 						</li >

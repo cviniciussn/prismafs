@@ -11826,52 +11826,73 @@ h5,
 
 @media (min-width: 768px) {
   #sidebar {
-    width: 100%;
     background: #363435;
     color: #fff;
+    height: 80px;
+    width: 94%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    position: absolute;
-    bottom: 0;
-    left: 0;
   }
-
+  
   #sidebar .h6 {
     color: #fff;
   }
-
+  
   #sidebar.active {
     /* height: 0; */
   }
-
+  
   #sidebar .custom-menu {
-    height: 0;
-    visibility: hidden;
+    display: none;
   }
-
+  
+  #sidebar .arrow {
+    background-color: #363435;
+    position: absolute;
+    width: 3vw;
+    height: 80px;
+    padding-top: 25px;
+    color: #fff;
+    /* box-shadow: 0px 0 10px #000; */
+  }
+  
+  #sidebar .arrowLeft {
+    padding-left: 0.9vw;
+    left: -3vw;
+  }
+  
+  #sidebar .arrowRight {
+    padding-left: 0.9vw;
+    right: -3vw;
+  }
+  
   #sidebar h1 {
     margin-bottom: 20px;
     font-weight: 700;
   }
-
+  
   #sidebar .logo {
     /* margin-bottom:   -250px; */
     /* visibility: hidden; */
     /* height: 0; */
   }
-
+  
   #sidebar ul.components {
     padding: 0;
     position: relative;
     overflow-x: auto;
     overflow-y: hidden;
-    height: 60px;
+    height: 100%;
     flex-wrap: nowrap;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   #sidebar ul li {
@@ -11886,13 +11907,14 @@ h5,
   #sidebar ul li>ul li {
     font-size: 14px;
   }
-
+  
   #sidebar ul li a {
-    /* padding: 10px; */
     /* display: block; */
     color: rgba(255, 255, 255);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    text-align: center;
+    /* border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1); */
   }
 
   #sidebar ul li.active>a {
@@ -11904,7 +11926,9 @@ h5,
 @media (max-width: 767px) {
   #sidebar {
     background: #363435;
-    color: #fff;
+    color: #000;
+    /* border-right: 3px solid #60b019; */
+    box-shadow: 1px 1px 5px #363435;
     min-width: 250px;
     max-width: 250px;
     -webkit-transition: all 0.5s;
@@ -11934,7 +11958,11 @@ h5,
     top: 10px !important;
   }
 
-  #sidebar .logo {
+  #sidebar .arrow {
+    display: none;
+  }
+
+  #sidebar .logotype {
     background-color: #fff;
     width: 100%;
     padding: 10px 20px;
@@ -11947,8 +11975,6 @@ h5,
   }
 
   #sidebar ul li {
-    display: flex;
-    -ms-flex-direction: row;
     width: 100%;
   }
 }

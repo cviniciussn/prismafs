@@ -10,18 +10,19 @@ body {
     left: 0;
     top: 0; */
     height: 100vh;
+    z-index: -2;
 }
 
 #header {
     background: #60b019;
     color: white;
     font-weight: bold;
-    z-index: -1;
     text-align: center;
-
+    z-index: -1;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    box-shadow: 1px 1px 5px #363435;
 }
 
     #header .logotype {

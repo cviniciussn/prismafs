@@ -19,11 +19,4 @@ $(document).ready(function () {
 	$('#sidebarCollapse').on('click', function () {
 		$('#sidebar').toggleClass('active');
 	});
-
-	// if (($(window).width()) < 767) {
-	// 	$(`<img id="logotype" className="logo" src=${logo} alt="BSBios" />`).appendTo("#containerLogo");
-	// } else {
-	// 	$("#logotype").remove();
-	// 	}
-	
 });
