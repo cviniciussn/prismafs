@@ -11717,7 +11717,7 @@ body {
   font-size: 14px;
   line-height: 1.8;
   font-weight: normal;
-  background: #fafafa;
+  /* background: #fafafa; */
   color: gray;
 }
 
@@ -11843,9 +11843,9 @@ h5,
     color: #fff;
   }
   
-  #sidebar.active {
-    /* height: 0; */
-  }
+  /* #sidebar.active {
+    height: 0;
+  } */
   
   #sidebar .custom-menu {
     display: none;
@@ -11862,11 +11862,13 @@ h5,
   }
   
   #sidebar .arrowLeft {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
     padding-left: 0.9vw;
     left: -3vw;
   }
   
   #sidebar .arrowRight {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
     padding-left: 0.9vw;
     right: -3vw;
   }
@@ -11874,12 +11876,6 @@ h5,
   #sidebar h1 {
     margin-bottom: 20px;
     font-weight: 700;
-  }
-  
-  #sidebar .logo {
-    /* margin-bottom:   -250px; */
-    /* visibility: hidden; */
-    /* height: 0; */
   }
   
   #sidebar ul.components {
@@ -11913,8 +11909,8 @@ h5,
     color: rgba(255, 255, 255);
     padding: 12px;
     text-align: center;
-    /* border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(255, 255, 255, 0.1); */
+    /* border-left: 1px solid rgba(255, 255, 255, 0.1); */
+    /* border-right: 1px solid rgba(255, 255, 255, 0.1); */
   }
 
   #sidebar ul li.active>a {
@@ -11927,7 +11923,6 @@ h5,
   #sidebar {
     background: #363435;
     color: #000;
-    /* border-right: 3px solid #60b019; */
     box-shadow: 1px 1px 5px #363435;
     min-width: 250px;
     max-width: 250px;
@@ -11935,6 +11930,10 @@ h5,
     -o-transition: all 0.5s;
     transition: all 0.5s;
     position: relative;
+  }
+
+  #sidebar .icon {
+    margin-right: 10px;
   }
 
   #sidebar.active {
@@ -11977,6 +11976,10 @@ h5,
   #sidebar ul li {
     width: 100%;
   }
+
+  #sidebar ul li a br {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12018,11 +12021,11 @@ a[data-toggle="collapse"] {
   transform: translateY(-50%);
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   #sidebarCollapse span {
     display: none;
   }
-}
+} */
 
 #content {
   width: 100%;
@@ -12035,7 +12038,7 @@ a[data-toggle="collapse"] {
 
 @media (max-width: 767px) {
   #content {
-    padding: 4rem;
+    padding: 4rem 2rem;
   }
 }
 

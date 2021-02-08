@@ -1,5 +1,6 @@
 import Container from "./Container";
 import Content from "./Content";
+import Gallery from "./Gallery"
 import Header from "./Header";
 import Nav from "./Nav";
 import Blackboard from "./Blackboard";
@@ -11,6 +12,7 @@ import PermissaoDoTrabalho from "../pages/PermissaoDoTrabalho"
 export {
     // components
     Container,
+    Gallery,
     Content,
     Header,
     Nav,

@@ -4,10 +4,8 @@ import {
     Container,
     Header,
     Content,
-    Blackboard,
-    Slider,
-    Nav,
-    SideBar
+    SideBar,
+    Gallery
 } from "../../components";
 
 function Introducao() {
@@ -16,9 +14,7 @@ function Introducao() {
         <Container>
             <Header />
             <SideBar />
-            {/* <Content>
-            </Content> */}
-            {/* <Nav /> */}
+            <Content />
         </Container >
     );
 }
