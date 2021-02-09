@@ -1,19 +1,20 @@
 import React from 'react';
+import './script.js'
 
 function Introducao() {
     return (
         <div>
-            <div id="slide01" className="slide-inner">
-                <h2 className="text-center mb-4">Introdução</h2>
+            <div id="slide01">
+                <h2 id="introducao" className="text-center mb-4">Introdução</h2>
 
                 {/* Apresentar as fotos uma a uma, após um intervalo de tempo para visualização. Após isso, 
                 liberar a seta de avançar. */}
 
-                <img src="" alt="Imagem 1" />{/* Foto de Escada alta como suporte para o trabalhador de gpointstudio na Envato Elements */}
+                <img id="img1" src="" alt="Imagem 1" />{/* Foto de Escada alta como suporte para o trabalhador de gpointstudio na Envato Elements */}
 
                 {/* >>> */}
 
-                <img src="" alt="Imagem 2" />{/* Foto de Receptáculo de plugue de fio elétrico no fundo da parede de concreto de twenty20photos na Envato Elements */}
+                <img id="img2" src="" alt="Imagem 2" />{/* Foto de Receptáculo de plugue de fio elétrico no fundo da parede de concreto de twenty20photos na Envato Elements */}
 
                 {/* >>> */}
                 <p>
