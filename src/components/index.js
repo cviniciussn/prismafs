@@ -3,23 +3,15 @@ import Content from "./Content";
 import Gallery from "./Gallery"
 import Header from "./Header";
 import Nav from "./Nav";
-import Blackboard from "./Blackboard";
 import SideBar from "./SideBar";
-
-import Introducao from "../pages/Introducao"
-import PermissaoDoTrabalho from "../pages/PermissaoDoTrabalho"
+import Buttons from "./Buttons";
 
 export {
-    // components
     Container,
     Gallery,
     Content,
     Header,
     Nav,
-    Blackboard,
     SideBar,
-
-    // pages
-    Introducao,
-    PermissaoDoTrabalho,
+    Buttons,
 }

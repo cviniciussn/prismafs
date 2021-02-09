@@ -13,12 +13,11 @@ export default function SideBar() {
 	console.log()
 	$(document).ready(function () {
 		$(".arrowRight").on("click", function () {
-			setCount(count + 1)
+			setCount(count + 100)
 		});
 		$(".arrowLeft").on("click", function () {
-			setCount(count - 1)
+			setCount(count - 100)
 		});
-		console.log(count)
 	})
 
 

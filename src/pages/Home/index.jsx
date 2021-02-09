@@ -5,18 +5,20 @@ import {
     Header,
     Content,
     SideBar,
-    Gallery
+    Buttons,
 } from "../../components";
 
-function Introducao() {
+function Home() {
 
     return (
         <Container>
             <Header />
-            <SideBar />
-            <Content />
+            <Content>
+                <Buttons />
+            </Content>
+            {/* <SideBar /> */}
         </Container >
     );
 }
 
-export default Introducao;
+export default Home;
