@@ -5,6 +5,7 @@ import {
     Header,
     Content,
     SideBar,
+    ButtonsPanel
 } from "../../components";
 
 import Introducao from "../Treinamento/Introducao/index";
@@ -17,6 +18,7 @@ function Treinamento() {
                 <SideBar />
                 <Content>
                     <Introducao />
+                    <ButtonsPanel />
                 </Content>
             </Container >
         </div>

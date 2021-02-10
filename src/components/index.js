@@ -5,6 +5,7 @@ import Header from "./Header";
 import Nav from "./Nav";
 import SideBar from "./SideBar";
 import Buttons from "./Buttons";
+import ButtonsPanel from "./ButtonsPanel";
 
 export {
     Container,
@@ -14,4 +15,5 @@ export {
     Nav,
     SideBar,
     Buttons,
+    ButtonsPanel,
 }

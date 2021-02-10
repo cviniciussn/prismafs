@@ -3,8 +3,15 @@ import '../../../css/animate.css'
 
 $(document).ready(function (){
 
+    // $('#introducao').remove()
+    // $('#img1').remove()
+    // $('#img2').remove()
+    // $('#pgf-01').remove()
+    // $('#pgf-02').remove()
+    // $('#pgf-03').remove()
+    
     setInterval(() => {
-
+        
         setInterval(() => {
             $('#introducao').addClass('animated-middle fadeInUp').removeClass('opacity-0')
 
@@ -27,7 +34,7 @@ $(document).ready(function (){
                                     $('#slide01').addClass('animated-middle fadeOutLeft')
 
                                     setInterval(() => {
-                                        $('#slide01').remove()  
+                                        $('#slide01').remove()
                                     }, 2000);
 
                                 }, 2000);

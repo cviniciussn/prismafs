@@ -11,8 +11,6 @@ body {
     
 }
 
-#container .bg {}
-
 #container .bg-gradient {
     height: 100vh;
     width: 100vw;
@@ -51,7 +49,30 @@ body {
     #header .logotype {
         /* margin-left: 250px; */
     }
+    #buttons-bar {
+        position: absolute;
+        bottom: 0;
+        max-height: 50px;
+        background-color: brown;
+        width: 100%;
+        /* flex-grow: 1; */
+    }
 }
+
+#buttons-bar {
+    /* background: #000; */
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    #buttons-bar a {
+        color: #363435 !important;
+    }
+    #buttons-bar a:hover {
+        color: #60b019 !important;
+    }
+
 
 #nav-bar {
     font-family: Arial, Helvetica, sans-serif;
@@ -79,8 +100,8 @@ nav li a {
 
 nav li a:hover {
     color: #fff;
-    background: #000;
+    /* background: #000; */
     /* background: #5eaf18; */
     text-decoration: none;
-    padding-top: 0.8rem;
+    /* padding-top: 0.8rem; */
 }

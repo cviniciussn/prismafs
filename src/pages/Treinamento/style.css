@@ -5,9 +5,40 @@
 .opacity-0 {
     opacity: 0 !important;
     visibility: hidden !important;
-  }
+}
 
-  .img-01 {
-      padding: 5px;
-      height: 200px;
-  }
+.img-01 {
+    padding: 5px;
+    height: 200px;
+}
+
+.title {
+    flex-grow: 1;
+    /* font-size: 18px; */
+    /* border-bottom: 3px solid #60b019; */
+}
+
+.blackboard {
+    /* height: 70vh; */
+    flex-grow: 2;
+    background-color: aqua;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.blackboard::-webkit-scrollbar {
+    width: 8px;
+}
+
+.blackboard::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.blackboard::-webkit-scrollbar-thumb {
+    background-color: #60b019;
+    /* outline: 1px solid #eee; */
+    /* outline: 1px solid #eee; */
+}
