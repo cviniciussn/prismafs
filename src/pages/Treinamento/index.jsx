@@ -7,7 +7,7 @@ import {
     SideBar,
 } from "../../components";
 
-import Introducao from "./topicos/1. Introducao";
+import Introducao from "../Treinamento/Introducao/index";
 
 function Treinamento() {
     return (
