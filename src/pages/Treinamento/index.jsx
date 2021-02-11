@@ -8,7 +8,8 @@ import {
     ButtonsPanel
 } from "../../components";
 
-import Introducao from "../Treinamento/Introducao/index";
+import Slide01 from "../Treinamento/Introducao/slide01";
+import Slide02 from "../Treinamento/Introducao/slide02";
 
 function Treinamento() {
     return (
@@ -17,7 +18,11 @@ function Treinamento() {
                 <Header />
                 <SideBar />
                 <Content>
-                    <Introducao />
+                    <div className="blackboard">
+                        <h2 className="text-center mb-4">Introdução</h2>
+                        <Slide01 />
+                        <Slide02 />
+                    </div>
                     <ButtonsPanel />
                 </Content>
             </Container >

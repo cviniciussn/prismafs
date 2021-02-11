@@ -9,38 +9,26 @@ $(document).ready(function (){
     // $('#pgf-01').remove()
     // $('#pgf-02').remove()
     // $('#pgf-03').remove()
+
+    
     
     setInterval(() => {
-        
+    
         setInterval(() => {
-            $('#introducao').addClass('animated-middle fadeInUp').removeClass('opacity-0')
+            $('#img1').addClass('animated-middle fadeInUp').removeClass('opacity-0')
 
             setInterval(() => {
-                $('#img1').addClass('animated-middle fadeInUp').removeClass('opacity-0')
-    
+                $('#img2').addClass('animated-middle fadeInUp').removeClass('opacity-0')
+
                 setInterval(() => {
-                    $('#img2').addClass('animated-middle fadeInUp').removeClass('opacity-0')
+                    $('#pgf-01').addClass('animated-middle fadeInUp').removeClass('opacity-0')
 
                     setInterval(() => {
-                        $('#pgf-01').addClass('animated-middle fadeInUp').removeClass('opacity-0')
-
+                        $('#pgf-02').addClass('animated-middle fadeInUp').removeClass('opacity-0')
+                        
                         setInterval(() => {
-                            $('#pgf-02').addClass('animated-middle fadeInUp').removeClass('opacity-0')
-                            
-                            setInterval(() => {
-                                $('#pgf-03').addClass('animated-middle fadeInUp').removeClass('opacity-0')
-                            
-                                setInterval(() => {
-                                    $('#slide01').addClass('animated-middle fadeOutLeft')
-
-                                    setInterval(() => {
-                                        $('#slide01').remove()
-                                    }, 2000);
-
-                                }, 2000);
-                            
-                            }, 2000);
-
+                            $('#pgf-03').addClass('animated-middle fadeInUp').removeClass('opacity-0')
+                        
                         }, 2000);
 
                     }, 2000);
@@ -52,5 +40,4 @@ $(document).ready(function (){
         }, 2000);
 
     }, 2000);
-
 })

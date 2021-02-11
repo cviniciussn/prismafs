@@ -4,8 +4,6 @@ import { useState } from 'react';
 // import logo from '../img/logo_top4.PNG';
 
 $(document).ready(function () {
-
-	
 	var fullHeight = function () {
 		
 		$('.js-fullheight').css('height', $(window).height());
