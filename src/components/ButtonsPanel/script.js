@@ -2,10 +2,7 @@ import $ from 'jquery';
 import '../../pages/Treinamento/style.css'
 import React from 'react'
 
-// import ''
-
 // import '../../css/animate.css';
-
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -19,7 +16,6 @@ function currentSlide(n) {
   }
   
   function showSlides(n) {
-    var i;
     var slides = document.getElementsByClassName("mySlides");
     // var dots = document.getElementsByClassName("dot");
     
@@ -31,17 +27,15 @@ function currentSlide(n) {
       slideIndex = slides.length
     }
     
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-
-    console.log(slides.length)
     
     // for (i = 0; i < dots.length; i++) {
     //   dots[i].className = dots[i].className.replace(" active", "");
     // }
     
-    // slides[slideIndex - 1].style.display = "block";
+    // slides[slideIndex-1].style.display = "block";
     // dots[slideIndex - 1].className += "active";
   }
   

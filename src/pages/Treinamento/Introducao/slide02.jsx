@@ -14,7 +14,7 @@ import '../../../components/ButtonsPanel/script'
 function Introducao() {
     return (
         <div>
-            <div className="mySlides opacity-0">
+            <div className="mySlides">
                 <p>
                     Nesse módulo, você conhecerá <strong>outras informações</strong> sobre o Sistema de Saúde e Segurança do Trabalho da
                     BSBIOS e, assim, poderá <strong>se prevenir ainda mais</strong> de acidentes, incidentes, desvios e doenças ocupacionais.

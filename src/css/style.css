@@ -11988,6 +11988,10 @@ h5,
     display: none;
   }
 
+  #content {
+    margin-top: ;
+  }
+
   .blackboard {
     /* background-color: aqua; */
     width: 100% !important;
@@ -12066,6 +12070,9 @@ a[data-toggle="collapse"] {
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;
+
+  top: 50%;
+  transform: translateY(-50%)
 }
 
 .blackboard::-webkit-scrollbar {
