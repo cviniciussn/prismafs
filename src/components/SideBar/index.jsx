@@ -44,17 +44,17 @@ export default function SideBar() {
 					</Link>
 				</li>
 				<li>
-					<Link to="#">
+					<Link to="permissao-de-trabalho">
 						{/* <span className="icon"><i className="bi bi-clipboard-check"></i></span> */}
 						<span className="icon"><i className="fas fa-clipboard-check"></i></span><br />
 						Permissão de trabalho
 					</Link>
 				</li>
 				<li>
-					<a href="#">
+					<Link to="bloqueio-eletromecanico">
 						<span className="icon"><i className="bi bi-slash-circle"></i></span><br />
                      	Bloqueio eletromecânico
-					</a>
+					</Link>
 				</li>
 				<li>
 					<a href="#">
