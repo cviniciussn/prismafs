@@ -10,15 +10,15 @@ import '../../js/main';
 export default function SideBar() {
 	const [count, setCount] = useState(0);
 
-	console.log()
-	$(document).ready(function () {
-		$(".arrowRight").on("click", function () {
-			setCount(count + 100)
-		});
-		$(".arrowLeft").on("click", function () {
-			setCount(count - 100)
-		});
-	})
+	// console.log()
+	// $(document).ready(function () {
+	// 	$(".arrowRight").on("click", function () {
+	// 		setCount(count + 100)
+	// 	});
+	// 	$(".arrowLeft").on("click", function () {
+	// 		setCount(count - 100)
+	// 	});
+	// })
 
 
 	return (

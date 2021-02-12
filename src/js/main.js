@@ -35,8 +35,7 @@ $(document).ready(function () {
 	});
 
 	setInterval(() => {
-		$('h1').fadeIn();
-		// alert('hahahah');
+		$('h1').addClass('animated').fadeIn().removeClass('opacity-0');
 		
 	}, 1000);
 	
