@@ -11,13 +11,13 @@ import {
 function PermissaoDeTrabalho() {
     return (
         <div>
-            <Container>
-                <Header />
-                <Content>
+            {/* <Container> */}
+                {/* <Header /> */}
+                {/* <Content> */}
                     <h1 className="text-center mt-4">Permissão de Trabalho</h1>
-                </Content>
+                {/* </Content> */}
                 {/* <SideBar /> */}
-            </Container >
+            {/* </Container > */}
         </div>
     );
 }

@@ -11,13 +11,13 @@ import {
 function OperadoresDeMaquinas() {
     return (
         <div>
-            <Container>
-                <Header />
-                <SideBar />
-                <Content>
+            {/* <Container> */}
+                {/* <Header /> */}
+                {/* <SideBar /> */}
+                {/* <Content> */}
                     <h1 className="text-center mt-4">Operadores de Maquinas</h1>
-                </Content>
-            </Container >
+                {/* </Content> */}
+            {/* </Container > */}
         </div>
     );
 }

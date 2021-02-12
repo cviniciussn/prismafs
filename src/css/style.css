@@ -11844,6 +11844,11 @@ h5,
   background-color: #60b019 !important;
 }
 
+#sidebar ul li a:focus {
+  color: #fff;
+  background-color: #60b019 !important;
+}
+
 @media (min-width: 768px) {
   #sidebar {
     height: 100px;

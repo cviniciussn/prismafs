@@ -11,13 +11,13 @@ import {
 function PlanoDeAcaoEEmergencia() {
     return (
         <div>
-            <Container>
-                <Header />
-                <SideBar />
-                <Content>
+            {/* <Container> */}
+                {/* <Header /> */}
+                {/* <SideBar /> */}
+                {/* <Content> */}
                     <h1 className="text-center mt-4">Plano de Ação e Emergência</h1>
-                </Content>
-            </Container >
+                {/* </Content> */}
+            {/* </Container > */}
         </div>
     );
 }
