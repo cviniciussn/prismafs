@@ -5,20 +5,23 @@ import {
     Header,
     Content,
     SideBar,
-    Buttons,
 } from "../../components";
 
-function Home() {
+import {Link} from 'react-router-dom';
+
+function Introducao() {
 
     return (
         <Container>
             <Header />
             <Content>
-                <Buttons />
+                <Link to="/permissao-de-trabalho">
+                    <button id="btn-start" className="btn btn-success">Iniciar Treinamento</button>
+                </Link>
             </Content>
             {/* <SideBar /> */}
         </Container >
     );
 }
 
-export default Home;
+export default Introducao;

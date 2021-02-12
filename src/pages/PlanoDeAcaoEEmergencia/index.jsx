@@ -8,18 +8,18 @@ import {
     Slide
 } from "../../components";
 
-function PermissaoDeTrabalho() {
+function PlanoDeAcaoEEmergencia() {
     return (
         <div>
             <Container>
                 <Header />
+                <SideBar />
                 <Content>
-                    <h1 className="text-center mt-4">Permissão de Trabalho</h1>
+                    <h1 className="text-center mt-4">Plano de Ação e Emergência</h1>
                 </Content>
-                {/* <SideBar /> */}
             </Container >
         </div>
     );
 }
 
-export default PermissaoDeTrabalho;
+export default PlanoDeAcaoEEmergencia;

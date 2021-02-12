@@ -38,7 +38,7 @@ export default function SideBar() {
 
 			<ul className="menuBar components m-0">
 				<li>
-					<Link to="#">
+					<Link to="/">
 						<span className="icon"><i className="bi bi-house-door-fill"></i></span><br />
 						Introdução
 					</Link>
@@ -57,60 +57,60 @@ export default function SideBar() {
 					</Link>
 				</li>
 				<li>
-					<a href="#">
+					<Link to="tipos-de-trabalho">
 						<span className="icon"><i className="bi bi-tools"></i></span><br />
 						Tipos de trabalho
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href="#">
+					<Link to="espaco-confinado">
 						<span className="icon"><i className="fas fa-compress-alt"></i></span><br />
                         Espaço confinado
-					</a>
+					</Link>
 				</li >
 				<li>
-					<a href="#">
+					<Link to="movimentacao-de-cargas">
 						{/* <span className="icon"><i className="bi bi-gear"></i></span> */}
 						<span className="icon"><i className="fas fa-truck-loading"></i></span><br />
                         Movimentação de cargas
-					</a>
+					</Link>
 				</li >
 				<li>
-					<a href="#">
+					<Link to="operadores-de-maquinas">
 						{/* <span className="icon"><i className="bi bi-geo"></i></span> */}
 						<span className="icon"><i className="fas fa-cogs"></i></span><br />
 						Operadores de máquinas
-					</a>
+					</Link>
 				</li >
 				<li>
-					<a href="#">
+					<Link to="produtos-quimicos">
 						<span className="icon"><i className="fas fa-flask"></i></span><br />
 						Produtos químicos
-					</a>
+					</Link>
 				</li >
 				<li>
-					<a href="#">
+					<Link to="plano-de-acao-e-emergencia">
 						<span className="icon"><i className="bi bi-exclamation-triangle"></i></span><br />
 						Plano de Ação e Emergência
-					</a>
+					</Link>
 				</li >
 				<li>
-					<a href="#">
+					<Link to="regras-gerais-e-dicas">
 						<span className="icon"><i className="bi bi-lightbulb"></i></span><br />
 						Regras Gerais e Dicas
-					</a>
+					</Link>
 				</li >
 				<li>
-					<a href="#">
+					<Link to="testando-conhecimentos">
 						<span className="icon"><i className="bi bi-book"></i></span><br />
 						Testando Conhecimentos
-					</a>
+					</Link>
 				</li >
 				<li>
-					<a href="#">
+					<Link to="conclusao">
 						<span className="icon"><i className="bi bi-bullseye"></i></span><br />
                         Conclusão
-					</a>
+					</Link>
 				</li >
 			</ul>
 		</nav>
