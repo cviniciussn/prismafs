@@ -1,12 +1,13 @@
 import React from 'react';
+import '../../js/main';
 
-import {
-    Container,
-    Header,
-    Content,
-    SideBar,
-    Slide
-} from "../../components";
+// import {
+//     Container,
+//     Header,
+//     Content,
+//     SideBar,
+//     Slide
+// } from "../../components";
 
 function BloqueioEletromecanico() {
     return (
@@ -15,7 +16,7 @@ function BloqueioEletromecanico() {
                 {/* <Header /> */}
                 {/* <SideBar /> */}
                 {/* <Content> */}
-                    <h1 className="text-center mt-4">Bloqueio Eletromecânico</h1>
+                    <h1 className="opacity-0 text-center mt-4">Bloqueio Eletromecânico</h1>
                 {/* </Content> */}
             {/* </Container > */}
         </div>

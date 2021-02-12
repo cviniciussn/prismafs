@@ -22,7 +22,7 @@ export default function SideBar() {
 
 
 	return (
-		<nav id="sidebar">
+		<nav id="sidebar" className="opacity-0">
 			<div className="custom-menu">
 				<button type="button" id="sidebarCollapse" className="btn btn-primary">
 					<i className="fa fa-bars"></i>
@@ -31,9 +31,6 @@ export default function SideBar() {
 
 			<a type="button" className="arrow arrowLeft">
 				<i className="bi bi-caret-left-fill"></i>
-			</a>
-			<a type="button" className="arrow arrowRight">
-				<i className="bi bi-caret-right-fill"></i>
 			</a>
 
 			<ul className="menuBar components m-0">
@@ -113,6 +110,10 @@ export default function SideBar() {
 					</Link>
 				</li >
 			</ul>
+			
+			<a type="button" className="arrow arrowRight">
+				<i className="bi bi-caret-right-fill"></i>
+			</a>
 		</nav>
 	);
 }
