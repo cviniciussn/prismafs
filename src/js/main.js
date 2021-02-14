@@ -11,9 +11,8 @@ $(window).on('load', function() {
 
         $("#header").addClass('animated-middle slideInDown').removeClass('opacity-0');
         $("#sidebar").addClass('animated-middle slideInUp').removeClass('opacity-0');
-        // $(".nav-arrows span").removeClass('opacity-0').addClass('show-arrows');
 
-    },1000);
+    },2000);
 });
 
 $(document).ready(function () {
@@ -33,10 +32,4 @@ $(document).ready(function () {
 	$('#sidebarCollapse').on('click', function () {
 		$('#sidebar').toggleClass('active');
 	});
-
-	setInterval(() => {
-		$('h1').addClass('animated').fadeIn().removeClass('opacity-0');
-		
-	}, 1000);
-	
 });

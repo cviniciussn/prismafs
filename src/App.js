@@ -41,7 +41,7 @@ function App() {
           <Content>
             <Switch>
                 <Route path='/' exact><Introducao /></Route>
-                <Route path='/permissao-de-trabalho' exact><PermissaoDeTrabalho /></Route>
+                <Route path='/permissao-de-trabalho' component={PermissaoDeTrabalho} exact />
                 <Route path='/bloqueio-eletromecanico' exact><BloqueioEletromecanico /></Route>
                 <Route path='/tipos-de-trabalho' exact><TiposDeTrabalho /></Route>
                 <Route path='/espaco-confinado' exact><EspacoConfinado /></Route>

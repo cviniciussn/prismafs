@@ -13,14 +13,7 @@ function ProdutosQuimicos() {
 
     return (
         <div>
-            {/* // <Container> */}
-                {/* // <Header /> */}
-                {/* // <Content> */}
-                    <h1 className="text-center mt-4">Produtos Químicos</h1>
-                {/* // </Content> */}
-                {/* // <SideBar /> */}
-            {/* // </Container > */}
-
+            <h1 className="text-center mt-4">Produtos Químicos</h1>
         </div>
     );
 }

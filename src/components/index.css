@@ -10,7 +10,7 @@ body {
     height: 100vh;
     /* display: flex; */
     /* flex-wrap: nowrap; */
-    z-index: -9999;
+    z-index: -99999;
 }
 
 #container .bg-gradient {

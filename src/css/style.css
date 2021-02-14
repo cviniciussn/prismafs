@@ -62,17 +62,6 @@ section {
   display: block;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000;
-  text-align: left;
-  background-color: #fff;
-}
-
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -84,19 +73,9 @@ hr {
   overflow: visible;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 abbr[title],
@@ -374,53 +353,6 @@ template {
 
 [hidden] {
   display: none !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-h1,
-.h1 {
-  font-size: 2.5rem;
-}
-
-h2,
-.h2 {
-  font-size: 2rem;
-}
-
-h3,
-.h3 {
-  font-size: 1.75rem;
-}
-
-h4,
-.h4 {
-  font-size: 1.5rem;
-}
-
-h5,
-.h5 {
-  font-size: 1.25rem;
-}
-
-h6,
-.h6 {
-  font-size: 1rem;
 }
 
 .lead {
@@ -11712,13 +11644,12 @@ a.text-dark:focus {
 }
 
 body {
-  /* font-family: "Poppins", Arial, sans-serif; */
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
   line-height: 1.8;
-  font-weight: normal;
+  /* font-weight: bold; */
   /* background: #fafafa; */
-  color: #000;
+  color: #363435;
 }
 
 a {
@@ -11761,13 +11692,54 @@ h5,
 .h4,
 .h5 {
   line-height: 1.5;
-  font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
-  color: #000;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+  margin-bottom: 3rem; }
+
+h1,
+.h1 {
+  font-size: 3rem; }
+
+h2,
+.h2 {
+  font-size: 2rem;
 }
 
-.ftco-section {
-  padding: 7em 0;
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+.bem-vindo {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+  margin-bottom: 3rem; }
+  @media (max-width: 767px) {
+    .bem-vindo {
+      font-size: 1.2rem; }
+  }
+  
+  .ftco-section {
+    padding: 7em 0;
 }
 
 .ftco-no-pt {
@@ -11812,6 +11784,11 @@ h5,
 
 .wrapper {
   width: 100%;
+  z-index: -99999 !important;
+}
+
+#container {
+  z-index: -999999 !important;
 }
 
 #header {
@@ -11820,23 +11797,28 @@ h5,
   height: 65px;
   font-weight: bold;
   text-align: center;
-  z-index: -1;
-  /* box-shadow: 1px 1px 5px #363435; */
-}
+  z-index: 1;
+  /* box-shadow: 1px 1px 5px #363435; */ }
   #header .logotype {
     /* display: none; */
     height: 68px;
-    padding: 10px;
-  }
+    padding: 10px; }
+
+#content {
+  text-align: center;
+  z-index: 0 !important;
+  scroll-behavior: smooth;
+}
 
 #sidebar {
   background: #363435;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: bold;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  z-index: 2;
 }
 
 #sidebar ul li a:hover {
@@ -11850,9 +11832,32 @@ h5,
 }
 
 @media (min-width: 768px) {
+  #content {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 5vw;
+    padding: 8rem 5rem 10rem !important;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    #content::-webkit-scrollbar {
+      display: block;
+      width: 8px; }
+    #content::-webkit-scrollbar-track {
+      scrollbar-shadow-color: #040505; } 
+    #content::-webkit-scrollbar-thumb {
+      background-color: #60b019; }
+    #content::-webkit-scrollbar-track-piece:start {
+      margin-top: 85px; }
+    #content::-webkit-scrollbar-track-piece:end {
+      margin-bottom: 120px; }
+
+  
   #sidebar {
     height: 100px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -11949,6 +11954,27 @@ h5,
 }
 
 @media (max-width: 767px) {
+  #content {
+    padding: 5rem 2rem !important;
+    margin-right: 5px;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    #content::-webkit-scrollbar {
+      display: block;
+      width: 5px; }
+    #content::-webkit-scrollbar-track {
+      scrollbar-shadow-color: #040505; } 
+    #content::-webkit-scrollbar-thumb {
+      background-color: #60b019;
+      border-radius: 10px; }
+    #content::-webkit-scrollbar-track-piece:start {
+      margin-top: 65px; }
+
   #sidebar {
     margin-left: -280px;
     background: #363435;
@@ -12008,15 +12034,7 @@ h5,
     display: none;
   }
 
-  #content {
-    margin-top: 0;
-  }
-
   .blackboard {
-    /* background-color: aqua; */
-    width: 100% !important;
-    height: 70vh !important;
-    padding: 0.5rem;
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
@@ -12069,42 +12087,6 @@ a[data-toggle="collapse"] {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
-#content {
-  width: 100%;
-  margin-top: 65px;
-  padding: 0;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* .blackboard {
-  background-color: aqua;
-  height: 400px;
-  width: 70vw;
-  margin: auto;
-  padding: 20px;
-  position: relative;
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  top: 50%;
-  transform: translateY(-50%);
-
-  display: flex;
-}
-  .blackboard::-webkit-scrollbar {
-    width: 8px;
-  }
-  .blackboard::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-  .blackboard::-webkit-scrollbar-thumb {
-    background-color: #60b019;
-    outline: 1px solid #eee; */
-    /* outline: 1px solid #eee;
-  } */
 
 .btn.btn-primary {
   background: #866ec7;
@@ -12295,7 +12277,15 @@ a[data-toggle="collapse"] {
   opacity: 0.3 !important;
 }
 
+.display-none {
+  display: none;
+}
+
 .opacity-1 {
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+.topic {
+  color: #60b019;
 }
