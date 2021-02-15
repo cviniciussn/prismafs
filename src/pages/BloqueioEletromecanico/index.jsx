@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 function BloqueioEletromecanico() {
     return (
-        <div>
+        <div id="bloqueio-eletromecanico">
             <div className="slide-06">
                 <p>
                     A Política de Bloqueio Eletromecânico da BSBIOS estabelece que:

@@ -13,6 +13,7 @@ $(window).on('load', function() {
         $("#sidebar").addClass('animated-middle slideInUp').removeClass('opacity-0');
 
     },2000);
+
 });
 
 $(document).ready(function () {

@@ -5,7 +5,8 @@ import '../../css/style.css'
 function Container(props) {
 
   return (
-    <div id="container">
+    <div id="container" className="bg-1">
+      <div className="bg-transp"/>
       <div className="wrapper d-flex align-items-stretch">
         {props.children}
       </div>
