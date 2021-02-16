@@ -1,23 +1,20 @@
 import React from 'react';
-
-import {
-    Container,
-    Header,
-    Content,
-    SideBar,
-    Slide
-} from "../../components";
+import $ from 'jquery';
+import '../../css/animate.css';
+import { Link, Redirect } from 'react-router-dom';
 
 function TiposDeTrabalho() {
     return (
         <div>
-            {/* <Container> */}
-                {/* <Header /> */}
-                {/* <SideBar /> */}
-                {/* <Content> */}
-                    <h1 className="text-center mt-4">Tipos de Trabalho</h1>
-                {/* </Content> */}
-            {/* </Container > */}
+            <div id="slide-08">
+                <h1 className="topic text-center mb-4">Trabalho com Eletricidade</h1>
+                <p>
+                    Ao trabalhar com eletricidade o colaborador está exposto a riscos, 
+                    que podem provocar acidentes. Para trabalhar em segurança, conheça e siga algumas 
+                    práticas seguras.
+            </p>
+
+            </div>
         </div>
     );
 }

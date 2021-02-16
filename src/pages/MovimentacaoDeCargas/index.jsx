@@ -1,23 +1,10 @@
 import React from 'react';
 
-import {
-    Container,
-    Header,
-    Content,
-    SideBar,
-    Slide
-} from "../../components";
 
 function MovimentacaoDeCargas() {
     return (
         <div>
-            {/* <Container> */}
-                {/* <Header /> */}
-                {/* <SideBar /> */}
-                {/* <Content> */}
-                    <h1 className="text-center mt-4">Movimentação de Cargas</h1>
-                {/* </Content> */}
-            {/* </Container > */}
+            <h1 className="topic text-center opacity-0">Movimentação de Cargas</h1>
         </div>
     );
 }

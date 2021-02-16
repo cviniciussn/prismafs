@@ -41,7 +41,7 @@ export default function SideBar() {
 					</Link>
 				</li>
 				<li>
-					<Link to="permissao-de-trabalho">
+					<Link to="permissao-de-trabalho" id="permissao-de-trabalho">
 						{/* <span className="icon"><i className="bi bi-clipboard-check"></i></span> */}
 						<span className="icon"><i className="fas fa-clipboard-check"></i></span><br />
 						Permissão de trabalho

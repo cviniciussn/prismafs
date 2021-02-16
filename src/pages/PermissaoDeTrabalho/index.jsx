@@ -9,128 +9,163 @@ function PermissaoDeTrabalho() {
 
     $(document).ready(() => {
 
-        setInterval(() => { $('h1').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
+        setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000 + 3000);
 
-        setInterval(() => {
-            $('#item-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+        setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 4000 + 3000);
 
+        setInterval(() => { $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 9000 + 3000);
+
+        setInterval(() => { $('#item-03-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 14000 + 3000);
+
+        setInterval(() => { $('#btn-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 19000 + 3000);
+
+        $('#btn-01-sl-03').on('click', () => {
+            // setInterval(() => { $('#slide-03').addClass('animated-middle fadeOutUp'); }, 1000 + 3000);
+            // setInterval(() => { $('#slide-03').addClass('display-none'); }, 3000 + 3000);
             setInterval(() => {
-                $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+                // alert('hahah')
+                $('#slide-04').removeClass('display-none');
+                $('#item-04-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+            }, 4000);
+        });
 
-                setInterval(() => {
-                    $('#item-03-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+        <div>
 
-                    setInterval(() => {
-                        $('#btn-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+            {/* // setInterval(() => {
+    
+            //     setInterval(() => {
+            //         $('#slide-04').removeClass('display-none')
+            //         setInterval(() => {
+            //         }, 500);
+    
+            //         setInterval(() => {
+            //             $('#item-04-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+    
+            //         }, 1500);
+            //     }, 0);
+            // }, 500);
+    
+            // setInterval(() => {
+            //     $('#item-05-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+    
+            // }, 1500);
+            // setInterval(() => {
+            //     $('#btn-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+    
+            //     $('#btn-01-sl-04').on('click', () => {
+            //         // $('#slide-04').addClass('animated-middle fadeOutUp')
+            //     });
+    
+            // }, 500); */}
 
-                        $('#btn-01-sl-03').on('click', () => {
+        </div>
 
-                            setInterval(() => {
-                                // $('#slide-03').addClass('animated-middle fadeOutUp');
-                                // setInterval(() => { $('#slide-03').addClass('display-none'); }, 1000);
+        $('#btn-dropdown-01').on('click', () => {
+            $('#atv-list').slideDown();
 
-                                setInterval(() => {
-                                    $('#slide-04').removeClass('display-none')
-                                    setInterval(() => {
-                                    }, 500);
-
-                                    setInterval(() => {
-                                        $('#item-04-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
-
-                                        setInterval(() => {
-                                            $('#item-05-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
-
-                                            setInterval(() => {
-                                                $('#btn-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
-
-                                                $('#btn-01-sl-04').on('click', () => {
-                                                    // $('#slide-04').addClass('animated-middle fadeOutUp')
-                                                });
-
-                                            }, 500);
-                                        }, 1500);
-                                    }, 1500);
-                                }, 0);
-                            }, 500);
-                        });
-
-                    }, 500);
-                }, 500);
-            }, 500);
-        }, 500);
-
-        $('#atv-01').on('click', () => {
-            $('#atv-list').slideToggle();
         });
 
     })
 
     return (
         <div>
-            <h1 className="topic text-center opacity-0">Permissão de Trabalho</h1>
+            <div className="title text-center opacity-0">Permissão de Trabalho</div>
+            <hr />
             <div id="slide-03" className="">
-
-                <div id="item-01-sl-03" className="d-flex flex-wrap justify-content-center align-items-center opacity-0">
-                    <p className="par-05 w-50 m-2">
-                        Algumas atividades necessitam de uma <strong>autorização antes da sua execução</strong> devido ao risco
-                        que elas podem oferecer ao colaborador. Essa autorização é chamada <strong>Permissão de Trabalho (PT)</strong>.
-                    </p>
-                    <img src={img} alt="Imagem3" className="img m-2" />
+                <div id="item-01-sl-03" className="container-fluid my-3 mb-3 opacity-0">
+                    <div className="row g-0 flex-wrap-reverse align-items-center">
+                        <div className="col-md-6">
+                            <div className="par-05 card-body">
+                                Algumas atividades necessitam de uma <strong>autorização antes da sua execução</strong> devido ao risco
+                                que elas podem oferecer ao colaborador. Essa autorização é chamada <strong>Permissão de Trabalho (PT)</strong>.
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <img id="img-01-sl-03" className="card-img" src={img} alt="Imagem3" />
+                        </div>
+                    </div>
                 </div>
 
+                <hr />
                 {/* >>> */}
 
-                <p id="item-02-sl-03" className="opacity-0">
-                    O objetivo da Permissão de Trabalho é a <strong>prevenção de acidentes</strong> por meio da avaliação dos riscos de cada
-                atividade, <strong>de caráter diferenciado (não rotineiro)</strong>, a ser realizada dentro da propriedade da BSBIOS.
-                </p>
+                <div className="container-fluid opacity-0 " id="item-02-sl-03" >
+                    <div className="row">
+                        <div className="col-md-12">
+                            <p className="my-3">
+                                O objetivo da Permissão de Trabalho é a <strong>prevenção de acidentes</strong> por meio da avaliação dos riscos de cada
+                                atividade, <strong>de caráter diferenciado (não rotineiro)</strong>, a ser realizada dentro da propriedade da BSBIOS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <hr />
                 {/* >>> */}
 
-                <p id="item-03-sl-03" className="opacity-0">
-                    Com a Permissão de Trabalho, a Empresa garante que somente os colaboradores aptos ao desempenho da atividade
-                    adentrem à área de risco e a realizem com segurança.
-                </p>
+                <div className="container-fluid opacity-0" id="item-03-sl-03" >
+                    <div className="row g-0">
+                        <div className="col-md-10">
+                            <p className="my-3">
+                                Com a Permissão de Trabalho, a Empresa garante que somente os colaboradores aptos ao desempenho da atividade
+                                adentrem à área de risco e a realizem com segurança.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                <button id="btn-01-sl-03" type="button" className="btn btn-success opacity-0">Avançar</button>
+                <div className="container-fluid text-center">
+                    <button className="btn btn-custom my-3 opacity-0" id="btn-01-sl-03" type="button">Avançar</button>
+                </div>
+
             </div>
 
             <div id="slide-04" className="display-none">
 
-                <div id="item-04-sl-04" className="opacity-0">
-                    <p>
-                        Conheça algumas <strong><a id="atv-01">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
-                    </p>
-                    <div id="atv-list" className="">
-                        <ul>
-                            <li>
-                                <i className="fas fa-check"></i> Trabalhos a quente (que geram fagulhas)
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Manuseio de produtos químicos
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Intervenção em equipamentos
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Manutenções de qualquer tipo
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Trabalhos em altura
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Trabalhos em espaços confinados
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Movimentações de materiais com guindastes
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Escavações
-                            </li>
-                            <li>
-                                <i className="fas fa-check"></i> Trabalhos com eletricidade
-                            </li>
-                        </ul>
+
+
+                <div id="item-04-sl-04" className="container-fluid opacity-0">
+                    <div className="row">
+                        <div className="col-md-10">
+                            <p className="mt-3">
+                                Conheça algumas <strong><a id="btn-dropdown-01">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
+                            </p>
+
+                            <small id="atv-list" className="box collapse">
+                                <ul>
+                                    <li>
+                                        <i className="fas fa-check"></i> Trabalhos a quente (que geram fagulhas)
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Manuseio de produtos químicos
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Intervenção em equipamentos
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Manutenções de qualquer tipo
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Trabalhos em altura
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Trabalhos em espaços confinados
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Movimentações de materiais com guindastes
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Escavações
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check"></i> Trabalhos com eletricidade
+                                    </li>
+                                </ul>
+                            </small>
+                        </div>
+
+                        <hr />
+
                     </div>
                 </div>
 
@@ -140,7 +175,7 @@ function PermissaoDeTrabalho() {
                     Em caso de dúvida se a atividade necessita de permissão, pergunte ao seu líder ou ao SESMT.
                 </p>
 
-                <button id="btn-01-sl-04" type="button" className="btn btn-success opacity-0">Avançar</button>
+                <button id="btn-01-sl-04" type="button" className="btn btn-custom opacity-0">Avançar</button>
             </div>
 
             <div id="slide-05" className="display-none">
@@ -179,7 +214,7 @@ function PermissaoDeTrabalho() {
                 </div>
 
                 <Link to="/bloqueio-eletromecano">
-                    <button id="btn-02" type="button" className="btn btn-success opacity-0">Avançar</button>
+                    <button id="btn-02" type="button" className="btn btn-custom opacity-0">Avançar</button>
                 </Link>
 
             </div>

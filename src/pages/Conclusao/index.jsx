@@ -1,23 +1,12 @@
 import React from 'react';
-
-import {
-    Container,
-    Header,
-    Content,
-    SideBar,
-    Slide
-} from "../../components";
+import $ from 'jquery';
+import '../../css/animate.css';
+import { Link, Redirect } from 'react-router-dom';
 
 function Conclusao() {
     return (
         <div>
-            {/* <Container> */}
-                {/* <Header /> */}
-                {/* <SideBar /> */}
-                {/* <Content> */}
-                    <h1 className="text-center mt-4">Conclusao</h1>
-                {/* </Content> */}
-            {/* </Container > */}
+            <h1 className="topic text-center opacity-0">Conclusao</h1>
         </div>
     );
 }

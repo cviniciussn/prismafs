@@ -11,6 +11,7 @@ body {
     /* display: flex; */
     /* flex-wrap: nowrap; */
     z-index: -99999;
+    overflow: hidden;
 }
 
 #container .bg-gradient {
