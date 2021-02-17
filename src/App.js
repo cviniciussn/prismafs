@@ -11,7 +11,7 @@ import {
   Introducao,
   PermissaoDeTrabalho,
   BloqueioEletromecanico,
-  TiposDeTrabalho,
+  TrabalhoComEletricidade,
   EspacoConfinado,
   MovimentacaoDeCargas,
   OperadoresDeMaquinas,
@@ -43,7 +43,7 @@ function App() {
                 <Route path='/' exact><Introducao /></Route>
                 <Route path='/permissao-de-trabalho' component={PermissaoDeTrabalho} exact />
                 <Route path='/bloqueio-eletromecanico' exact><BloqueioEletromecanico /></Route>
-                <Route path='/tipos-de-trabalho' exact><TiposDeTrabalho /></Route>
+                <Route path='/trabalho-com-eletricidade' exact><TrabalhoComEletricidade /></Route>
                 <Route path='/espaco-confinado' exact><EspacoConfinado /></Route>
                 <Route path='/movimentacao-de-cargas' exact><MovimentacaoDeCargas /></Route>
                 <Route path='/operadores-de-maquinas' exact><OperadoresDeMaquinas /></Route>

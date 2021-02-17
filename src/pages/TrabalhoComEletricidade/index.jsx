@@ -7,12 +7,12 @@ import Card from '../../components/Card';
 import Alert from '../../components/Alert';
 import ArrowProgress from '../../components/ArrowProgress';
 
-function TiposDeTrabalho() {
+function TrabalhoComEletricidade() {
     return (
         <div>
             <div id="slide-08">
-
-                <div className="title text-center"><span className="icon"><i className="bi bi-tools"></i></span> Trabalho com Eletricidade</div>
+                <div className="title text-center opacity-0"><span className="icon"><i className="bi bi-tools"></i></span> Trabalho com Eletricidade</div>
+                
                 <Paragraph id="item-01-sl-08">
                     Ao trabalhar com eletricidade o colaborador está exposto a riscos,
                     que podem provocar acidentes. Para trabalhar em segurança, conheça e siga algumas
@@ -147,4 +147,4 @@ function TiposDeTrabalho() {
     );
 }
 
-export default TiposDeTrabalho;
+export default TrabalhoComEletricidade;

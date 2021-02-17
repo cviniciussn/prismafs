@@ -8,7 +8,7 @@ import $ from 'jquery';
 import '../../js/main';
 
 export default function SideBar() {
-	const [count, setCount] = useState(0);
+	// const [count, setCount] = useState(0);
 
 	// console.log()
 	// $(document).ready(function () {
@@ -44,45 +44,45 @@ export default function SideBar() {
 					<Link to="permissao-de-trabalho" id="permissao-de-trabalho">
 						{/* <span className="icon"><i className="bi bi-clipboard-check"></i></span> */}
 						<span className="icon"><i className="fas fa-clipboard-check"></i></span><br />
-						Permissão de trabalho
+						Permissão de Trabalho
 					</Link>
 				</li>
 				<li>
 					<Link to="bloqueio-eletromecanico">
 						<span className="icon"><i class="fas fa-lock"></i></span><br />
-                     	Bloqueio eletromecânico
+                     	Bloqueio Eletromecânico
 					</Link>
 				</li>
 				<li>
-					<Link to="tipos-de-trabalho">
+					<Link to="trabalho-com-eletricidade">
 						<span className="icon"><i className="bi bi-tools"></i></span><br />
-						Tipos de trabalho
+						Trabalho com Eletricidade
 					</Link>
 				</li>
 				<li>
 					<Link to="espaco-confinado">
 						<span className="icon"><i className="fas fa-compress-alt"></i></span><br />
-                        Espaço confinado
+                        Espaço Confinado
 					</Link>
 				</li >
 				<li>
 					<Link to="movimentacao-de-cargas">
 						{/* <span className="icon"><i className="bi bi-gear"></i></span> */}
 						<span className="icon"><i className="fas fa-truck-loading"></i></span><br />
-                        Movimentação de cargas
+                        Movimentação de Cargas
 					</Link>
 				</li >
 				<li>
 					<Link to="operadores-de-maquinas">
 						{/* <span className="icon"><i className="bi bi-geo"></i></span> */}
 						<span className="icon"><i className="fas fa-cogs"></i></span><br />
-						Operadores de máquinas
+						Operadores de Máquinas
 					</Link>
 				</li >
 				<li>
 					<Link to="produtos-quimicos">
 						<span className="icon"><i className="fas fa-flask"></i></span><br />
-						Produtos químicos
+						Produtos Químicos
 					</Link>
 				</li >
 				<li>

@@ -15,7 +15,7 @@ import img03 from '../../img/img-03-sl-06.jpg';
 function BloqueioEletromecanico() {
     return (
         <div id="bloqueio-eletromecanico">
-            <h1 className="title text-center opacity-0"><span className="icon"><i class="fas fa-lock"></i></span> Bloqueio Eletromecânico</h1>
+            <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-lock"></i></span> Bloqueio Eletromecânico</div>
 
             <hr />
 
