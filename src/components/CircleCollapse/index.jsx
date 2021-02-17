@@ -6,7 +6,7 @@ function CircleCollapse(props) {
 
 
     return (
-        <div className="container-fluid py-5">
+        <div id="card-custom" className="container-fluid py-3">
             <div className={props.classNameRow}>
 
                 <buttom className={props.classNameButton} type="button">

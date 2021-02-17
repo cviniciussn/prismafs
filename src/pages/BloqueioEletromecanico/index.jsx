@@ -6,6 +6,7 @@ import { Link, Redirect } from 'react-router-dom';
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
 import Alert from "../../components/Alert";
+import ButtonCollapseImg from "../../components/ButtonCollapseImg";
 
 import img01 from '../../img/img-01-sl-06.jpg';
 import img02 from '../../img/img-02-sl-06.jpg';
@@ -20,65 +21,27 @@ function BloqueioEletromecanico() {
 
             <div className="slide-06">
 
-                <div id="item-01-sl-06" className="">
-                    <div className="row justify-content-center">
-                        <div className="col-md-10">
-                            <p className="my-3">
-                                A Política de Bloqueio Eletromecânico da BSBIOS estabelece que:
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+                <Paragraph id="item-01-sl-06">
+                    A Política de Bloqueio Eletromecânico da BSBIOS estabelece que:
+                </Paragraph>
 
                 <Alert id="item-02-sl-06">
                     <strong>ANTES</strong> de executar qualquer intervenção, <strong>TODOS</strong> devem realizar bloqueio e identificação
                     de <strong>TODAS</strong> as energias perigosas de <strong>QUALQUER</strong> equipamento.
                 </Alert>
 
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-md-4">
-
-                        </div>
-                    </div>
-                </div>
-
-                {/* >>> */}
+                <ArrowProgress id="btn-01-sl-06" />
                 <hr />
 
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-4 text-center">
-                            <button className="btn btn-outline-custom dropdown-toggle py-3 my-3" type="button" data-toggle="collapse" data-target="#teste1" role="button" aria-expanded="false" aria-controlsdata-target="#collapseExample">
-                                Bloqueio Elétrico
-                            </button>
-                            <div className="collapse multi-collapse" id="teste1">
-                                <img src={img01} className="card-img my-1" />
-                            </div>
-                        </div>
-                        <div className="col-md-4 text-center">
-                            <button className="btn btn-outline-custom dropdown-toggle py-3 my-3" type="button" data-toggle="collapse" data-target="#teste2" role="button" aria-expanded="false" aria-controlsdata-target="#collapseExample">
-                                Bloqueio Mecânico
-                            </button>
-                            <div className="collapse multi-collapse" id="teste2">
-                                <img src={img02} className="card-img my-1" />
-                            </div>
-                        </div>
-                        <div className="col-md-4 text-center">
-                            <button className="btn btn-outline-custom dropdown-toggle py-3 my-3" type="button" data-toggle="collapse" data-target="#teste3" role="button" aria-expanded="false" aria-controlsdata-target="#collapseExample">
-                                Cartão de Bloqueio
-                            </button>
-                            <div className="collapse multi-collapse" id="teste3">
-                                <img src={img03} className="card-img my-1" />
-                            </div>
-                        </div>
+
+                        <ButtonCollapseImg title="Bloqueio Elétrico" idBtn="" idImg="teste1" imgSrc={img01} />
+                        <ButtonCollapseImg title="Bloqueio Mecânico" idBtn="" idImg="teste2" imgSrc={img02} />
+                        <ButtonCollapseImg title="Cartão de Bloqueio" idBtn="" idImg="teste3" imgSrc={img03} />
+
                     </div>
                 </div>
-
-
-
-
             </div>
 
 

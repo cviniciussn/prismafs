@@ -2942,6 +2942,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #3f760f;
   border-color: #3f760f;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
 
 .btn-success {
@@ -7608,6 +7609,13 @@ button.bg-dark:focus {
   border-top-right-radius: 0.25rem !important;
 }
 
+.rounded-top-custom {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
 .rounded-right {
   border-top-right-radius: 0.25rem !important;
   border-bottom-right-radius: 0.25rem !important;
@@ -12270,7 +12278,7 @@ ul {
 }
 
 .box-shadow-custom {
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
 }
 
 .rounded-20px {
@@ -12288,21 +12296,23 @@ ul {
 
 @media (min-width: 768px) {
   .square {
-    display: none !important;
-  }
+    display: none !important; }
+
+  #card-custom {
+    margin: 5rem 0 !important; }
 
   .circle {
     background-color: #007bff;
     border-color: #007bff;
-    cursor: pointer;
     width: 210px;
     height: 210px;
     line-height: 210px;
     text-align: center;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: bold;
     color: #fff;
     position: absolute;
+    cursor: pointer;
     z-index: 1;
   }
 

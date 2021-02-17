@@ -6,6 +6,7 @@ import img1 from '../../img/img01.jpg';
 import img2 from '../../img/img02.jpg';
 
 import ArrowProgress from "../../components/ArrowProgress";
+import Paragraph from "../../components/Paragraph";
 
 function Introducao() {
 
@@ -93,7 +94,7 @@ function Introducao() {
 
                         <div className="col-md-6">
 
-                            <div id="crsl-01-sl-01" class="carousel slide box-shadow-custom rounded-20px my-3 opacity-0" data-interval="10000" data-ride="carousel">
+                            <div id="crsl-01-sl-01" class="carousel slide carousel-fade box-shadow-custom rounded-20px my-3 opacity-0" data-interval="10000" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#crsl-01-sl-01" data-slide-to="0" class="active"></li>
                                     <li data-target="#crsl-01-sl-01" data-slide-to="1"></li>
@@ -119,54 +120,31 @@ function Introducao() {
                             </div>
 
                         </div>
-
-                        {/* <div className="col-md-5">
-                            <img id="img-01-sl-01" className="card-img my-3 opacity-0" src={img1} alt="Imagem1" />
-                        </div>
-                        <div className="col-md-5">
-                        <img id="img-02-sl-01" className="card-img my-3 opacity-0" src={img2} alt="Imagem2" />
-                        </div> */}
-
-                    </div>
-
-                    <div id="item-01-sl-01" className="opacity-0">
-                        <div className="row justify-content-center">
-                            <div className=" text-center col-md-10">
-                                <p className="text-center my-3">
-                                    Imagens como essas nos chocam e podem gerar um certo receio em você, não é mesmo?
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
+                    
+                <Paragraph id="item-01-sl-01">
+                    Imagens como essas nos chocam e podem gerar um certo receio em você, não é mesmo?
+                </Paragraph>
 
                 <hr id="hr-01-sl-01" className="opacity-0" />
 
-                <div id="item-02-sl-01" className="container-fluid opacity-0">
-                    <div className="row justify-content-center">
-                        <div className="col-md-10">
-                            <p className="my-3">
-                                Mas lembre-se que está ingressando em uma Empresa que tem a segurança como um valor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <Paragraph id="item-02-sl-01">
+                    Mas lembre-se que está ingressando em uma Empresa que tem a segurança como um valor.
+                </Paragraph>
+
 
                 <hr id="hr-02-sl-01" className="opacity-0" />
 
-                <div id="item-03-sl-01" className="container-fluid opacity-0">
-                    <div className="row justify-content-center">
-                        <div className="col-md-10">
-                            <p className="my-3">
-                                E que, sabendo verificar o risco oferecido pelas tarefas a serem executadas e obtendo os
-                                cuidados necessários em sua realização, você pode mudar seu comportamento e evitar esses
-                                e vários outros acidentes.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <ArrowProgress id="btn-01-sl-01"/>
+                <Paragraph id="item-03-sl-01">
+                    E que, sabendo verificar o risco oferecido pelas tarefas a serem executadas e obtendo os
+                    cuidados necessários em sua realização, você pode mudar seu comportamento e evitar esses
+                    e vários outros acidentes.
+                </Paragraph>
+
+
+                <ArrowProgress id="btn-01-sl-01" />
 
                 <hr />
 

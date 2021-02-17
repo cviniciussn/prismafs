@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom';
 
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
+import ParagraphAndImg from "../../components/ParagraphAndImg";
 import Alert from "../../components/Alert";
 import CircleCollapse from "../../components/CircleCollapse";
 
 import img from '../../img/img01.jpg';
+import carteiraVrf from '../../img/carteira-verificacao.jpg'
 
 function PermissaoDeTrabalho() {
 
@@ -41,9 +43,22 @@ function PermissaoDeTrabalho() {
                     setInterval(() => { $('#btn-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 5000);
 
                     $('#btn-01-sl-04').on('click', () => {
+
                         setInterval(() => {
                             $('#item-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
-                        }, 4000);
+                        }, 1000);
+
+
+                        setInterval(() => { $('#btn-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 3000);
+                        $('#btn-02-sl-04').on('click', () => {
+
+                            setInterval(() => { $('#item-01-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
+
+                            setInterval(() => { $('#item-02-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
+                        });
+
+
+
                     });
 
 
@@ -65,19 +80,17 @@ function PermissaoDeTrabalho() {
             <hr />
 
             <div id="slide-03" className="">
-                <div id="item-01-sl-03" className="container-fluid my-3 mb-3 opacity-0">
-                    <div className="row g-0 flex-wrap-reverse align-items-center">
-                        <div className="col-md-6">
-                            <div className="par-05 card-body">
-                                Algumas atividades necessitam de uma <strong>autorização antes da sua execução</strong> devido ao risco
-                                que elas podem oferecer ao colaborador. Essa autorização é chamada <strong>Permissão de Trabalho (PT)</strong>.
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <img id="img-01-sl-03" className="card-img" src={img} alt="Imagem3" />
-                        </div>
-                    </div>
-                </div>
+
+
+                <ParagraphAndImg
+                    idItem="item-01-sl-03"
+                    idParagraph=""
+                    idImg="img-01-sl-03"
+                    imgSrc={img}
+                >
+                    Algumas atividades necessitam de uma <strong>autorização antes da sua execução</strong> devido ao risco
+                    que elas podem oferecer ao colaborador. Essa autorização é chamada <strong>Permissão de Trabalho (PT)</strong>.
+                </ParagraphAndImg>
 
                 <hr />
                 {/* >>> */}
@@ -85,7 +98,7 @@ function PermissaoDeTrabalho() {
 
                 <Paragraph id="item-02-sl-03">
                     O objetivo da Permissão de Trabalho é a <strong>prevenção de acidentes</strong> por meio da avaliação dos
-                    riscos de cadaatividade, <strong>de caráter diferenciado (não rotineiro)</strong>, a ser realizada dentro
+                    riscos de cada atividade, <strong>de caráter diferenciado (não rotineiro)</strong>, a ser realizada dentro
                     da propriedade da BSBIOS.
                 </Paragraph>
 
@@ -111,7 +124,7 @@ function PermissaoDeTrabalho() {
                     <div className="row">
                         <div className="col-md-10 mt-3">
                             <p>
-                                Conheça algumas <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#list-01-sl-04">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
+                                Conheça algumas <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#list-01-sl-04" aria-expanded="false">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
                                 <br />
                                 <small><strong><i>(Clique na área em destaque)</i></strong></small>
                             </p>
@@ -152,11 +165,7 @@ function PermissaoDeTrabalho() {
                     </small>
                 </div>
 
-                <hr />
-
-
                 <ArrowProgress id="btn-01-sl-04" />
-
 
                 <hr />
                 {/* >>> */}
@@ -166,76 +175,75 @@ function PermissaoDeTrabalho() {
                     Em caso de dúvida se a atividade necessita de permissão, pergunte ao seu líder ou ao SESMT.
                 </Alert>
 
+
+                <ArrowProgress id="btn-02-sl-04" />
+
                 <hr />
+
             </div>
 
             <div id="slide-05" className="">
 
-                <div id="item-01-sl-05" className="">
-                    <div className="row">
-                        <div className="col-md-10 mt-3">
-                            <p>
-                                Existem <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#list-01-sl-04">três tipos</a></strong> de Permissão de Trabalho:
+                <Paragraph id="item-01-sl-05">
+                    Existem <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#item-01-colpse-sl-05">três tipos</a></strong> de Permissão de Trabalho:
                                 <br />
-                                <small><strong><i>(Clique na área em destaque)</i></strong></small>
-                            </p>
-                        </div>
+                    <small><strong><i>(Clique na área em destaque)</i></strong></small>
+
+                    <div id="item-01-colpse-sl-05">
+                        <CircleCollapse
+                            id=""
+                            title="PT"
+                            classNameRow="row d-flex flex-row align-items-center"
+                            classNameButton="square btn btn-primary"
+                            classNameBtnCircle="circle rounded-circle align-items-center"
+                        >
+
+                            Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
+                            trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
+                        </CircleCollapse>
+
+                        <CircleCollapse
+                            id=""
+                            title="PET"
+                            classNameRow="row d-flex flex-row align-items-center"
+                            classNameButton="square btn btn-warning"
+                            classNameBtnCircle="circle rounded-circle align-items-center"
+                        >
+
+                            Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
+                            trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
+                        </CircleCollapse>
+
+                        <CircleCollapse
+                            id=""
+                            title="PTE"
+                            classNameRow="row d-flex flex-row align-items-center"
+                            classNameButton="square btn btn-danger"
+                            classNameBtnCircle="circle rounded-circle align-items-center"
+                        >
+
+                            Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
+                            trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
+                        </CircleCollapse>
                     </div>
+                </Paragraph>
 
 
-                    <CircleCollapse
-                        id=""
-                        title="PT"
-                        classNameRow="row d-flex flex-row align-items-center"
-                        classNameButton="square btn btn-primary"
-                        classNameBtnCircle="circle rounded-circle align-items-center"
-                    >
-
-                        Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
-                        trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
-                    </CircleCollapse>
-
-                    <CircleCollapse
-                        id=""
-                        title="PET"
-                        classNameRow="row d-flex flex-row align-items-center"
-                        classNameButton="square btn btn-warning"
-                        classNameBtnCircle="circle rounded-circle align-items-center"
-                    >
-
-                        Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
-                        trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
-                    </CircleCollapse>
-
-                    <CircleCollapse
-                        id=""
-                        title="PTE"
-                        classNameRow="row d-flex flex-row align-items-center"
-                        classNameButton="square btn btn-danger"
-                        classNameBtnCircle="circle rounded-circle align-items-center"
-                    >
-
-                        Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
-                        trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
-                    </CircleCollapse>
-
-
-                </div>
-            </div>
-
-            <div id="item-02-sl-05" className="opacity-0">
-                <h3>Atenção</h3>
-                <p>
-                    A liberação da Permissão de Trabalho para altura e espaço confinado depende de duas situações:
+                <Alert id="item-02-sl-05">
+                    <h2 className="text-center">Atenção</h2>
+                    <p>
+                        A liberação da Permissão de Trabalho para altura e espaço confinado depende de duas situações:
+                        <ol>
+                            <li>
+                                Apresentação da <strong><u><i><a className="click">Carteira de Verificação da Pressão Arterial</a></i></u></strong>.
+                            </li>
+                            <li>
+                                Ambiente de trabalho totalmente preparado para o início da atividade.
+                            </li>
+                        </ol>
                     </p>
-                <ol>
-                    <li>
-                        Apresentação da <strong><u><i>Carteira de Verificação da Pressão Arterial</i></u></strong>.
-                        </li>
-                    <li>
-                        Ambiente de trabalho totalmente preparado para o início da atividade.
-                        </li>
-                </ol>
+                </Alert>
+
             </div>
 
             <Link to="/bloqueio-eletromecano">
