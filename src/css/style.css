@@ -11830,12 +11830,14 @@ h6,
 .arrow-progress {
   color: #60b019 !important;
   font-size: 30px !important;
+  position: relative;
 }
 
 .arrow-progress:hover {
   color: #60b019 !important;
   font-size: 30px !important;
 }
+
 
 #sidebar {
   background: #363435;
@@ -12035,10 +12037,10 @@ h6,
   }
 
   #sidebar {
-    margin-left: -280px;
+    font-size: 14px;
     background: #363435;
     color: #000;
-    /* box-shadow: 1px 1px 5px #363435; */
+    margin-left: -280px;
     min-width: 280px;
     max-width: 280px;
     -webkit-transition: all 0.3s;
@@ -12167,17 +12169,6 @@ a[data-toggle="collapse"] {
   transform: translateY(-50%);
 }
 
-.btn.btn-primary {
-  background: #866ec7;
-  border-color: #866ec7;
-}
-
-.btn.btn-primary:hover,
-.btn.btn-primary:focus {
-  background: #866ec7 !important;
-  border-color: #866ec7 !important;
-}
-
 .footer p {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -12286,13 +12277,69 @@ ul {
   border-radius: 20px;
 }
 
-.green {
-  color: "#3f760f" !important;
-}
-
 .title {
   color: #428e00;
   font-size: 50px;
   line-height: 1.5;
   font-weight: normal;
+}
+
+
+
+@media (min-width: 768px) {
+  .square {
+    display: none !important;
+  }
+
+  .circle {
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+    width: 210px;
+    height: 210px;
+    line-height: 210px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .circle:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  .circle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+
+  .card-of-circle {
+    height: 150px;
+    left: 30px;
+    padding-left: 200px !important;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+
+  .card-of-circle .active {
+    width: 0;
+    left: -50px
+  }
+}
+
+@media (max-width: 767px) {
+  .circle {
+    display: none !important;
+  }
+
+  .card-of-circle {
+    width: 250px;
+    font-size: 14px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }

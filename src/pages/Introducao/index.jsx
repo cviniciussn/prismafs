@@ -5,6 +5,7 @@ import '../../css/animate.css';
 import img1 from '../../img/img01.jpg';
 import img2 from '../../img/img02.jpg';
 
+import ArrowProgress from "../../components/ArrowProgress";
 
 function Introducao() {
 
@@ -142,7 +143,7 @@ function Introducao() {
                 <hr id="hr-01-sl-01" className="opacity-0" />
 
                 <div id="item-02-sl-01" className="container-fluid opacity-0">
-                    <div className="row">
+                    <div className="row justify-content-center">
                         <div className="col-md-10">
                             <p className="my-3">
                                 Mas lembre-se que está ingressando em uma Empresa que tem a segurança como um valor.
@@ -154,7 +155,7 @@ function Introducao() {
                 <hr id="hr-02-sl-01" className="opacity-0" />
 
                 <div id="item-03-sl-01" className="container-fluid opacity-0">
-                    <div className="row">
+                    <div className="row justify-content-center">
                         <div className="col-md-10">
                             <p className="my-3">
                                 E que, sabendo verificar o risco oferecido pelas tarefas a serem executadas e obtendo os
@@ -165,11 +166,7 @@ function Introducao() {
                     </div>
                 </div>
 
-                <div className="container-fluid text-center">
-                    <span className="green">
-                        <i className="fas fa-angle-double-down my-3 opacity-0" id="btn-01-sl-01" type="button"></i>
-                    </span>
-                </div>
+                <ArrowProgress id="btn-01-sl-01"/>
 
                 <hr />
 
@@ -178,7 +175,7 @@ function Introducao() {
             <div className="slide-02">
 
                 <div id="item-01-sl-02" className="container-fluid opacity-0">
-                    <div className="row">
+                    <div className="row justify-content-center">
                         <div className="col-md-10">
                             <p className="my-3">
                                 Nesse módulo, você conhecerá <strong>outras informações</strong> sobre o Sistema de Saúde e Segurança do Trabalho da BSBIOS e,
@@ -191,7 +188,7 @@ function Introducao() {
                 <hr id="hr-01-sl-02" className="opacity-0" />
 
                 <div id="item-02-sl-02" className="container-fluid text-center opacity-0">
-                    <div className="row">
+                    <div className="row justify-content-center">
                         <div className="col-md-12">
                             <h1 className="my-3">
                                 Bem-vindo ao curso<br />
@@ -202,7 +199,7 @@ function Introducao() {
                 </div>
 
                 <div className="container-fluid text-center">
-                    <button className="btn btn-custom my-3 opacity-0" width="300" id="btn-02-sl-02" type="button">Iniciar Curso</button>
+                    <button className="btn btn-custom my-3 opacity-0" id="btn-02-sl-02" type="button"><strong>Iniciar Curso</strong></button>
                 </div>
 
             </div>

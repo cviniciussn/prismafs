@@ -3,6 +3,10 @@ import $ from 'jquery';
 import '../../css/animate.css';
 import { Link, Redirect } from 'react-router-dom';
 
+import ArrowProgress from "../../components/ArrowProgress";
+import Paragraph from "../../components/Paragraph";
+import Alert from "../../components/Alert";
+
 import img01 from '../../img/img-01-sl-06.jpg';
 import img02 from '../../img/img-02-sl-06.jpg';
 import img03 from '../../img/img-03-sl-06.jpg';
@@ -12,7 +16,7 @@ function BloqueioEletromecanico() {
         <div id="bloqueio-eletromecanico">
             <h1 className="title text-center opacity-0"><span className="icon"><i class="fas fa-lock"></i></span> Bloqueio Eletromecânico</h1>
 
-            <hr/>
+            <hr />
 
             <div className="slide-06">
 
@@ -26,16 +30,11 @@ function BloqueioEletromecanico() {
                     </div>
                 </div>
 
-                <div id="item-02-sl-06" className="">
-                    <div className="row justify-content-center">
-                        <div className="col-md-10 alert alert-warning box-shadow-custom">
-                            <p className="my-3">
-                                <strong>ANTES</strong> de executar qualquer intervenção, <strong>TODOS</strong> devem realizar bloqueio e identificação
-                                de <strong>TODAS</strong> as energias perigosas de <strong>QUALQUER</strong> equipamento.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+                <Alert id="item-02-sl-06">
+                    <strong>ANTES</strong> de executar qualquer intervenção, <strong>TODOS</strong> devem realizar bloqueio e identificação
+                    de <strong>TODAS</strong> as energias perigosas de <strong>QUALQUER</strong> equipamento.
+                </Alert>
 
                 <div className="container-fluid">
                     <div className="row">
