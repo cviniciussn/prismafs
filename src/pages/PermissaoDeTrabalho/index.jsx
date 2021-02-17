@@ -42,7 +42,7 @@ function PermissaoDeTrabalho() {
 
                 setInterval(() => { $('#item-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 500);
 
-                $('#atv-list').on('click', () => {
+                $('#pointer-01-sl-04').on('click', () => {
 
                     setInterval(() => { $('#btn-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 5000);
 
@@ -52,7 +52,6 @@ function PermissaoDeTrabalho() {
                             $('#item-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
                         }, 1000);
 
-
                         setInterval(() => { $('#btn-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 3000);
                         $('#btn-02-sl-04').on('click', () => {
 
@@ -60,17 +59,7 @@ function PermissaoDeTrabalho() {
 
                             setInterval(() => { $('#item-02-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
                         });
-
-
-
                     });
-
-
-
-
-
-
-
 
                 });
             }, 0);
@@ -84,8 +73,6 @@ function PermissaoDeTrabalho() {
             <hr />
 
             <div id="slide-03" className="">
-
-
                 <ParagraphAndImg
                     idItem="item-01-sl-03"
                     idParagraph=""
@@ -98,7 +85,6 @@ function PermissaoDeTrabalho() {
 
                 <hr />
                 {/* >>> */}
-
 
                 <Paragraph id="item-02-sl-03">
                     O objetivo da Permissão de Trabalho é a <strong>prevenção de acidentes</strong> por meio da avaliação dos
@@ -118,15 +104,13 @@ function PermissaoDeTrabalho() {
                 <ArrowProgress id="btn-01-sl-03" />
 
                 <hr />
-
             </div>
 
             <div id="slide-04" className="display-none">
 
-
                 <div className="container-fluid">
-                    <Paragraph>
-                        Conheça algumas <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#list-01-sl-04" aria-expanded="false">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
+                    <Paragraph id="item-01-sl-04">
+                        Conheça algumas <strong><a className="click" id="pointer-01-sl-04" data-toggle="collapse" data-target="#list-01-sl-04" aria-expanded="false">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
                         <br />
                         <small><strong><i>(Clique na área em destaque)</i></strong></small>
                     </Paragraph>
@@ -186,7 +170,7 @@ function PermissaoDeTrabalho() {
             <div id="slide-05" className="">
 
                 <Paragraph id="item-01-sl-05">
-                    Existem <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#item-01-colpse-sl-05">três tipos</a></strong> de Permissão de Trabalho:
+                    Existem <strong><a className="click" id="list-01-sl-04" data-toggle="collapse" data-target="#item-01-colpse-sl-05">três tipos</a></strong> de Permissão de Trabalho:
                                 <br />
                     <small><strong><i>(Clique na área em destaque)</i></strong></small>
 
@@ -229,6 +213,7 @@ function PermissaoDeTrabalho() {
                     </div>
                 </Paragraph>
 
+                <hr/>
 
                 <Alert id="item-02-sl-05">
                     <h2 className="text-center">Atenção</h2>

@@ -44,11 +44,17 @@ function BloqueioEletromecanico() {
                 </div>
             </div>
 
+            <ArrowProgress />
+            <hr />
 
             <div className='slide-07'>
-                <hr />
 
                 {/* SLIDE 7 */}
+
+                <Paragraph>
+                    Chegou a hora de refletir...
+                </Paragraph>
+
 
                 <div className="container-fluid" id="">
                     <div className="row">
@@ -59,57 +65,18 @@ function BloqueioEletromecanico() {
                     </div>
                 </div>
 
+                <ArrowProgress />
                 <hr />
 
-                <div className="container-fluid" id="">
-                    <div className="row">
-                        <div className="col-md-10">
-                            {/* ALERTA EM AZUL */}
 
-                            <p className="my-3" id=""><strong>Fique Atento!</strong></p>
-                            <p className="my-3" id="">
-                                O bloqueio e a identificação das energias perigosas do equipamento em que será realizado o trabalho devem ser realizados por <strong>todos os colaboradores, terceiros, temporários e prestadores de serviço que irão realizar a atividade.</strong>
+                <Alert id="">
+                    <h2 className="text-center">Fique Atento!</h2>
+                    O bloqueio e a identificação das energias perigosas do equipamento em que será realizado o trabalho
+                    devem ser realizados por <strong>todos os colaboradores, terceiros, temporários e prestadores de
+                    serviço que irão realizar a atividade.</strong>
+                </Alert>
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-            <div className="slide-08">
-                {/* SLIDE 8 */}
-
-                <h1>TRABALHO COM ELETRICIDADE</h1>
-
-                <p class="my-3" id="">
-                    Ao trabalhar com <strong>eletricidade</strong>  o colaborador está exposto a riscos, que podem provocar acidentes.
-                Para <strong>trabalhar em segurança</strong> , conheça e siga algumas <strong>práticas seguras. </strong>
-                </p>
-                {/* Apresentar os tópicos um a um. Os tópicos 2, 3 e 6 terão um 
-			    “Clique aqui” que, ao serem clicados, deverão apresentar em 
-		        uma telinha alpha as respectivas imagens. */}
-
-
-                <hr />
-
-                <div class="container-fluid" id="">
-                    <div class="row">
-                        <div class="col-md-10">
-                            <p class="my-3" id=""> 1 - Somente eletricistas treinados e qualificados estão autorizados a realizar atividade em linhas elétricas energizadas ou máquinas e equipamentos elétricos. </p>
-                            <p class="my-3" id=""> 2 - Estes devem sempre usar os equipamentos de proteção. Clique aqui. </p>
-                            <p class="my-3" id=""> 3 - Somente pessoal autorizado pode acessar as Centrais de Controle de Motores (CCM) e Subestações. Clique aqui. </p>
-                            <p class="my-3" id="">4 - É proibido o uso de “T”, benjamins ou fios paralelos e equipamentos com plugs incompatíveis com as instalações da Empresa.</p>
-                            <p class="my-3" id="">5 - Em caso de dúvida, chame um eletricista.</p>
-                            <p class="my-3" id="">6 - Caso necessite realizar bloqueio elétrico, comunique o seu facilitador e/ou gestor da área. Clique aqui.</p>
-
-                            <img id="" src="" alt="imagem do topico 2" />
-                            <img id="" src="" alt="imagem do topico 3" />
-                            <img id="" src="" alt="imagem do topico" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div >
     );
 }

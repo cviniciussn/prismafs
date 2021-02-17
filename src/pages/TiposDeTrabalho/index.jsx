@@ -2,17 +2,67 @@ import React from 'react';
 import $ from 'jquery';
 import '../../css/animate.css';
 import { Link, Redirect } from 'react-router-dom';
+import Paragraph from '../../components/Paragraph';
+import Card from '../../components/Card';
+import Alert from '../../components/Alert';
+import ArrowProgress from '../../components/ArrowProgress';
 
 function TiposDeTrabalho() {
     return (
         <div>
             <div id="slide-08">
-                <div className="title text-center opacity-0"><span className="icon"><i className="bi bi-tools"></i></span> Trabalho com Eletricidade</div>
-                <p>
+
+                <div className="title text-center"><span className="icon"><i className="bi bi-tools"></i></span> Trabalho com Eletricidade</div>
+                <Paragraph id="item-01-sl-08">
                     Ao trabalhar com eletricidade o colaborador está exposto a riscos,
                     que podem provocar acidentes. Para trabalhar em segurança, conheça e siga algumas
                     práticas seguras.
-                </p>
+                </Paragraph>
+
+                <hr />
+
+                <Card>
+                    <small>
+                        <ol>
+                            <li>
+                                Somente eletricistas treinados e qualificados estão autorizados a realizar atividade
+                                em linhas elétricas energizadas ou máquinas e equipamentos elétricos.
+                            </li>
+                            <li>
+                                Estes devem sempre usar os equipamentos de proteção. 
+                                <br/>
+                                <span className="click"><strong><i>Clique aqui</i></strong></span>.
+                            </li>
+                            <li>
+                                Somente pessoal autorizado pode acessar as Centrais de Controle de Motores (CCM)
+                                e Subestações.
+                                <br/>
+                                <span className="click"><strong><i>Clique aqui</i></strong></span>.
+                            </li>
+                            <li>
+                                É proibido o uso de “T”, benjamins ou fios paralelos e equipamentos com plugs
+                                incompatíveis com as instalações da Empresa.
+                            </li>
+                            <li>
+                                Em caso de dúvida, chame um eletricista.
+                            </li>
+                            <li>
+                                Caso necessite realizar bloqueio elétrico, comunique o seu facilitador e/ou
+                                gestor da área.
+                                <br/>
+                                <span className="click"><strong><i>Clique aqui</i></strong></span>.
+                            </li>
+                        </ol>
+                    </small>
+                </Card>
+
+                <ArrowProgress />
+                <hr />
+
+                <Alert>
+                    <h2 className="text-center">Atenção</h2>
+                        Esteja sempre com a Carteira de Verificação da Pressão Arterial.
+                </Alert>
 
             </div>
 
