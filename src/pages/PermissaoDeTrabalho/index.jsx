@@ -11,7 +11,7 @@ function PermissaoDeTrabalho() {
 
         setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
 
-        setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 4000);
+        setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 2000);
 
         setInterval(() => { $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 9000);
 
@@ -115,7 +115,7 @@ function PermissaoDeTrabalho() {
 
 
                 <div className="container-fluid text-center my-3">
-                    <a id="btn-01-sl-03" className="icon opacity-0" type="button">
+                    <a id="btn-01-sl-03" className="arrow-progress click opacity-0" type="button">
                         <i className="fas fa-angle-double-down"></i>
                     </a>
                 </div>
@@ -128,43 +128,44 @@ function PermissaoDeTrabalho() {
 
                 <div id="item-04-sl-04" className="container-fluid opacity-0">
                     <div className="row">
-                        <div className="col-md-10">
-                            <p className="mt-3">
-                                Conheça algumas <strong><a id="btn-dropdown-01">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
+                        <div className="col-md-10 mt-3">
+                            <p>
+                                Conheça algumas <strong><a className="click">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
                                 <br />
-                            </p>
-                            <small><strong><i>(Clique na área em destaque)</i></strong></small>
+                                <small><strong><i>(Clique na área em destaque)</i></strong></small>
 
-                            <div className="card card-body col-md-6 py-3">
+                            </p>
+
+                            <div className="col-md-6 py-3">
                                 <small id="atv-list" className="text-left collapse">
                                     <ul>
                                         <li>
                                             <i className="fas fa-check"></i> Trabalhos a quente (que geram fagulhas)
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Manuseio de produtos químicos
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Intervenção em equipamentos
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Manutenções de qualquer tipo
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Trabalhos em altura
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Trabalhos em espaços confinados
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Movimentações de materiais com guindastes
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Escavações
-                                    </li>
+                                        </li>
                                         <li>
                                             <i className="fas fa-check"></i> Trabalhos com eletricidade
-                                    </li>
+                                        </li>
                                     </ul>
                                 </small>
                             </div>
@@ -175,10 +176,11 @@ function PermissaoDeTrabalho() {
                     </div>
                 </div>
 
-
-                <span className="container-fluid text-center green">
-                    <i className="fas fa-angle-double-down my-3 opacity-0" id="" type="button"></i>
-                </span>
+                <div className="container-fluid text-center my-3">
+                    <a id="" className="arrow-progress click opacity-0" type="button">
+                        <i className="fas fa-angle-double-down"></i>
+                    </a>
+                </div>
 
                 <hr />
                 {/* >>> */}
@@ -218,10 +220,10 @@ function PermissaoDeTrabalho() {
                     <ol>
                         <li>
                             Apresentação da <strong><u><i>Carteira de Verificação da Pressão Arterial</i></u></strong>.
-                        </li>
+                            </li>
                         <li>
                             Ambiente de trabalho totalmente preparado para o início da atividade.
-                        </li>
+                            </li>
                     </ol>
                 </div>
 

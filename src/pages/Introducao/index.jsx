@@ -40,15 +40,15 @@ function Introducao() {
 
         setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
 
-        setInterval(() => { $('#crsl-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 3000);
+        setInterval(() => { $('#crsl-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
 
-        setInterval(() => { $('#item-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 10000);
+        setInterval(() => { $('#item-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 8000);
 
-        setInterval(() => { $('#hr-01-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 10500);
+        setInterval(() => { $('#hr-01-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 8500);
 
-        setInterval(() => { $('#item-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 15000);
+        setInterval(() => { $('#item-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 12000);
 
-        setInterval(() => { $('#hr-02-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 15500);
+        setInterval(() => { $('#hr-02-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 12500);
 
         setInterval(() => { $('#item-03-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 20000);
 

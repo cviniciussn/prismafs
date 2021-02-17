@@ -49,7 +49,7 @@ export default function SideBar() {
 				</li>
 				<li>
 					<Link to="bloqueio-eletromecanico">
-						<span className="icon"><i className="bi bi-slash-circle"></i></span><br />
+						<span className="icon"><i class="fas fa-lock"></i></span><br />
                      	Bloqueio eletromecânico
 					</Link>
 				</li>

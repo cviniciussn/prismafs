@@ -11827,9 +11827,14 @@ h6,
   scroll-behavior: smooth;
 }
 
-#content a .icon {
-  color: #60b019;
-  font-size: 30px;
+.arrow-progress {
+  color: #60b019 !important;
+  font-size: 30px !important;
+}
+
+.arrow-progress:hover {
+  color: #60b019 !important;
+  font-size: 30px !important;
 }
 
 #sidebar {
@@ -11950,7 +11955,7 @@ h6,
     overflow-y: hidden;
     flex-wrap: nowrap;
     scroll-behavior: smooth;
-    
+
   }
 
   #sidebar ::-webkit-scrollbar {
@@ -12264,13 +12269,13 @@ ul {
   height: 100vh;
 }
 
-#btn-dropdown-01 {
+.click {
   cursor: pointer;
-  color: #60b019;
+  color: #60b019 !important;
 }
 
-#btn-dropdown-01:hover {
-  color: #3f760f;
+.click:hover {
+  color: #3f760f !important;
 }
 
 .box-shadow-custom {
