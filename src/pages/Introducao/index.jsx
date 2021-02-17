@@ -38,35 +38,33 @@ function Introducao() {
 
     $(document).ready(function () {
 
-        setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000 - 2000);
+        setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
 
-        setInterval(() => { $('#img-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 5000 - 2000);
+        setInterval(() => { $('#crsl-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 3000);
 
-        setInterval(() => { $('#img-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 8000 - 2000);
+        setInterval(() => { $('#item-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 10000);
 
-        setInterval(() => { $('#item-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 12000 - 2000);
+        setInterval(() => { $('#hr-01-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 10500);
 
-        setInterval(() => { $('#hr-01-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 12500 - 2000);
+        setInterval(() => { $('#item-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 15000);
 
-        setInterval(() => { $('#item-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 17000 - 2000);
+        setInterval(() => { $('#hr-02-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 15500);
 
-        setInterval(() => { $('#hr-02-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 17500 - 2000);
+        setInterval(() => { $('#item-03-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 20000);
 
-        setInterval(() => { $('#item-03-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 22000 - 2000);
-
-        setInterval(() => { $('#btn-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 28000 - 2000);
+        setInterval(() => { $('#btn-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 26000);
 
         $('#btn-01-sl-01').on('click', () => {
 
-            setInterval(() => { $('#item-01-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000 - 2000);
+            setInterval(() => { $('#item-01-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
 
-            setInterval(() => { $('#hr-01-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 2500 - 2000);
+            setInterval(() => { $('#hr-01-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 1500);
 
-            setInterval(() => { $('#item-02-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 12000 - 2000);
+            setInterval(() => { $('#item-02-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 11000);
 
-            setInterval(() => { $('#hr-02-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 12500 - 2000);
+            setInterval(() => { $('#hr-02-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 11500);
 
-            setInterval(() => { $('#btn-02-sl-02').addClass('animated-middle slideInLeft').removeClass('opacity-0'); }, 15000 - 2000);
+            setInterval(() => { $('#btn-02-sl-02').addClass('animated-middle slideInLeft').removeClass('opacity-0'); }, 14000);
 
         });
 
@@ -75,7 +73,7 @@ function Introducao() {
 
             $("#header").addClass('animated-middle slideOutUp');
             $("#sidebar").addClass('animated-middle slideOutDown');
-            
+
             $("#sidebar").addClass('animated-middle fadeOut');
 
             setInterval(() => { window.location.href = "/permissao-de-trabalho"; }, 1000);
@@ -89,13 +87,45 @@ function Introducao() {
             <div id="" className="slide-01">
 
                 <div className="container-fluid">
+
                     <div className="row justify-content-center">
-                        <div className="col-md-5">
+
+                        <div className="col-md-6">
+
+                            <div id="crsl-01-sl-01" class="carousel slide box-shadow-custom rounded-20px my-3 opacity-0" data-interval="10000" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#crsl-01-sl-01" data-slide-to="0" class="active"></li>
+                                    <li data-target="#crsl-01-sl-01" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img id="" className="rounded-20px d-block w-100" src={img1} alt="Imagem1" />
+                                        {/* <img class="d-block w-100" src={img1} alt="Primeiro Slide" /> */}
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img id="" className="rounded-20px d-block w-100" src={img2} alt="Imagem2" />
+                                        {/* <img class="d-block w-100" src={img2} alt="Segundo Slide" /> */}
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#crsl-01-sl-01" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#crsl-01-sl-01" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Próximo</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        {/* <div className="col-md-5">
                             <img id="img-01-sl-01" className="card-img my-3 opacity-0" src={img1} alt="Imagem1" />
                         </div>
                         <div className="col-md-5">
-                            <img id="img-02-sl-01" className="card-img my-3 opacity-0" src={img2} alt="Imagem2" />
-                        </div>
+                        <img id="img-02-sl-01" className="card-img my-3 opacity-0" src={img2} alt="Imagem2" />
+                        </div> */}
+
                     </div>
 
                     <div id="item-01-sl-01" className="opacity-0">
@@ -139,10 +169,9 @@ function Introducao() {
                     <span className="green">
                         <i className="fas fa-angle-double-down my-3 opacity-0" id="btn-01-sl-01" type="button"></i>
                     </span>
-                    {/* <a className="btn btn-custom" width="300"  >Avançar</a> */}
                 </div>
 
-                <hr/>
+                <hr />
 
             </div>
 

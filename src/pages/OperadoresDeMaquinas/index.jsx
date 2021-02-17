@@ -4,7 +4,8 @@ import React from 'react';
 function OperadoresDeMaquinas() {
     return (
         <div>
-            <h1 className="topic text-center opacity-0">Operadores de Maquinas</h1>
+            <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-cogs"></i></span> Operadores de Maquinas</div>
+            <hr/>
         </div>
     );
 }

@@ -9,24 +9,21 @@ function PermissaoDeTrabalho() {
 
     $(document).ready(() => {
 
-        setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000 + 3000);
+        setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
 
-        setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 4000 + 3000);
+        setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 4000);
 
-        setInterval(() => { $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 9000 + 3000);
+        setInterval(() => { $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 9000);
 
-        setInterval(() => { $('#item-03-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 14000 + 3000);
+        setInterval(() => { $('#item-03-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 14000);
 
-        setInterval(() => { $('#btn-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 19000 + 3000);
+        setInterval(() => { $('#btn-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 16000);
 
         $('#btn-01-sl-03').on('click', () => {
-            // setInterval(() => { $('#slide-03').addClass('animated-middle fadeOutUp'); }, 1000 + 3000);
-            // setInterval(() => { $('#slide-03').addClass('display-none'); }, 3000 + 3000);
             setInterval(() => {
-                // alert('hahah')
-                $('#slide-04').removeClass('display-none');
-                $('#item-04-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
-            }, 4000);
+                setInterval(() => { $('#slide-04').removeClass('display-none'); }, 0);
+                setInterval(() => { $('#item-04-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 500);
+            }, 500);
         });
 
         <div>
@@ -69,8 +66,10 @@ function PermissaoDeTrabalho() {
 
     return (
         <div>
-            <div className="title text-center opacity-0">Permissão de Trabalho</div>
+            <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-clipboard-check"></i></span> Permissão de Trabalho</div>
+
             <hr />
+
             <div id="slide-03" className="">
                 <div id="item-01-sl-03" className="container-fluid my-3 mb-3 opacity-0">
                     <div className="row g-0 flex-wrap-reverse align-items-center">
@@ -114,54 +113,61 @@ function PermissaoDeTrabalho() {
                     </div>
                 </div>
 
-                <div className="container-fluid text-center">
-                    <button className="btn btn-custom my-3 opacity-0" id="btn-01-sl-03" type="button">Avançar</button>
+
+                <div className="container-fluid text-center my-3">
+                    <a id="btn-01-sl-03" className="icon opacity-0" type="button">
+                        <i className="fas fa-angle-double-down"></i>
+                    </a>
                 </div>
+
+                <hr />
 
             </div>
 
             <div id="slide-04" className="display-none">
-
-
 
                 <div id="item-04-sl-04" className="container-fluid opacity-0">
                     <div className="row">
                         <div className="col-md-10">
                             <p className="mt-3">
                                 Conheça algumas <strong><a id="btn-dropdown-01">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
+                                <br />
                             </p>
+                            <small><strong><i>(Clique na área em destaque)</i></strong></small>
 
-                            <small id="atv-list" className="box collapse">
-                                <ul>
-                                    <li>
-                                        <i className="fas fa-check"></i> Trabalhos a quente (que geram fagulhas)
+                            <div className="card card-body col-md-6 py-3">
+                                <small id="atv-list" className="text-left collapse">
+                                    <ul>
+                                        <li>
+                                            <i className="fas fa-check"></i> Trabalhos a quente (que geram fagulhas)
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Manuseio de produtos químicos
+                                        <li>
+                                            <i className="fas fa-check"></i> Manuseio de produtos químicos
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Intervenção em equipamentos
+                                        <li>
+                                            <i className="fas fa-check"></i> Intervenção em equipamentos
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Manutenções de qualquer tipo
+                                        <li>
+                                            <i className="fas fa-check"></i> Manutenções de qualquer tipo
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Trabalhos em altura
+                                        <li>
+                                            <i className="fas fa-check"></i> Trabalhos em altura
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Trabalhos em espaços confinados
+                                        <li>
+                                            <i className="fas fa-check"></i> Trabalhos em espaços confinados
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Movimentações de materiais com guindastes
+                                        <li>
+                                            <i className="fas fa-check"></i> Movimentações de materiais com guindastes
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Escavações
+                                        <li>
+                                            <i className="fas fa-check"></i> Escavações
                                     </li>
-                                    <li>
-                                        <i className="fas fa-check"></i> Trabalhos com eletricidade
+                                        <li>
+                                            <i className="fas fa-check"></i> Trabalhos com eletricidade
                                     </li>
-                                </ul>
-                            </small>
+                                    </ul>
+                                </small>
+                            </div>
                         </div>
 
                         <hr />
@@ -169,13 +175,19 @@ function PermissaoDeTrabalho() {
                     </div>
                 </div>
 
+
+                <span className="container-fluid text-center green">
+                    <i className="fas fa-angle-double-down my-3 opacity-0" id="" type="button"></i>
+                </span>
+
+                <hr />
                 {/* >>> */}
 
                 <p id="item-05-sl-04" className="opacity-0">
                     Em caso de dúvida se a atividade necessita de permissão, pergunte ao seu líder ou ao SESMT.
                 </p>
 
-                <button id="btn-01-sl-04" type="button" className="btn btn-custom opacity-0">Avançar</button>
+                {/* <button id="" type="button" className="btn btn-custom opacity-0">Avançar</button> */}
             </div>
 
             <div id="slide-05" className="display-none">

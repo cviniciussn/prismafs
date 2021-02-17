@@ -6,7 +6,8 @@ import { Link, Redirect } from 'react-router-dom';
 function Conclusao() {
     return (
         <div>
-            <h1 className="topic text-center opacity-0">Conclusao</h1>
+            <h1 className="title text-center opacity">Conclusao</h1>
+            <hr />
         </div>
     );
 }

@@ -6,7 +6,8 @@ function ProdutosQuimicos() {
 
     return (
         <div>
-            <h1 className="topic text-center opacity-0">Produtos Químicos</h1>
+            <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-flask"></i></span> Produtos Químicos</div>
+            <hr/>
         </div>
     );
 }
