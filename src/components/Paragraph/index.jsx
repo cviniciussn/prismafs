@@ -5,7 +5,7 @@ import $ from 'jquery';
 function Paragraph(props) {
 
     return (
-        <div className="container-fluid" id={props.id} >
+        <div className="container-fluid opacity-0" id={props.id} >
             <div className="row">
                 <div className="col-md-12">
                     <p className="my-3">

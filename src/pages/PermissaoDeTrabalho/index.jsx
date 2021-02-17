@@ -8,11 +8,15 @@ import Paragraph from "../../components/Paragraph";
 import ParagraphAndImg from "../../components/ParagraphAndImg";
 import Alert from "../../components/Alert";
 import CircleCollapse from "../../components/CircleCollapse";
+import CardCollapsed from "../../components/CardCollapsed";
+
 
 import img from '../../img/img01.jpg';
 import carteiraVrf from '../../img/carteira-verificacao.jpg'
 
 function PermissaoDeTrabalho() {
+
+
 
 
     $(document).ready(() => {
@@ -119,50 +123,47 @@ function PermissaoDeTrabalho() {
 
             <div id="slide-04" className="display-none">
 
-                <div id="item-01-sl-04" className="container-fluid py-3 opacity-0">
 
-                    <div className="row">
-                        <div className="col-md-10 mt-3">
-                            <p>
-                                Conheça algumas <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#list-01-sl-04" aria-expanded="false">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
-                                <br />
-                                <small><strong><i>(Clique na área em destaque)</i></strong></small>
-                            </p>
-                        </div>
-                    </div>
-                    <small className="collapse" id="list-01-sl-04">
-                        <div className="card-body">
+                <div className="container-fluid">
+                    <Paragraph>
+                        Conheça algumas <strong><a className="click" id="atv-list" data-toggle="collapse" data-target="#list-01-sl-04" aria-expanded="false">atividades que necessitam da Permissão de Trabalho</a></strong> para serem realizadas.
+                        <br />
+                        <small><strong><i>(Clique na área em destaque)</i></strong></small>
+                    </Paragraph>
+
+                    <CardCollapsed id="list-01-sl-04">
+                        {/* <small> */}
                             <ul>
                                 <li>
                                     <i className="fas fa-check"></i> Trabalhos a quente (que geram fagulhas)
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Manuseio de produtos químicos
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Intervenção em equipamentos
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Manutenções de qualquer tipo
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Trabalhos em altura
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Trabalhos em espaços confinados
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Movimentações de materiais com guindastes
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Escavações
-                                    </li>
+                                </li>
                                 <li>
                                     <i className="fas fa-check"></i> Trabalhos com eletricidade
-                                    </li>
+                                </li>
                             </ul>
-                        </div>
-                    </small>
+                        {/* </small> */}
+                    </CardCollapsed>
                 </div>
 
                 <ArrowProgress id="btn-01-sl-04" />

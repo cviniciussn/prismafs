@@ -12244,6 +12244,7 @@ a[data-toggle="collapse"] {
 
 ul {
   list-style: none;
+  padding: 0 1rem !important;
 }
 
 .img {
@@ -12296,10 +12297,12 @@ ul {
 
 @media (min-width: 768px) {
   .square {
-    display: none !important; }
+    display: none !important;
+  }
 
   #card-custom {
-    margin: 5rem 0 !important; }
+    margin: 5rem 0 !important;
+  }
 
   .circle {
     background-color: #007bff;

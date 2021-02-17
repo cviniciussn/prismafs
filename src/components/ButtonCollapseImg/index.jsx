@@ -17,7 +17,7 @@ function ButtonCollapseImg(props) {
             role="button"
             aria-expanded="false"
             aria-controlsdata-target={"#"+props.idImg}>
-_
+
                 {props.title}
 
             </button>
