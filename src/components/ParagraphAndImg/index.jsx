@@ -12,7 +12,7 @@ function ParagraphAndImg(props) {
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <img id={props.idImg} className="card-img" src={props.imgSrc} alt="Imagem3" />
+                    <img id={props.idImg} className="card-img box-shadow-custom" src={props.imgSrc} alt="Imagem3" />
                 </div>
             </div>
         </div>

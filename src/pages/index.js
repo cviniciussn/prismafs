@@ -2,6 +2,8 @@ import Introducao from "./Introducao";
 import PermissaoDeTrabalho from "./PermissaoDeTrabalho";
 import BloqueioEletromecanico from "./BloqueioEletromecanico";
 import TrabalhoComEletricidade from "./TrabalhoComEletricidade";
+import TrabalhoAQuente from "./TrabalhoAQuente";
+import TrabalhoEmAltura from "./TrabalhoEmAltura";
 import EspacoConfinado from "./EspacoConfinado";
 import MovimentacaoDeCargas from "./MovimentacaoDeCargas";
 import OperadoresDeMaquinas from "./OperadoresDeMaquinas";
@@ -16,6 +18,8 @@ export {
     PermissaoDeTrabalho,
     BloqueioEletromecanico,
     TrabalhoComEletricidade,
+    TrabalhoAQuente,
+    TrabalhoEmAltura,
     EspacoConfinado,
     MovimentacaoDeCargas,
     OperadoresDeMaquinas,

@@ -9,6 +9,7 @@ import ParagraphAndImg from "../../components/ParagraphAndImg";
 import Alert from "../../components/Alert";
 import CircleCollapse from "../../components/CircleCollapse";
 import CardCollapsed from "../../components/CardCollapsed";
+import Modal from "../../components/Modal";
 
 
 import img from '../../img/img01.jpg';
@@ -16,53 +17,47 @@ import carteiraVrf from '../../img/carteira-verificacao.jpg'
 
 function PermissaoDeTrabalho() {
 
+    $(window).on('load', () => {
 
+        $(document).ready(() => {
 
+            setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
 
-    $(document).ready(() => {
+            setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 2000);
 
-        $('.circle').on('click', () => {
-            $('.card-of-circle').toggleClass('active');
-        })
+            setInterval(() => { $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 9000);
 
+            setInterval(() => { $('#item-03-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 14000);
 
-        setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
+            setInterval(() => { $('#btn-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 16000);
 
-        setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 2000);
+            $('#btn-01-sl-03').on('click', () => {
+                setInterval(() => {
+                    setInterval(() => { $('#slide-04').removeClass('display-none'); }, 0);
 
-        setInterval(() => { $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 9000);
+                    setInterval(() => { $('#item-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 500);
 
-        setInterval(() => { $('#item-03-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 14000);
+                    $('#pointer-01-sl-04').on('click', () => {
 
-        setInterval(() => { $('#btn-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 16000);
+                        setInterval(() => { $('#btn-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 5000);
 
-        $('#btn-01-sl-03').on('click', () => {
-            setInterval(() => {
-                setInterval(() => { $('#slide-04').removeClass('display-none'); }, 0);
+                        $('#btn-01-sl-04').on('click', () => {
 
-                setInterval(() => { $('#item-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 500);
+                            setInterval(() => {
+                                $('#item-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
+                            }, 1000);
 
-                $('#pointer-01-sl-04').on('click', () => {
+                            setInterval(() => { $('#btn-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 3000);
+                            $('#btn-02-sl-04').on('click', () => {
 
-                    setInterval(() => { $('#btn-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 5000);
+                                setInterval(() => { $('#item-01-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
 
-                    $('#btn-01-sl-04').on('click', () => {
-
-                        setInterval(() => {
-                            $('#item-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
-                        }, 1000);
-
-                        setInterval(() => { $('#btn-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 3000);
-                        $('#btn-02-sl-04').on('click', () => {
-
-                            setInterval(() => { $('#item-01-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
-
-                            setInterval(() => { $('#item-02-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
+                                setInterval(() => { $('#item-02-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
+                            });
                         });
                     });
-
-                });
-            }, 0);
+                }, 0);
+            });
         });
     });
 
@@ -73,6 +68,7 @@ function PermissaoDeTrabalho() {
             <hr />
 
             <div id="slide-03" className="">
+
                 <ParagraphAndImg
                     idItem="item-01-sl-03"
                     idParagraph=""
@@ -102,8 +98,8 @@ function PermissaoDeTrabalho() {
                 </Paragraph>
 
                 <ArrowProgress id="btn-01-sl-03" />
-
                 <hr />
+
             </div>
 
             <div id="slide-04" className="display-none">
@@ -116,7 +112,7 @@ function PermissaoDeTrabalho() {
                     </Paragraph>
 
                     <CardCollapsed id="list-01-sl-04">
-                        {/* <small> */}
+                        <small>
                             <ul>
                                 <li>
                                     <i className="fas fa-check"></i> Trabalhos a quente (que geram fagulhas)
@@ -146,7 +142,7 @@ function PermissaoDeTrabalho() {
                                     <i className="fas fa-check"></i> Trabalhos com eletricidade
                                 </li>
                             </ul>
-                        {/* </small> */}
+                        </small>
                     </CardCollapsed>
                 </div>
 
@@ -162,7 +158,6 @@ function PermissaoDeTrabalho() {
 
 
                 <ArrowProgress id="btn-02-sl-04" />
-
                 <hr />
 
             </div>
@@ -213,7 +208,7 @@ function PermissaoDeTrabalho() {
                     </div>
                 </Paragraph>
 
-                <hr/>
+                <hr />
 
                 <Alert id="item-02-sl-05">
                     <h2 className="text-center">Atenção</h2>
@@ -221,7 +216,7 @@ function PermissaoDeTrabalho() {
                         A liberação da Permissão de Trabalho para altura e espaço confinado depende de duas situações:
                         <ol>
                             <li>
-                                Apresentação da <strong><u><i><a className="click">Carteira de Verificação da Pressão Arterial</a></i></u></strong>.
+                                Apresentação da <span><strong><u><i><a className="click" data-toggle="modal" data-target="#modal-01-sl-05">Carteira de Verificação da Pressão Arterial</a></i></u></strong></span>.
                             </li>
                             <li>
                                 Ambiente de trabalho totalmente preparado para o início da atividade.
@@ -229,6 +224,7 @@ function PermissaoDeTrabalho() {
                         </ol>
                     </p>
                 </Alert>
+                
 
             </div>
 

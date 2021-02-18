@@ -12,6 +12,8 @@ import {
   PermissaoDeTrabalho,
   BloqueioEletromecanico,
   TrabalhoComEletricidade,
+  TrabalhoAQuente,
+  TrabalhoEmAltura,
   EspacoConfinado,
   MovimentacaoDeCargas,
   OperadoresDeMaquinas,
@@ -29,11 +31,18 @@ import {
   SideBar,
   Slide
 } from "./components";
+import Modal from './components/Modal';
+
+import carteiraVrf from '../src/img/carteira-verificacao.jpg'
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Modal idModal="modal-01-sl-05" title="Carteira de Verificação da Pressão Arterial">
+            <img src={carteiraVrf} className="card-img box-shadow-custom w-100" alt="..." />
+        </Modal>
+
         <Container>
 
           <Header/>
@@ -44,6 +53,8 @@ function App() {
                 <Route path='/permissao-de-trabalho' component={PermissaoDeTrabalho} exact />
                 <Route path='/bloqueio-eletromecanico' exact><BloqueioEletromecanico /></Route>
                 <Route path='/trabalho-com-eletricidade' exact><TrabalhoComEletricidade /></Route>
+                <Route path='/trabalho-a-quente' exact><TrabalhoAQuente /></Route>
+                <Route path='/trabalho-em-altura' exact><TrabalhoEmAltura /></Route>
                 <Route path='/espaco-confinado' exact><EspacoConfinado /></Route>
                 <Route path='/movimentacao-de-cargas' exact><MovimentacaoDeCargas /></Route>
                 <Route path='/operadores-de-maquinas' exact><OperadoresDeMaquinas /></Route>

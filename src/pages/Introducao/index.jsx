@@ -10,78 +10,52 @@ import Paragraph from "../../components/Paragraph";
 
 function Introducao() {
 
-    // ---------------------------------------------------------------------------------------
-    // $('#content').scrollTop($('.slide-02').offset().top - $('#content').offset().top + $('#content').scrollTop());
-    // ---------------------------------------------------------------------------------------
+    $(window).on('click', () => {
+        $(document).ready(function () {
 
+            setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
 
-    // $('#content').animate({
-    //     scrollTop: $('').offset().top
-    // }, 1000, function () {
-    //     // Callback after animation
-    //     // Must change focus!
-    //     var $target = $(target);
-    //     
-    //     if ($target.is(":focus")) { // Checking if the target was focused
-    //         return false;
-    //     } else {
-    //         $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-    //          // Set focus again
-    //     };
-    // });
+            setInterval(() => { $('#crsl-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
 
-    // $(window).on('load', () => {
-    //     $('#content').animate({
-    //         scrollTop: $('#item-02-sl-01').offset().top
-    //     }, 1000);
+            setInterval(() => { $('#item-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 8000);
 
-    //     console.log($('#item-02-sl-01').offset().top)
-    // })
+            setInterval(() => { $('#hr-01-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 8500);
 
-    $(document).ready(function () {
+            setInterval(() => { $('#item-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 12000);
 
-        setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
+            setInterval(() => { $('#hr-02-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 12500);
 
-        setInterval(() => { $('#crsl-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
+            setInterval(() => { $('#item-03-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 20000);
 
-        setInterval(() => { $('#item-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 8000);
+            setInterval(() => { $('#btn-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 26000);
 
-        setInterval(() => { $('#hr-01-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 8500);
+            $('#btn-01-sl-01').on('click', () => {
 
-        setInterval(() => { $('#item-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 12000);
+                setInterval(() => { $('#item-01-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
 
-        setInterval(() => { $('#hr-02-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 12500);
+                setInterval(() => { $('#hr-01-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 1500);
 
-        setInterval(() => { $('#item-03-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 20000);
+                setInterval(() => { $('#item-02-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 11000);
 
-        setInterval(() => { $('#btn-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 26000);
+                setInterval(() => { $('#hr-02-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 11500);
 
-        $('#btn-01-sl-01').on('click', () => {
+                setInterval(() => { $('#btn-02-sl-02').addClass('animated-middle slideInLeft').removeClass('opacity-0'); }, 14000);
 
-            setInterval(() => { $('#item-01-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
+            });
 
-            setInterval(() => { $('#hr-01-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 1500);
+            $('#btn-02-sl-02').on('click', () => {
+                $('#introducao').addClass('animated-middle slideOutLeft ');
 
-            setInterval(() => { $('#item-02-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 11000);
+                $("#header").addClass('animated-middle slideOutUp');
+                $("#sidebar").addClass('animated-middle slideOutDown');
 
-            setInterval(() => { $('#hr-02-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 11500);
+                $("#sidebar").addClass('animated-middle fadeOut');
 
-            setInterval(() => { $('#btn-02-sl-02').addClass('animated-middle slideInLeft').removeClass('opacity-0'); }, 14000);
-
+                setInterval(() => { window.location.href = "/permissao-de-trabalho"; }, 1000);
+                // setInterval(() => { $('#introducao').addClass('display-none'); }, 2000);
+            });
         });
-
-        $('#btn-02-sl-02').on('click', () => {
-            $('#introducao').addClass('animated-middle slideOutLeft ');
-
-            $("#header").addClass('animated-middle slideOutUp');
-            $("#sidebar").addClass('animated-middle slideOutDown');
-
-            $("#sidebar").addClass('animated-middle fadeOut');
-
-            setInterval(() => { window.location.href = "/permissao-de-trabalho"; }, 1000);
-            // setInterval(() => { $('#introducao').addClass('display-none'); }, 2000);
-        });
-    });
+    })
 
     return (
         <div id="introducao">
@@ -122,7 +96,7 @@ function Introducao() {
                         </div>
                     </div>
                 </div>
-                    
+
                 <Paragraph id="item-01-sl-01">
                     Imagens como essas nos chocam e podem gerar um certo receio em você, não é mesmo?
                 </Paragraph>

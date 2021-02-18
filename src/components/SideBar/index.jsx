@@ -55,8 +55,20 @@ export default function SideBar() {
 				</li>
 				<li>
 					<Link to="trabalho-com-eletricidade">
-						<span className="icon"><i className="bi bi-tools"></i></span><br />
+						<span className="icon"><i class="fas fa-bolt"></i></span><br />
 						Trabalho com Eletricidade
+					</Link>
+				</li>
+				<li>
+					<Link to="trabalho-a-quente">
+						<span className="icon"><i className="fas fa-fire-alt"></i></span><br />
+						Trabalho a Quente
+					</Link>
+				</li>
+				<li>
+					<Link to="trabalho-em-altura">
+						<span className="icon"><i class="fas fa-sort-amount-up-alt"></i></span><br />
+						Trabalho em Altura
 					</Link>
 				</li>
 				<li>
