@@ -3,6 +3,17 @@ import $ from 'jquery';
 import '../../css/animate.css';
 import { Link } from 'react-router-dom';
 
+import {
+    fadeInDown,
+    fadeOutDown,
+    fadeInUp,
+    fadeOutUp,
+    fadeInLeft,
+    fadeOutLeft,
+    fadeInRight,
+    fadeOutRight
+} from '../../js/main'
+
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
 import ParagraphAndImg from "../../components/ParagraphAndImg";
@@ -17,46 +28,43 @@ import carteiraVrf from '../../img/carteira-verificacao.jpg'
 
 function PermissaoDeTrabalho() {
 
-    $(window).on('load', () => {
 
+    $(window).on('load', () => {
         $(document).ready(() => {
 
-            setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
+            fadeInDown(".title", 1);
 
-            setInterval(() => { $('#item-01-sl-03').addClass('animated-middle fadeInLeft').removeClass('opacity-0'); }, 2000);
+            fadeInLeft('#item-01-sl-03', 2);
 
-            setInterval(() => { $('#item-02-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 9000);
+            fadeInUp('#item-02-sl-03', 4);
 
-            setInterval(() => { $('#item-03-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 14000);
+            fadeInUp('#item-03-sl-03', 8);
 
-            setInterval(() => { $('#btn-01-sl-03').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 16000);
+            fadeInUp('#btn-01-sl-03', 12);
 
             $('#btn-01-sl-03').on('click', () => {
-                setInterval(() => {
-                    setInterval(() => { $('#slide-04').removeClass('display-none'); }, 0);
+                setInterval(() => { $('#slide-04').removeClass('display-none'); }, 0);
 
-                    setInterval(() => { $('#item-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 500);
+                fadeInUp('#item-01-sl-04', 1)
 
-                    $('#pointer-01-sl-04').on('click', () => {
+                $('#pointer-01-sl-04').on('click', () => {
 
-                        setInterval(() => { $('#btn-01-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 5000);
+                    fadeInUp('#btn-01-sl-04', 2)
 
-                        $('#btn-01-sl-04').on('click', () => {
+                    $('#btn-01-sl-04').on('click', () => {
 
-                            setInterval(() => {
-                                $('#item-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0');
-                            }, 1000);
+                        fadeInUp('#item-02-sl-04', 1)
 
-                            setInterval(() => { $('#btn-02-sl-04').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 3000);
-                            $('#btn-02-sl-04').on('click', () => {
+                        fadeInUp('#btn-02-sl-04', 3)
 
-                                setInterval(() => { $('#item-01-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
+                        $('#btn-02-sl-04').on('click', () => {
 
-                                setInterval(() => { $('#item-02-sl-05').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
-                            });
+                            fadeInUp('#item-01-sl-05', 1)
+
+                            fadeInUp('#item-02-sl-05', 1)
                         });
                     });
-                }, 0);
+                });
             });
         });
     });
@@ -224,7 +232,7 @@ function PermissaoDeTrabalho() {
                         </ol>
                     </p>
                 </Alert>
-                
+
 
             </div>
 

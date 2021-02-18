@@ -5,7 +5,6 @@ import {Redirect} from 'react-router-dom'
 
 // import logo from '../img/logo_top4.PNG';
 
-
 $(window).on('load', function() {
 
 	setInterval(function(){
@@ -32,22 +31,53 @@ $(document).ready(function () {
 
 	$('#sidebar a').on('click', () => {
 		$('#sidebar').toggleClass('active');
-
-		// if( $(window).width() > 767) {
-		// 	const teste = setInterval(() => {
-		// 		$("#header").addClass('animated-middle slideOutUp');
-		// 		$("#sidebar").addClass('animated-middle slideOutDown');
-		// 		setInterval(() => {
-		// 			$("#header").removeClass('slideOutUp');
-		// 			$("#sidebar").removeClass('slideOutDown');
-		// 		}, 2000);
-
-		// 		clearInterval(teste)
-		// 	}, 1000);
-		// }
 	})
 
 	$('#sidebarCollapse').on('click', function () {
 		$('#sidebar').toggleClass('active');
 	});
 });
+
+// --------------------------------------------------------------------------------------------
+
+export const fadeInDown = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeInDown').removeClass('opacity-0');
+	}, sec * 1000);
+};
+
+export const fadeInUp = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeInUp').removeClass('opacity-0');
+	}, sec * 1000);
+}
+export const fadeOutDown = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeOutDown').removeClass('opacity-0');
+	}, sec * 1000);
+}
+export const fadeOutUp = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeOutUp').removeClass('opacity-0');
+	}, sec * 1000);
+}
+export const fadeInLeft = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeInLeft').removeClass('opacity-0');
+	}, sec * 1000);
+}
+export const fadeInRight = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeInRight').removeClass('opacity-0');
+	}, sec * 1000);
+}
+export const fadeOutLeft = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeOutLeft').removeClass('opacity-0');
+	}, sec * 1000);
+}
+export const fadeOutRight = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('animated-middle fadeOutRight').removeClass('opacity-0');
+	}, sec * 1000);
+}

@@ -10,10 +10,27 @@ import Paragraph from "../../components/Paragraph";
 
 function Introducao() {
 
-    $(window).on('click', () => {
+    const scrollTo = (id, sec) => {
+
+        let timer = setInterval(() => {
+
+            document.getElementById("content").scrollTo({
+                top: document.getElementById(id).getBoundingClientRect() + 120,
+                behavior: 2000,
+            });
+
+            clearInterval(timer)
+
+        }, sec * 1000);
+    }
+
+    $(window).on('load', () => {
         $(document).ready(function () {
 
-            setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
+            // scrollTo("item-03-sl-01", 20)
+
+            // setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
+            // fadeInDown(".title", 1);
 
             setInterval(() => { $('#crsl-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
 
