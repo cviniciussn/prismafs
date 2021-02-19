@@ -21,7 +21,7 @@ function NextPage(props) {
 
             $("#sidebar").addClass('animated-middle fadeOut');
 
-            setInterval(() => { window.location.href = nextPagePath; }, 2000);
+            setInterval(() => { window.location.href = nextPagePath; }, 1000);
             // setInterval(() => { $('#introducao').addClass('display-none'); }, 2000);
         });
 

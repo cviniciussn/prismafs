@@ -1,11 +1,16 @@
 import React from 'react';
 import Alert from '../../components/Alert';
+import $ from "jquery";
+
 import ArrowProgress from '../../components/ArrowProgress';
 import Card from '../../components/Card';
 import Paragraph from '../../components/Paragraph';
-import $ from "jquery";
+import NextPage from '../../components/NextPage';
 
-import img01 from '../../img/img-01-sl-12.jpg';
+
+import img01 from '../../img/img-01-sl-11.png';
+import img02 from '../../img/img-01-sl-12.jpg';
+
 function EspacoConfinado() {
 
     $("")
@@ -18,68 +23,26 @@ function EspacoConfinado() {
 
                 <Paragraph>
                     <strong>Espaço Confinado</strong> é um local <strong>não projetado para a presença contínua de pessoas</strong>. Suas características são:
-                    <br />
-                    <br />
-                    <ul>
-                        <li>
-                            <i className="fas fa-check" /> Acesso restrito de entrada
-                        </li>
-                        <li>
-                            <i className="fas fa-check" /> Saída e ventilação insuficiente para renovação de ar
-                        </li>
-                    </ul>
                 </Paragraph>
 
-                <ArrowProgress />
-                <hr />
-
-                <Paragraph>
-                    <div className="card bg-primary" id="item-01-sl-11">
-                        <div className="row d-flex justify-content-center">
-                            <div className="col-md-4 d-flex justify-content-center">
-                                <div className="circle yellow">
-                                    Espaço Confinado
-                                </div>
-                            </div>
-
-                            <div className="col-md-8" id="list-01-sl-11">
-                                <div className="card-body">
-                                    <div className="text-center"><strong>Riscos dos espaços confinados:</strong></div>
-                                    <ul>
-                                        <li>
-                                            <i className="fas fa-circle" style={{ color: '#ffd900' }} /> Falta de oxigênio.
-                                        </li>
-                                        <li>
-                                            <i className="fas fa-circle" style={{ color: '#ffd900' }} /> Presença de:
-                                        </li>
-                                        <ul>
-                                            <li>
-                                                <i className="fas fa-check" style={{ color: '#ffd900' }} /> Vapores e gases inflamáveis
-                                        </li>
-                                            <li>
-                                                <i className="fas fa-check" style={{ color: '#ffd900' }} /> Agentes biológicos
-                                        </li>
-                                        </ul>
-                                        <li>
-                                            <i className="fas fa-circle" style={{ color: '#ffd900' }} /> Perigo de soterramento na movimentação de grãos
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div className="container-fluid">
+                    <div className="row justify-content-center">
+                        <div className="col-md-6">
+                            <img src={img01} alt="" className="card-img box-shadow-custom" />
                         </div>
                     </div>
-                </Paragraph>
+                </div>
             </div>
 
-            <ArrowProgress id=""/>
+            <ArrowProgress id="" />
             <hr />
 
-            <div id="slide-12" className="display-none">
+            <div id="slide-12">
 
                 <Paragraph>
                     <div className="row justify-content-center">
                         <div className="col-md-6">
-                            <img className="card-img box-shadow-custom" src={img01} alt="STOP" />
+                            <img className="card-img box-shadow-custom" src={img02} alt="STOP" />
                         </div>
                     </div>
                 </Paragraph>
@@ -95,8 +58,11 @@ function EspacoConfinado() {
                         </li>
                     </ol>
                 </Alert>
-
             </div>
+
+            <NextPage id="next-page-07" currentPageId="espaco-confinado" nextPagePath="/movimentacao-de-cargas">
+                Próxima Página
+            </NextPage>
         </div>
     );
 }

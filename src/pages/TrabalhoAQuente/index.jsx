@@ -15,7 +15,6 @@ function TrabalhoAQuente() {
     return (
         <div id="trabalho-a-quente">
             <div className="title text-center"><span className="icon"><i class="fas fa-fire-alt"></i></span> Trabalho a Quente</div>
-            <hr />
             <div className="slide-09">
 
                 <ParagraphAndImg idItem="" imgSrc={img1}>
