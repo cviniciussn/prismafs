@@ -33,7 +33,7 @@ function TrabalhoEmAltura() {
 
                 <small>Clique na área em destaque para conhecê-los.</small>
 
-                <div className="container-fluid">
+                <div className="container-fluid justify-content-center py-3">
 
                     <div className="col ml-20rem ml-8rem">
                         <SquareCollapseText title="05" idCard="teste1">

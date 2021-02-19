@@ -22,8 +22,8 @@ function SquareCollapseText(props) {
                 {props.title}
             </button>
 
-            <div className="card card-x" id={idCard}>
-                <div className="card-body p-3" id={props.idImg}>
+            <div className="card card-x box-shadow-custom" id={idCard}>
+                <div className="card-body p-1" id={props.idImg}>
                     {props.children}
                 </div>
             </div>
