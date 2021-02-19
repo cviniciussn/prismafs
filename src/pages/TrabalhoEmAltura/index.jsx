@@ -15,13 +15,7 @@ import img1 from '../../img/img-01-sl-10.jpg';
 
 function TrabalhoEmAltura() {
 
-    $(window).on('load', function () {
-        $(document).ready()
-        $("[data-toggle='toggle']").click(function () {
-            var selector = $(this).data("target");
-            $(selector).toggleClass('in');
-        });
-    });
+    
 
     return (
         <div id="trabalho-em-altura">
@@ -35,9 +29,8 @@ function TrabalhoEmAltura() {
 
                 <small>Clique na área em destaque para conhecê-los.</small>
 
-                <div className="container-fluid justify-content-center py-3">
-
-                    <div className="col ml-15rem">
+                <div className="container-fluid justify-content-center py-3 my-3">
+                    <div className="col ml-15rem d-inline-flex">
                         <SquareCollapseText title="04" idCard="teste1">
                             Para realização de atividade de trabalho em altura, é obrigatório a verificação da
                             Pressão Arterial (PA) no início da jornada de trabalho.
@@ -58,9 +51,7 @@ function TrabalhoEmAltura() {
                             Somente colaboradores treinados, autorizados e aptos podem realizar atividade em altura.
                         </SquareCollapseText>
                     </div>
-
                 </div>
-
 
                 <ArrowProgress />
                 <hr />

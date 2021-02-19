@@ -17,16 +17,24 @@ function SquareCollapseText(props) {
     });
 
     return (
-        <div className="row">
-            <button className="cursor-pointer square-custom btn btn-custom box-shadow-custom" id={props.idBtn} type="button">
-                {props.title}
-            </button>
+        <div className="row d-inline-flex">
 
-            <div className="card card-x box-shadow-custom" id={idCard}>
-                <div className="card-body p-1" id={props.idImg}>
-                    {props.children}
+            <div className="position-absolute text-center fixed-top-custom w-5rem">
+                <i class="fas fa-user-shield"></i>
+            </div>
+
+            <div className="row">
+                <button className="cursor-pointer square-custom btn btn-custom box-shadow-custom" id={props.idBtn} type="button">
+                    {props.title}
+                </button>
+
+                <div className="card card-x box-shadow-custom" id={idCard}>
+                    <div className="card-body p-1" id={props.idImg}>
+                        {props.children}
+                    </div>
                 </div>
             </div>
+
         </div>
     );
 }
