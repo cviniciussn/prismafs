@@ -6,10 +6,11 @@ import Paragraph from '../../components/Paragraph';
 import Card from '../../components/Card';
 import Alert from '../../components/Alert';
 import ArrowProgress from '../../components/ArrowProgress';
+import NextPage from '../../components/NextPage';
 
 function TrabalhoComEletricidade() {
     return (
-        <div>
+        <div id="trabalho-com-eletricidade">
             <div id="slide-08">
                 <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-bolt"></i></span> Trabalho com Eletricidade</div>
 
@@ -31,13 +32,13 @@ function TrabalhoComEletricidade() {
                             <li>
                                 Estes devem sempre usar os equipamentos de proteção.
                                 <br />
-                                <span className="click"><strong><i>Clique aqui</i></strong></span>.
+                                <span className="click"><strong><u><i><a data-toggle="modal" data-target="#modal-01-sl-08">Clique aqui</a></i></u></strong></span>.
                             </li>
                             <li>
                                 Somente pessoal autorizado pode acessar as Centrais de Controle de Motores (CCM)
                                 e Subestações.
                                 <br />
-                                <span className="click"><strong><i>Clique aqui</i></strong></span>.
+                                <span className="click"><strong><u><i><a data-toggle="modal" data-target="#modal-02-sl-08">Clique aqui</a></i></u></strong></span>.
                             </li>
                             <li>
                                 É proibido o uso de “T”, benjamins ou fios paralelos e equipamentos com plugs
@@ -50,7 +51,7 @@ function TrabalhoComEletricidade() {
                                 Caso necessite realizar bloqueio elétrico, comunique o seu facilitador e/ou
                                 gestor da área.
                                 <br />
-                                <span className="click"><strong><i>Clique aqui</i></strong></span>.
+                                <span className="click"><strong><u><i><a data-toggle="modal" data-target="#modal-03-sl-08">Clique aqui</a></i></u></strong></span>.
                             </li>
                         </ol>
                     </small>
@@ -63,6 +64,10 @@ function TrabalhoComEletricidade() {
                     <h2 className="text-center">Atenção</h2>
                         Esteja sempre com a Carteira de Verificação da Pressão Arterial.
                 </Alert>
+
+                <NextPage id="next-page-03" currentPageId="trabalho-com-eletricidade" nextPagePath="/trabalho-a-quente" >
+                    Próxima Página
+                </NextPage>
             </div>
         </div>
     );

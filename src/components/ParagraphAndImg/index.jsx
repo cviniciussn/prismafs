@@ -4,7 +4,7 @@ import React from 'react';
 
 function ParagraphAndImg(props) {
     return (
-        <div id={props.idItem} className="container-fluid my-3 mb-3 opacity-0">
+        <div id={props.idItem} className="container-fluid my-3 mb-3">
             <div className="row g-0 flex-wrap-reverse align-items-center">
                 <div id={props.idParagraph} className="col-md-6">
                     <div className="par-05 card-body">

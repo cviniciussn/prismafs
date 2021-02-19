@@ -7,6 +7,7 @@ import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
 import Alert from "../../components/Alert";
 import ButtonCollapseImg from "../../components/ButtonCollapseImg";
+import NextPage from '../../components/NextPage';
 
 import img01 from '../../img/img-01-sl-06.jpg';
 import img02 from '../../img/img-02-sl-06.jpg';
@@ -76,6 +77,9 @@ function BloqueioEletromecanico() {
                     serviço que irão realizar a atividade.</strong>
                 </Alert>
 
+                <NextPage id="btn-teste2" currentPageId="bloqueio-eletromecanico" nextPagePath="/trabalho-com-eletricidade">
+                    Próxima Página
+                </NextPage>
             </div>
         </div >
     );

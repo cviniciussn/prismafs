@@ -20,60 +20,55 @@ import ParagraphAndImg from "../../components/ParagraphAndImg";
 import Alert from "../../components/Alert";
 import CircleCollapse from "../../components/CircleCollapse";
 import CardCollapsed from "../../components/CardCollapsed";
-import Modal from "../../components/Modal";
 
 
 import img from '../../img/img01.jpg';
-import carteiraVrf from '../../img/carteira-verificacao.jpg'
+import NextPage from '../../components/NextPage';
 
 function PermissaoDeTrabalho() {
 
 
     $(window).on('load', () => {
-        $(document).ready(() => {
 
-            fadeInDown(".title", 1);
+        //     fadeInDown(".title", 1);
 
-            fadeInLeft('#item-01-sl-03', 2);
+        //     fadeInLeft('#item-01-sl-03', 2);
 
-            fadeInUp('#item-02-sl-03', 4);
+        //     fadeInUp('#item-02-sl-03', 4);
 
-            fadeInUp('#item-03-sl-03', 8);
+        //     fadeInUp('#item-03-sl-03', 8);
 
-            fadeInUp('#btn-01-sl-03', 12);
+        //     fadeInUp('#btn-01-sl-03', 12);
 
-            $('#btn-01-sl-03').on('click', () => {
-                setInterval(() => { $('#slide-04').removeClass('display-none'); }, 0);
+        //     $('#btn-01-sl-03').on('click', () => {
+        //         setInterval(() => { $('#slide-04').removeClass('display-none'); }, 0);
 
-                fadeInUp('#item-01-sl-04', 1)
+        //         fadeInUp('#item-01-sl-04', 1)
 
-                $('#pointer-01-sl-04').on('click', () => {
+        //         $('#pointer-01-sl-04').on('click', () => {
 
-                    fadeInUp('#btn-01-sl-04', 2)
+        //             fadeInUp('#btn-01-sl-04', 2)
 
-                    $('#btn-01-sl-04').on('click', () => {
+        //             $('#btn-01-sl-04').on('click', () => {
 
-                        fadeInUp('#item-02-sl-04', 1)
+        //                 fadeInUp('#item-02-sl-04', 1)
 
-                        fadeInUp('#btn-02-sl-04', 3)
+        //                 fadeInUp('#btn-02-sl-04', 3)
 
-                        $('#btn-02-sl-04').on('click', () => {
+        //                 $('#btn-02-sl-04').on('click', () => {
 
-                            fadeInUp('#item-01-sl-05', 1)
+        //                     fadeInUp('#item-01-sl-05', 1)
 
-                            fadeInUp('#item-02-sl-05', 1)
-                        });
-                    });
-                });
-            });
-        });
+        //                     fadeInUp('#item-02-sl-05', 1)
+        //                 });
+        //             });
+        //         });
+        //     });
     });
 
     return (
-        <div>
+        <div id="permissao-de-trabalho">
             <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-clipboard-check"></i></span> Permissão de Trabalho</div>
-
-            <hr />
 
             <div id="slide-03" className="">
 
@@ -176,45 +171,45 @@ function PermissaoDeTrabalho() {
                     Existem <strong><a className="click" id="list-01-sl-04" data-toggle="collapse" data-target="#item-01-colpse-sl-05">três tipos</a></strong> de Permissão de Trabalho:
                                 <br />
                     <small><strong><i>(Clique na área em destaque)</i></strong></small>
-
-                    <div id="item-01-colpse-sl-05">
-                        <CircleCollapse
-                            id=""
-                            title="PT"
-                            classNameRow="row d-flex flex-row align-items-center"
-                            classNameButton="square btn btn-primary"
-                            classNameBtnCircle="circle rounded-circle align-items-center"
-                        >
-
-                            Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
-                            trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
-                        </CircleCollapse>
-
-                        <CircleCollapse
-                            id=""
-                            title="PET"
-                            classNameRow="row d-flex flex-row align-items-center"
-                            classNameButton="square btn btn-warning"
-                            classNameBtnCircle="circle rounded-circle align-items-center"
-                        >
-
-                            Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
-                            trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
-                        </CircleCollapse>
-
-                        <CircleCollapse
-                            id=""
-                            title="PTE"
-                            classNameRow="row d-flex flex-row align-items-center"
-                            classNameButton="square btn btn-danger"
-                            classNameBtnCircle="circle rounded-circle align-items-center"
-                        >
-
-                            Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
-                            trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
-                        </CircleCollapse>
-                    </div>
                 </Paragraph>
+
+                <div id="item-01-colpse-sl-05" className="collapse">
+                    <CircleCollapse
+                        id=""
+                        title="PT"
+                        classNameRow="row d-flex flex-row align-items-center"
+                        classNameButton="square btn btn-primary"
+                        classNameBtnCircle="circle rounded-circle align-items-center"
+                    >
+
+                        Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
+                        trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
+                        </CircleCollapse>
+
+                    <CircleCollapse
+                        id=""
+                        title="PET"
+                        classNameRow="row d-flex flex-row align-items-center"
+                        classNameButton="square btn btn-warning"
+                        classNameBtnCircle="circle rounded-circle align-items-center"
+                    >
+
+                        Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
+                        trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
+                        </CircleCollapse>
+
+                    <CircleCollapse
+                        id=""
+                        title="PTE"
+                        classNameRow="row d-flex flex-row align-items-center"
+                        classNameButton="square btn btn-danger"
+                        classNameBtnCircle="circle rounded-circle align-items-center"
+                    >
+
+                        Documento utilizado para avaliar e aprovar a realização das seguintes atividades:
+                        trabalho em altura, com químicos, içamento de carga/escavações, a quente e com risco.
+                        </CircleCollapse>
+                </div>
 
                 <hr />
 
@@ -233,13 +228,11 @@ function PermissaoDeTrabalho() {
                     </p>
                 </Alert>
 
-
             </div>
 
-            <Link to="/bloqueio-eletromecano">
-                <button id="btn-02" type="button" className="btn btn-custom opacity-0">Avançar</button>
-            </Link>
-
+            <NextPage id="next-page-02" currentPageId="permissao-de-trabalho" nextPagePath="/bloqueio-eletromecanico">
+                Próxima Página
+            </NextPage>
         </div>
 
 

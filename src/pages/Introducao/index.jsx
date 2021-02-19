@@ -5,73 +5,83 @@ import '../../css/animate.css';
 import img1 from '../../img/img01.jpg';
 import img2 from '../../img/img02.jpg';
 
+import {
+    fadeInDown,
+    fadeOutDown,
+    fadeInUp,
+    fadeOutUp,
+    fadeInLeft,
+    fadeOutLeft,
+    fadeInRight,
+    fadeOutRight,
+    addDisplayNone,
+    rmvDisplayNone
+} from '../../js/main'
+
+import ArrowRegress from "../../components/ArrowRegress";
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
+import NextPage from "../../components/NextPage";
+
+import 'jquery-smooth-scroll';
 
 function Introducao() {
 
-    const scrollTo = (id, sec) => {
-
-        let timer = setInterval(() => {
-
-            document.getElementById("content").scrollTo({
-                top: document.getElementById(id).getBoundingClientRect() + 120,
-                behavior: 2000,
-            });
-
-            clearInterval(timer)
-
-        }, sec * 1000);
-    }
-
     $(window).on('load', () => {
-        $(document).ready(function () {
 
-            // scrollTo("item-03-sl-01", 20)
 
-            // setInterval(() => { $('.title').addClass('animated-middle fadeInDown').removeClass('opacity-0'); }, 1000);
-            // fadeInDown(".title", 1);
+        // fadeInUp('#crsl-01-sl-01', 1)
 
-            setInterval(() => { $('#crsl-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 2000);
+        // fadeInUp('#item-01-sl-01', 4)
 
-            setInterval(() => { $('#item-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 8000);
+        // fadeInDown('#prog-section-01-sl-01', 5)
 
-            setInterval(() => { $('#hr-01-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 8500);
+        // $('#prog-section-01-sl-01').on('click', () => {
 
-            setInterval(() => { $('#item-02-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 12000);
+            // fadeOutUp('#section-01', 0)
+            // addDisplayNone('#section-01', 1)
 
-            setInterval(() => { $('#hr-02-sl-01').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 12500);
+            // rmvDisplayNone('#section-02', 1)
 
-            setInterval(() => { $('#item-03-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 20000);
+        //     fadeInUp('#regr-section-02-sl-01', 2)
 
-            setInterval(() => { $('#btn-01-sl-01').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 26000);
+        //     fadeInUp('#item-02-sl-01', 4)
 
-            $('#btn-01-sl-01').on('click', () => {
+        //     fadeInUp('#hr-02-sl-01', 4.5)
 
-                setInterval(() => { $('#item-01-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 1000);
+        //     fadeInUp('#item-03-sl-01', 5)
 
-                setInterval(() => { $('#hr-01-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 1500);
+        //     fadeInDown('#prog-section-02-sl-01', 6)
 
-                setInterval(() => { $('#item-02-sl-02').addClass('animated-middle fadeInUp').removeClass('opacity-0'); }, 11000);
+        // });
 
-                setInterval(() => { $('#hr-02-sl-02').addClass('animated-middle fadeIn').removeClass('opacity-0'); }, 11500);
+        // $('#prog-section-02-sl-01').on('click', () => {
 
-                setInterval(() => { $('#btn-02-sl-02').addClass('animated-middle slideInLeft').removeClass('opacity-0'); }, 14000);
 
-            });
+        //     setInterval(() => { $('#item-01-sl-02').addClass('animated-middle fadeInUp').removeClass(''); }, 1000);
 
-            $('#btn-02-sl-02').on('click', () => {
-                $('#introducao').addClass('animated-middle slideOutLeft ');
+        //     setInterval(() => { $('#hr-01-sl-02').addClass('animated-middle fadeIn').removeClass(''); }, 1500);
 
-                $("#header").addClass('animated-middle slideOutUp');
-                $("#sidebar").addClass('animated-middle slideOutDown');
+        //     setInterval(() => { $('#item-02-sl-02').addClass('animated-middle fadeInUp').removeClass(''); }, 11000);
 
-                $("#sidebar").addClass('animated-middle fadeOut');
+        //     setInterval(() => { $('#hr-02-sl-02').addClass('animated-middle fadeIn').removeClass(''); }, 11500);
 
-                setInterval(() => { window.location.href = "/permissao-de-trabalho"; }, 1000);
-                // setInterval(() => { $('#introducao').addClass('display-none'); }, 2000);
-            });
-        });
+        //     setInterval(() => { $('#btn-02-sl-02').addClass('animated-middle slideInLeft').removeClass(''); }, 14000);
+
+        // });
+
+        // $('#btn-02-sl-02').on('click', () => {
+        //     fadeOutLeft("#introducao", 0)
+
+        //     $("#header").addClass('animated-middle slideOutUp');
+        //     $("#sidebar").addClass('animated-middle slideOutDown');
+
+        //     $("#sidebar").addClass('animated-middle fadeOut');
+
+        //     setInterval(() => { window.location.href = "/permissao-de-trabalho"; }, 2000);
+        //     // setInterval(() => { $('#introducao').addClass('display-none'); }, 2000);
+        // });
+
     })
 
     return (
@@ -79,97 +89,107 @@ function Introducao() {
 
             <div id="" className="slide-01">
 
-                <div className="container-fluid">
+                <section id="section-01">
 
-                    <div className="row justify-content-center">
-
-                        <div className="col-md-6">
-
-                            <div id="crsl-01-sl-01" class="carousel slide carousel-fade box-shadow-custom rounded-20px my-3 opacity-0" data-interval="10000" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#crsl-01-sl-01" data-slide-to="0" class="active"></li>
-                                    <li data-target="#crsl-01-sl-01" data-slide-to="1"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img id="" className="rounded-20px d-block w-100" src={img1} alt="Imagem1" />
-                                        {/* <img class="d-block w-100" src={img1} alt="Primeiro Slide" /> */}
+                    <div className="container-fluid">
+                        <div className="row justify-content-center">
+                            <div className="col-md-6">
+                                <div id="crsl-01-sl-01" class="carousel slide carousel-fade box-shadow-custom rounded-20px my-3 " data-interval="10000" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#crsl-01-sl-01" data-slide-to="0" class="active"></li>
+                                        <li data-target="#crsl-01-sl-01" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img id="" className="rounded-20px d-block w-100" src={img1} alt="Imagem1" />
+                                            {/* <img class="d-block w-100" src={img1} alt="Primeiro Slide" /> */}
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img id="" className="rounded-20px d-block w-100" src={img2} alt="Imagem2" />
+                                            {/* <img class="d-block w-100" src={img2} alt="Segundo Slide" /> */}
+                                        </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img id="" className="rounded-20px d-block w-100" src={img2} alt="Imagem2" />
-                                        {/* <img class="d-block w-100" src={img2} alt="Segundo Slide" /> */}
-                                    </div>
+                                    <a class="carousel-control-prev" href="#crsl-01-sl-01" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#crsl-01-sl-01" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Próximo</span>
+                                    </a>
                                 </div>
-                                <a class="carousel-control-prev" href="#crsl-01-sl-01" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Anterior</span>
-                                </a>
-                                <a class="carousel-control-next" href="#crsl-01-sl-01" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Próximo</span>
-                                </a>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <Paragraph id="item-01-sl-01">
-                    Imagens como essas nos chocam e podem gerar um certo receio em você, não é mesmo?
-                </Paragraph>
+                    <Paragraph id="item-01-sl-01">
+                        Imagens como essas nos chocam e podem gerar um certo receio em você, não é mesmo?
+                    </Paragraph>
 
-                <hr id="hr-01-sl-01" className="opacity-0" />
+                    <ArrowProgress id="prog-section-01-sl-01" />
 
-                <Paragraph id="item-02-sl-01">
-                    Mas lembre-se que está ingressando em uma Empresa que tem a segurança como um valor.
-                </Paragraph>
+                </section>
 
+                <section id="section-02" className="">
 
-                <hr id="hr-02-sl-01" className="opacity-0" />
+                    <ArrowRegress id="regr-section-02-sl-01" />
 
-
-                <Paragraph id="item-03-sl-01">
-                    E que, sabendo verificar o risco oferecido pelas tarefas a serem executadas e obtendo os
-                    cuidados necessários em sua realização, você pode mudar seu comportamento e evitar esses
-                    e vários outros acidentes.
-                </Paragraph>
+                    <Paragraph id="item-02-sl-01">
+                        Mas lembre-se que está ingressando em uma Empresa que tem a segurança como um valor.
+                    </Paragraph>
 
 
-                <ArrowProgress id="btn-01-sl-01" />
+                    <hr id="hr-02-sl-01" className="" />
 
-                <hr />
+
+                    <Paragraph id="item-03-sl-01">
+                        E que, sabendo verificar o risco oferecido pelas tarefas a serem executadas e obtendo os
+                        cuidados necessários em sua realização, você pode mudar seu comportamento e evitar esses
+                        e vários outros acidentes.
+                    </Paragraph>
+
+                    <ArrowProgress id="prog-section-02-sl-01" />
+
+                </section>
 
             </div>
 
             <div className="slide-02">
 
-                <div id="item-01-sl-02" className="container-fluid opacity-0">
-                    <div className="row justify-content-center">
-                        <div className="col-md-10">
-                            <p className="my-3">
-                                Nesse módulo, você conhecerá <strong>outras informações</strong> sobre o Sistema de Saúde e Segurança do Trabalho da BSBIOS e,
-                                assim, poderá <strong>se prevenir ainda mais</strong> de acidentes, incidentes, desvios e doenças ocupacionais.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <section id="section-03" className="">
 
-                <hr id="hr-01-sl-02" className="opacity-0" />
+                    <ArrowRegress id="" />
 
-                <div id="item-02-sl-02" className="container-fluid text-center opacity-0">
-                    <div className="row justify-content-center">
-                        <div className="col-md-12">
-                            <h1 className="my-3">
-                                Bem-vindo ao curso<br />
-                                <strong>"Saúde e Segurança do Trabalho:" Módulo 2</strong>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
+                    <Paragraph id="item-01-sl-02">
+                        Nesse módulo, você conhecerá <strong>outras informações</strong> sobre o Sistema de Saúde e Segurança do Trabalho da BSBIOS e,
+                        assim, poderá <strong>se prevenir ainda mais</strong> de acidentes, incidentes, desvios e doenças ocupacionais.
+                    </Paragraph>
 
-                <div className="container-fluid text-center">
-                    <button className="btn btn-custom my-3 opacity-0" id="btn-02-sl-02" type="button"><strong>Iniciar Curso</strong></button>
-                </div>
+                    <ArrowProgress id="" />
+
+                </section>
+
+                <section id="section-04" className="">
+
+                    <ArrowRegress id="" />
+
+                    <Paragraph id="item-02-sl-02">
+                        <h1 className="text-center my-3">
+                            Bem-vindo ao curso<br />
+                            <strong>"Saúde e Segurança do Trabalho:" Módulo 2</strong>
+                        </h1>
+                    </Paragraph>
+
+                    <NextPage
+                        id="btn-02-sl-02"
+                        currentPageId="introducao"
+                        nextPagePath="/permissao-de-trabalho"
+                    >
+                        Iniciar Curso
+                    </NextPage>
+
+                </section>
 
             </div>
 

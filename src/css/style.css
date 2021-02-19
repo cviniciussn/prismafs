@@ -2939,10 +2939,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-custom:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #3f760f;
   border-color: #3f760f;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important; */
 }
 
 .btn-success {
@@ -6624,6 +6624,7 @@ a.close.disabled {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
   min-height: calc(100% - 1rem);
 }
 
@@ -11835,13 +11836,13 @@ h6,
   scroll-behavior: smooth;
 }
 
-.arrow-progress {
+.arrow-swap {
   color: #60b019 !important;
   font-size: 30px !important;
   position: relative;
 }
 
-.arrow-progress:hover {
+.arrow-swap:hover {
   color: #60b019 !important;
   font-size: 30px !important;
 }
@@ -11875,8 +11876,8 @@ h6,
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
-    margin: 0 8vw;
-    padding: 8rem 5vw 10rem !important;
+    margin: 0;
+    padding: 8rem 13vw 10rem !important;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -12269,6 +12270,10 @@ ul {
   height: 100vh;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .click {
   cursor: pointer;
   color: #60b019 !important;
@@ -12376,11 +12381,34 @@ ul {
   padding: 0 2rem !important;
 }
 
+.active-card {
+  left: 0;
+  width: 0;
+}
+
 .square-custom {
   color: #fff !important;
-  font-size: 50px;
-  width: 120px;
-  height: 120px;
-  line-height: 120px;
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
   text-align: center;
+}
+
+.ml-20rem {
+  margin-left: 20rem;
+}
+.ml-15rem {
+  margin-left: 15rem;
+}
+.ml-10rem {
+  margin-left: 10rem;
+}
+.ml-5rem {
+  margin-left: 5rem;
+}
+.card-x {
+  font-size: 0.8rem;
+  width: 25rem;
 }

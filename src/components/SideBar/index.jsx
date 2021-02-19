@@ -99,7 +99,7 @@ export default function SideBar() {
 				</li >
 				<li>
 					<Link to="plano-de-acao-e-emergencia">
-						<span className="icon"><i className="bi bi-exclamation-triangle"></i></span><br />
+						<span className="icon"><i class="fas fa-running"></i></span><br />
 						Plano de Ação e Emergência
 					</Link>
 				</li >

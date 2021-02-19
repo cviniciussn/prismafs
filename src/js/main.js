@@ -3,7 +3,6 @@ import { useState } from 'react';
 import '../css/animate.css';
 import {Redirect} from 'react-router-dom'
 
-// import logo from '../img/logo_top4.PNG';
 
 $(window).on('load', function() {
 
@@ -11,8 +10,10 @@ $(window).on('load', function() {
 
         $("#header").addClass('animated-middle slideInDown').removeClass('opacity-0');
         $("#sidebar").addClass('animated-middle slideInUp').removeClass('opacity-0');
+        $(".title").addClass('animated-middle slideInUp').removeClass('opacity-0');
 
-    },2000);
+
+    }, 0);
 });
 
 $(document).ready(function () {
@@ -79,5 +80,17 @@ export const fadeOutLeft = (selector, sec) => {
 export const fadeOutRight = (selector, sec) => {
 	setInterval(() => {
 		$(selector).addClass('animated-middle fadeOutRight').removeClass('opacity-0');
+	}, sec * 1000);
+}
+
+export const addDisplayNone = (selector, sec) => {
+	setInterval(() => {
+		$(selector).addClass('display-none');
+	}, sec * 1000);
+}
+
+export const rmvDisplayNone = (selector, sec) => {
+	setInterval(() => {
+		$(selector).removeClass('display-none');
 	}, sec * 1000);
 }

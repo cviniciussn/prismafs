@@ -33,9 +33,36 @@ function TrabalhoEmAltura() {
 
                 <small>Clique na área em destaque para conhecê-los.</small>
 
-                <SquareCollapseText title="01" idCard="teste1">
-                    Somente colaboradores treinados, autorizados e aptos podem realizar atividade em altura.
-                </SquareCollapseText>
+                <div className="container-fluid">
+
+                    <div className="col ml-20rem ml-8rem">
+                        <SquareCollapseText title="05" idCard="teste1">
+                            Somente colaboradores treinados, autorizados e aptos podem realizar atividade em altura.
+                        </SquareCollapseText>
+                    </div>
+                    <div className="col ml-15rem">
+                        <SquareCollapseText title="04" idCard="teste1">
+                            Somente colaboradores treinados, autorizados e aptos podem realizar atividade em altura.
+                        </SquareCollapseText>
+                    </div>
+                    <div className="col ml-10rem">
+                        <SquareCollapseText title="03" idCard="teste1">
+                            Somente colaboradores treinados, autorizados e aptos podem realizar atividade em altura.
+                        </SquareCollapseText>
+                    </div>
+                    <div className="col ml-5rem">
+                        <SquareCollapseText title="02" idCard="teste1">
+                            Somente colaboradores treinados, autorizados e aptos podem realizar atividade em altura.
+                        </SquareCollapseText>
+                    </div>
+                    <div className="col">
+                        <SquareCollapseText title="01" idCard="teste1">
+                            Somente colaboradores treinados, autorizados e aptos podem realizar atividade em altura.
+                        </SquareCollapseText>
+                    </div>
+
+                </div>
+
 
                 <ArrowProgress />
                 <hr />
