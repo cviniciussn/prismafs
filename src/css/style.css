@@ -11865,11 +11865,15 @@ h6,
 
 #sidebar ul li a:hover {
   color: #fff;
-  background-color: #60b019 !important;
+  background-color: #60b019;
 }
 
 #sidebar ul li a:focus {
   color: #fff;
+  background-color: #60b019;
+}
+
+a.active {
   background-color: #60b019 !important;
 }
 
@@ -12424,3 +12428,4 @@ ul {
   top: -2rem;
   left: -0.95rem;
 }
+

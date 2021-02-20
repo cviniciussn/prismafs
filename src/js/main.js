@@ -6,6 +6,12 @@ import {Redirect} from 'react-router-dom'
 
 $(window).on('load', function() {
 
+	$("#sidebar ul li a").on('click', () => {
+		console.log('teste de click #sidebar ul li')
+		$("#sidebar ul li a").removeClass('#sidebar ul li a:focus')
+		$(this).toggleClass('#sidebar ul li a .active');
+	});
+
 	setInterval(function(){
 
         $("#header").addClass('animated-middle slideInDown').removeClass('opacity-0');

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../../js/main';
 import '../../css/style.css';
 
@@ -35,91 +35,91 @@ export default function SideBar() {
 
 			<ul className="menuBar components m-0">
 				<li>
-					<Link to="/">
+					<NavLink exact to="/">
 						<span className="icon"><i className="bi bi-house-door-fill"></i></span><br />
 						Introdução
-					</Link>
+					</NavLink>
 				</li>
 				<li>
-					<Link to="permissao-de-trabalho" id="permissao-de-trabalho">
+					<NavLink to="permissao-de-trabalho" id="permissao-de-trabalho">
 						{/* <span className="icon"><i className="bi bi-clipboard-check"></i></span> */}
 						<span className="icon"><i className="fas fa-clipboard-check"></i></span><br />
 						Permissão de Trabalho
-					</Link>
+					</NavLink>
 				</li>
 				<li>
-					<Link to="bloqueio-eletromecanico">
+					<NavLink to="bloqueio-eletromecanico">
 						<span className="icon"><i class="fas fa-lock"></i></span><br />
                      	Bloqueio Eletromecânico
-					</Link>
+					</NavLink>
 				</li>
 				<li>
-					<Link to="trabalho-com-eletricidade">
+					<NavLink to="trabalho-com-eletricidade">
 						<span className="icon"><i class="fas fa-bolt"></i></span><br />
 						Trabalho com Eletricidade
-					</Link>
+					</NavLink>
 				</li>
 				<li>
-					<Link to="trabalho-a-quente">
+					<NavLink to="trabalho-a-quente">
 						<span className="icon"><i className="fas fa-fire-alt"></i></span><br />
 						Trabalho a Quente
-					</Link>
+					</NavLink>
 				</li>
 				<li>
-					<Link to="trabalho-em-altura">
+					<NavLink to="trabalho-em-altura">
 						<span className="icon"><i class="fas fa-sort-amount-up-alt"></i></span><br />
 						Trabalho em Altura
-					</Link>
+					</NavLink>
 				</li>
 				<li>
-					<Link to="espaco-confinado">
+					<NavLink to="espaco-confinado">
 						<span className="icon"><i className="fas fa-compress-alt"></i></span><br />
                         Espaço Confinado
-					</Link>
+					</NavLink>
 				</li >
 				<li>
-					<Link to="movimentacao-de-cargas">
+					<NavLink to="movimentacao-de-cargas">
 						{/* <span className="icon"><i className="bi bi-gear"></i></span> */}
 						<span className="icon"><i className="fas fa-truck-loading"></i></span><br />
                         Movimentação de Cargas
-					</Link>
+					</NavLink>
 				</li >
 				<li>
-					<Link to="operadores-de-maquinas">
+					<NavLink to="operadores-de-maquinas">
 						{/* <span className="icon"><i className="bi bi-geo"></i></span> */}
 						<span className="icon"><i className="fas fa-cogs"></i></span><br />
 						Operadores de Máquinas
-					</Link>
+					</NavLink>
 				</li >
 				<li>
-					<Link to="produtos-quimicos">
+					<NavLink to="produtos-quimicos">
 						<span className="icon"><i className="fas fa-flask"></i></span><br />
 						Produtos Químicos
-					</Link>
+					</NavLink>
 				</li >
 				<li>
-					<Link to="plano-de-acao-e-emergencia">
+					<NavLink to="plano-de-acao-e-emergencia">
 						<span className="icon"><i class="fas fa-running"></i></span><br />
 						Plano de Ação e Emergência
-					</Link>
+					</NavLink>
 				</li >
 				<li>
-					<Link to="regras-gerais-e-dicas">
+					<NavLink to="regras-gerais-e-dicas">
 						<span className="icon"><i className="bi bi-lightbulb"></i></span><br />
 						Regras Gerais e Dicas
-					</Link>
+					</NavLink>
 				</li >
 				<li>
-					<Link to="testando-conhecimentos">
+					<NavLink to="testando-conhecimentos">
 						<span className="icon"><i className="bi bi-book"></i></span><br />
 						Testando Conhecimentos
-					</Link>
+					</NavLink>
 				</li >
 				<li>
-					<Link to="conclusao">
+					<NavLink to="conclusao">
 						<span className="icon"><i className="bi bi-bullseye"></i></span><br />
                         Conclusão
-					</Link>
+					</NavLink>
 				</li >
 			</ul>
 			
