@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import '../../css/animate.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, NavLink, Redirect } from 'react-router-dom';
 import Paragraph from '../../components/Paragraph';
 import ParagraphAndImg from '../../components/ParagraphAndImg';
 import Card from '../../components/Card';
@@ -10,10 +10,11 @@ import ArrowProgress from '../../components/ArrowProgress';
 
 import img1 from '../../img/img-01-sl-09.jpg';
 import NextPage from '../../components/NextPage';
+import Topico from '../../components/Topico';
 
 function TrabalhoAQuente() {
     return (
-        <div id="trabalho-a-quente">
+        <Topico id="trabalho-a-quente">
             <div className="title text-center"><span className="icon"><i class="fas fa-fire-alt"></i></span> Trabalho a Quente</div>
             <div className="slide-09">
 
@@ -42,12 +43,16 @@ function TrabalhoAQuente() {
                     <small>Passe o mouse sobre a expressão em destaque</small>
                 </Alert>
 
-                <NextPage id="next-page-04" currentPageId="trabalho-a-quente" nextPagePath="/trabalho-em-altura" >
-                    Próxima Página
-                </NextPage>
-                
+                <NavLink to="/trabalho-em-altura">
+                    <div className="container-fluid text-center">
+                        <button className="btn btn-custom my-3 " type="button">
+                            <strong>Avançar</strong>
+                        </button>
+                    </div>
+                </NavLink>
+
             </div>
-        </div>
+        </Topico>
     );
 }
 

@@ -1,22 +1,19 @@
 import React from 'react';
+
 import Alert from '../../components/Alert';
-import $ from "jquery";
-
 import ArrowProgress from '../../components/ArrowProgress';
-import Card from '../../components/Card';
 import Paragraph from '../../components/Paragraph';
-import NextPage from '../../components/NextPage';
+import Topico from '../../components/Topico';
 
+import { NavLink } from 'react-router-dom';
 
 import img01 from '../../img/img-01-sl-11.png';
 import img02 from '../../img/img-01-sl-12.jpg';
 
 function EspacoConfinado() {
 
-    $("")
-
     return (
-        <div id="espaco-confinado">
+        <Topico id="espaco-confinado">
             <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-compress-alt"></i></span> Espaço Confinado</div>
 
             <div id="slide-11">
@@ -60,10 +57,14 @@ function EspacoConfinado() {
                 </Alert>
             </div>
 
-            <NextPage id="next-page-07" currentPageId="espaco-confinado" nextPagePath="/movimentacao-de-cargas">
-                Próxima Página
-            </NextPage>
-        </div>
+            <NavLink to="/movimentacao-de-cargas">
+                <div className="container-fluid text-center">
+                    <button className="btn btn-custom my-3 " type="button">
+                        <strong>Avançar</strong>
+                    </button>
+                </div>
+            </NavLink>
+        </Topico>
     );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import '../../css/animate.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, NavLink, Redirect } from 'react-router-dom';
 import Paragraph from '../../components/Paragraph';
 import ParagraphAndImg from '../../components/ParagraphAndImg';
 import Card from '../../components/Card';
@@ -9,16 +9,15 @@ import Alert from '../../components/Alert';
 import ArrowProgress from '../../components/ArrowProgress';
 import SquareCollapseText from '../../components/SquareCollapseText';
 
-import NextPage from '../../components/NextPage';
-
 import img1 from '../../img/img-01-sl-10.jpg';
+import Topico from '../../components/Topico';
 
 function TrabalhoEmAltura() {
 
-    
+
 
     return (
-        <div id="trabalho-em-altura">
+        <Topico id="trabalho-em-altura">
             <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-sort-amount-up-alt"></i></span> Trabalho em Altura</div>
             <div className="slide-10">
 
@@ -63,11 +62,15 @@ function TrabalhoEmAltura() {
 
             </div>
 
-            <NextPage id="next-page-06" currentPageId="trabalho-em-altura" nextPagePath="/espaco-confinado">
-                Próxima Página
-            </NextPage>
+            <NavLink to="/espaco-confinado">
+                <div className="container-fluid text-center">
+                    <button className="btn btn-custom my-3 " type="button">
+                        <strong>Avançar</strong>
+                    </button>
+                </div>
+            </NavLink>
 
-        </div>
+        </Topico>
     );
 }
 

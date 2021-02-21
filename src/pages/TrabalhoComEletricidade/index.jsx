@@ -1,16 +1,16 @@
 import React from 'react';
 import $ from 'jquery';
 import '../../css/animate.css';
-import { Link, Redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Paragraph from '../../components/Paragraph';
 import Card from '../../components/Card';
 import Alert from '../../components/Alert';
 import ArrowProgress from '../../components/ArrowProgress';
-import NextPage from '../../components/NextPage';
+import Topico from '../../components/Topico';
 
 function TrabalhoComEletricidade() {
     return (
-        <div id="trabalho-com-eletricidade">
+        <Topico id="trabalho-com-eletricidade">
             <div id="slide-08">
                 <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-bolt"></i></span> Trabalho com Eletricidade</div>
 
@@ -59,11 +59,15 @@ function TrabalhoComEletricidade() {
                     </Card>
                 </div>
 
-                <NextPage id="next-page-03" currentPageId="trabalho-com-eletricidade" nextPagePath="/trabalho-a-quente" >
-                    Próxima Página
-                </NextPage>
+                <NavLink to="/trabalho-a-quente">
+                    <div className="container-fluid text-center">
+                        <button className="btn btn-custom my-3 " type="button">
+                            <strong>Avançar</strong>
+                        </button>
+                    </div>
+                </NavLink>
             </div>
-        </div>
+        </Topico>
     );
 }
 

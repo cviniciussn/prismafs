@@ -1,14 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Alert from '../../components/Alert';
-import NextPage from '../../components/NextPage';
 import Paragraph from '../../components/Paragraph';
+import Topico from '../../components/Topico';
 
 import img01 from "../../img/img-01-sl-14.jpg"
 import img02 from "../../img/img-02-sl-14.jpg"
 
 function OperadoresDeMaquinas() {
     return (
-        <div id="operadores-de-maquinas">
+        <Topico id="operadores-de-maquinas">
             <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-cogs"></i></span> Operadores de Maquinas</div>
 
             <div id="slide14">
@@ -38,17 +39,20 @@ function OperadoresDeMaquinas() {
 
                 <hr />
 
-                <Alert>
-                    <h4 className="text-center">Atenção!</h4>
+                <Alert title="Atenção!">
                         Use sempre o crachá de identificação de operador quando estiver
                         operando uma empilhadeira ou uma pá-carregadeira.
                 </Alert>
             </div>
 
-            <NextPage id="next-page-08" currentPageId="operadores-de-maquinas" nextPagePath="/produtos-quimicos">
-                Próxima Página
-            </NextPage>
-        </div>
+            <NavLink to="/produtos-quimicos">
+                <div className="container-fluid text-center">
+                    <button className="btn btn-custom my-3 " type="button">
+                        <strong>Avançar</strong>
+                    </button>
+                </div>
+            </NavLink>
+        </Topico>
     );
 }
 

@@ -26,22 +26,8 @@ import NextPage from "../../components/NextPage";
 // import 'jquery-smooth-scroll';
 
 import { motion } from 'framer-motion';
-
-const containerVariants = {
-    hidden: {
-        opacity: 0,
-        x: '-100vw',
-    },
-    visible: {
-        opacity: 1,
-        transition: { type: 'spring', delay: 0.5, duration: 1.5, stiffness: 120 },
-        x: 0,
-    },
-    exit: {
-        transition: { ease: 'easeInOut' },
-        x: '100vw',
-    }
-};
+import Topico from '../../components/Topico';
+import { NavLink } from 'react-router-dom';
 
 function Introducao() {
 
@@ -103,12 +89,7 @@ function Introducao() {
     })
 
     return (
-        <motion.div id="introducao"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-        >
+        <Topico id="introducao">
 
             <div id="" className="slide-01">
                 <section id="section-01">
@@ -202,20 +183,19 @@ function Introducao() {
                         </h1>
                     </Paragraph>
 
-                    <NextPage
-                        id="btn-02-sl-02"
-                        currentPageId="introducao"
-                        nextPagePath="/permissao-de-trabalho"
-                    >
-                        <i class="fas fa-play-circle"></i><br />
-                        Iniciar Curso
-                    </NextPage>
+                    <NavLink to="/permissao-de-trabalho">
+                        <div className="container-fluid text-center">
+                            <button className="btn btn-custom my-3 " type="button">
+                                <strong>Iniciar Curso</strong>
+                            </button>
+                        </div>
+                    </NavLink>
 
                 </section>
 
             </div>
 
-        </motion.div >
+        </Topico >
     );
 }
 

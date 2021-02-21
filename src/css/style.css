@@ -12245,7 +12245,7 @@ a[data-toggle="collapse"] {
 }
 
 .display-none {
-  display: none;
+  display: none !important;
 }
 
 .opacity-1 {

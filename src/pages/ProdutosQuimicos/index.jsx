@@ -1,6 +1,5 @@
 import React from 'react';
-import $ from 'jquery';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Paragraph from '../../components/Paragraph';
 import ImgZoom from '../../components/ImgZoom';
 
@@ -8,11 +7,12 @@ import img01 from "../../img/img-01-sl-18.jpg";
 import img02 from "../../img/img-02-sl-18.jpg";
 // import img03 from "../../img/img-03-sl-18.jpg";
 import img04 from "../../img/img-01-sl-19.png";
+import Topico from '../../components/Topico';
 
 function ProdutosQuimicos() {
 
     return (
-        <div id="produtos-quimicos">
+        <Topico id="produtos-quimicos">
             <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-flask"></i></span> Produtos Químicos</div>
 
             <div id="slide-15">
@@ -124,7 +124,15 @@ function ProdutosQuimicos() {
                     </div>
                 </div>
             </div>
-        </div>
+
+            <NavLink to="/plano-de-acao-e-emergencia">
+                <div className="container-fluid text-center">
+                    <button className="btn btn-custom my-3 " type="button">
+                        <strong>Avançar</strong>
+                    </button>
+                </div>
+            </NavLink>
+        </Topico>
     );
 }
 

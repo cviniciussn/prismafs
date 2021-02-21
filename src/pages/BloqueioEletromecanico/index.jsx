@@ -1,13 +1,13 @@
 import React from 'react';
 import $ from 'jquery';
 import '../../css/animate.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, NavLink, Redirect } from 'react-router-dom';
 
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
 import Alert from "../../components/Alert";
 import ButtonCollapseImg from "../../components/ButtonCollapseImg";
-import NextPage from '../../components/NextPage';
+import Topico from '../../components/Topico';
 
 import img01 from '../../img/img-01-sl-06.jpg';
 import img02 from '../../img/img-02-sl-06.jpg';
@@ -15,7 +15,7 @@ import img03 from '../../img/img-03-sl-06.jpg';
 
 function BloqueioEletromecanico() {
     return (
-        <div id="bloqueio-eletromecanico">
+        <Topico id="bloqueio-eletromecanico">
             <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-lock"></i></span> Bloqueio Eletromecânico</div>
 
             <div className="slide-06">
@@ -61,18 +61,21 @@ function BloqueioEletromecanico() {
                 <ArrowProgress />
                 <hr />
 
-                <Alert id="">
-                    <h2 className="text-center">Fique Atento!</h2>
+                <Alert title="Fique atento!" idH4="teste2">
                     O bloqueio e a identificação das energias perigosas do equipamento em que será realizado o trabalho
                     devem ser realizados por <strong>todos os colaboradores, terceiros, temporários e prestadores de
                     serviço que irão realizar a atividade.</strong>
                 </Alert>
 
-                <NextPage id="btn-teste2" currentPageId="bloqueio-eletromecanico" nextPagePath="/trabalho-com-eletricidade">
-                    Próxima Página
-                </NextPage>
+                <NavLink to="/trabalho-com-eletricidade">
+                    <div className="container-fluid text-center">
+                        <button className="btn btn-custom my-3 " type="button">
+                            <strong>Avançar</strong>
+                        </button>
+                    </div>
+                </NavLink>
             </div>
-        </div >
+        </Topico >
     );
 }
 

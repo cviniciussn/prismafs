@@ -1,18 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 import '../../css/animate.css';
-import { Link } from 'react-router-dom';
-
-import {
-    fadeInDown,
-    fadeOutDown,
-    fadeInUp,
-    fadeOutUp,
-    fadeInLeft,
-    fadeOutLeft,
-    fadeInRight,
-    fadeOutRight
-} from '../../js/main'
 
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
@@ -24,6 +12,8 @@ import CardCollapsed from "../../components/CardCollapsed";
 
 import img from '../../img/img01.jpg';
 import NextPage from '../../components/NextPage';
+import Topico from '../../components/Topico';
+import { NavLink } from 'react-router-dom';
 
 function PermissaoDeTrabalho() {
 
@@ -67,7 +57,7 @@ function PermissaoDeTrabalho() {
     });
 
     return (
-        <div id="permissao-de-trabalho">
+        <Topico id="permissao-de-trabalho">
             <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-clipboard-check"></i></span> Permissão de Trabalho</div>
 
             <div id="slide-03" className="">
@@ -213,27 +203,27 @@ function PermissaoDeTrabalho() {
 
                 <hr />
 
-                <Alert id="item-02-sl-05">
-                    <h2 className="text-center">Atenção</h2>
-                    <p>
-                        A liberação da Permissão de Trabalho para altura e espaço confinado depende de duas situações:
-                        <ol>
-                            <li>
-                                Apresentação da <span><strong><u><i><a className="click" data-toggle="modal" data-target="#modal-01-sl-05">Carteira de Verificação da Pressão Arterial</a></i></u></strong></span>.
-                            </li>
-                            <li>
-                                Ambiente de trabalho totalmente preparado para o início da atividade.
-                            </li>
-                        </ol>
-                    </p>
+                <Alert id="item-02-sl-05" title="Atenção!" subtitle="A liberação da Permissão de Trabalho para altura e espaço confinado depende de duas situações:">
+                    <ol>
+                        <li>
+                            Apresentação da <span><strong><u><i><a className="click" data-toggle="modal" data-target="#modal-01-sl-05">Carteira de Verificação da Pressão Arterial</a></i></u></strong></span>.
+                        </li>
+                        <li>
+                            Ambiente de trabalho totalmente preparado para o início da atividade.
+                        </li>
+                    </ol>
                 </Alert>
 
             </div>
 
-            <NextPage id="next-page-02" currentPageId="permissao-de-trabalho" nextPagePath="/bloqueio-eletromecanico">
-                Próxima Página
-            </NextPage>
-        </div>
+            <NavLink to="/bloqueio-eletromecanico">
+                <div className="container-fluid text-center">
+                    <button className="btn btn-custom my-3 " type="button">
+                        <strong>Avançar</strong>
+                    </button>
+                </div>
+            </NavLink>
+        </Topico>
 
 
     );

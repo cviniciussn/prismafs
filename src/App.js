@@ -4,7 +4,6 @@ import {
   Header,
   Content,
   SideBar,
-  Slide
 } from "./components";
 import {
   Introducao,
@@ -31,24 +30,24 @@ import {
   useLocation
 } from 'react-router-dom'
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 
-function App() {
+function App() { 
   
-  
+  const location = useLocation();
+
   return (
     <div className="App">
       <Router>
-
         <Modals />
 
         <Container>
           <Header/>
           <Content>
 
-            <AnimatePresence>
-              <Switch   >
+            <AnimatePresence exitBeforeEnter>
+              <Switch location={location} key={location.pathname}>
                   <Route path='/' exact component={Introducao} />
                   <Route path='/permissao-de-trabalho' exact component={PermissaoDeTrabalho} />
                   <Route path='/bloqueio-eletromecanico' exact component={BloqueioEletromecanico} />
@@ -69,7 +68,7 @@ function App() {
           </Content>
           <SideBar />
         </Container>
-        </Router>
+      </Router>
     </div>
   );
 }

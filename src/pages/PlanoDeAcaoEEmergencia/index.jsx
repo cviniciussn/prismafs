@@ -1,15 +1,17 @@
 import React from 'react';
-import $ from 'jquery';
-import { Link, Redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import img01 from "../../img/img-01-sl-20.jpg";
 import img02 from "../../img/img-02-sl-20.jpg";
-import Paragraph from '../../components/Paragraph';
-import ImgZoom from '../../components/ImgZoom';
-import Alert from '../../components/Alert';
+import {
+    Paragraph,
+    Topico,
+    Alert,
+    ImgZoom,
+} from '../../components';
 
 function PlanoDeAcaoEEmergencia() {
     return (
-        <div>
+        <Topico id="plano-de-acao-e-emergencia">
             <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-running"></i></span> Plano de Ação e Emergência</div>
 
             <div id="slide-20">
@@ -53,7 +55,15 @@ function PlanoDeAcaoEEmergencia() {
                     </ol>
                 </Alert>
             </div>
-        </div>
+
+            <NavLink to="/regras-gerais-e-dicas">
+                <div className="container-fluid text-center">
+                    <button className="btn btn-custom my-3 " type="button">
+                        <strong>Avançar</strong>
+                    </button>
+                </div>
+            </NavLink>
+        </Topico>
     );
 }
 

@@ -4,11 +4,12 @@ import Paragraph from "../../components/Paragraph";
 
 import img01 from "../../img/img-01-sl-13.jpg";
 import Alert from '../../components/Alert';
-import NextPage from '../../components/NextPage';
+import Topico from '../../components/Topico';
+import { NavLink } from 'react-router-dom';
 
 function MovimentacaoDeCargas() {
     return (
-        <div id="movimentacao-de-cargas">
+        <Topico id="movimentacao-de-cargas">
             <div className="title text-center opacity-0">
                 <span className="icon"><i className="fas fa-truck-loading"></i></span> Movimentação de Cargas
             </div>
@@ -34,11 +35,15 @@ function MovimentacaoDeCargas() {
                     É <strong>proibido</strong> circular ou permanecer <strong>sob peça suspensa</strong>!
                 </Alert>
 
-                <NextPage id="next-page-08" currentPageId="movimentacao-de-cargas" nextPagePath="/operadores-de-maquinas">
-                    Próxima Página
-                </NextPage>
+                <NavLink to="/operadores-de-maquinas">
+                    <div className="container-fluid text-center">
+                        <button className="btn btn-custom my-3 " type="button">
+                            <strong>Avançar</strong>
+                        </button>
+                    </div>
+                </NavLink>
             </div>
-        </div>
+        </Topico>
     );
 }
 

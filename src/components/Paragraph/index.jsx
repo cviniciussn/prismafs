@@ -8,7 +8,7 @@ function Paragraph(props) {
         <div className="container-fluid" id={props.id} >
             <div className="row">
                 <div className="col">
-                    <p className="d-flex justify-content-center my-3">
+                    <p className="justify-content-center my-3">
                         {props.children}
                     </p>
                 </div>

@@ -1,14 +1,12 @@
 import React from 'react';
-import $ from 'jquery';
 import '../../css/animate.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Topico } from '../../components';
 
 function Conclusao() {
     return (
-        <div>
+        <Topico id="conclusao">
             <h1 className="title text-center opacity">Conclusao</h1>
-            <hr />
-        </div>
+        </Topico>
     );
 }
 
