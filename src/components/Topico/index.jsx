@@ -13,6 +13,10 @@ function Topico(props) {
             opacity: 1,
             x: 0,
         },
+        exit: {
+            opacity: 0,
+            x: "100vw",    
+        }
     };
 
     const pageTransition = {
@@ -25,7 +29,7 @@ function Topico(props) {
             transition={pageTransition}
             initial="out"
             animate="in"
-            exit="out"
+            exit="exit"
         >
             {props.children}
         </motion.div>

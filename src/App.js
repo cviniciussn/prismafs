@@ -39,7 +39,6 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
         <Modals />
 
         <Container>
@@ -68,7 +67,6 @@ function App() {
           </Content>
           <SideBar />
         </Container>
-      </Router>
     </div>
   );
 }

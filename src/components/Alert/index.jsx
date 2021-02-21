@@ -8,7 +8,6 @@ function Alert(props) {
 
     setInterval(() => {
 
-        console.log($("#" + idH3).val)
     }, 5000);
 
     if ($('#' + idH4).valueOf() === null) {
