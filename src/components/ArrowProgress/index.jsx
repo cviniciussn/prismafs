@@ -4,7 +4,7 @@ import React from 'react';
 
 function ArrowProgress(props) {
     return (
-        <div className="container-fluid text-center my-3">
+        <div className="container-fluid text-center my-3 ">
             <a id={props.id} className="arrow-swap click" type="button">
                 <i className="fas fa-angle-double-down"></i>
             </a>

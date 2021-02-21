@@ -5366,7 +5366,7 @@ input[type="button"].btn-block {
 .card-img {
   width: 100%;
   height: 100% !important;
-  border-radius: 20px !important;
+  /* border-radius: 20px !important; */
   /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); */
 }
 
@@ -11741,6 +11741,14 @@ h1,
   font-size: 3rem;
 }
 
+@media (max-width: 767px) {
+
+  h1,
+  .h1 {
+    font-size: 1.5rem;
+  }
+}
+
 h2,
 .h2 {
   font-size: 2rem;
@@ -11764,12 +11772,6 @@ h5,
 h6,
 .h6 {
   font-size: 1rem;
-}
-
-@media (max-width: 767px) {
-  .bem-vindo {
-    font-size: 1.8rem;
-  }
 }
 
 .ftco-section {
@@ -12285,6 +12287,7 @@ ul {
 .click {
   cursor: pointer;
   color: #60b019 !important;
+  font-weight: bold;
 }
 
 .click:hover {
@@ -12337,10 +12340,10 @@ ul {
     cursor: pointer;
     z-index: 1;
   }
-  
+
   .yellow {
     background-color: #ffd900 !important;
-    border-color: #ffd900 !important;  
+    border-color: #ffd900 !important;
   }
 
   .circle:hover {
@@ -12407,20 +12410,25 @@ ul {
 .ml-20rem {
   margin-left: 20rem;
 }
+
 .ml-15rem {
   margin-left: 15rem;
 }
+
 .ml-10rem {
   margin-left: 10rem;
 }
+
 .ml-5rem {
   margin-left: 5rem;
 }
+
 .card-x {
   font-size: 0.8rem;
   width: 20rem;
 }
-.w-5rem{
+
+.w-5rem {
   width: 5rem;
 }
 
@@ -12428,4 +12436,3 @@ ul {
   top: -2rem;
   left: -0.95rem;
 }
-

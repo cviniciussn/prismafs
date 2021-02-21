@@ -6,17 +6,17 @@ import {Redirect} from 'react-router-dom'
 
 $(window).on('load', function() {
 
-	$("#sidebar ul li a").on('click', () => {
-		console.log('teste de click #sidebar ul li')
-		$("#sidebar ul li a").removeClass('#sidebar ul li a:focus')
-		$(this).toggleClass('#sidebar ul li a .active');
-	});
+	// $("#sidebar ul li a").on('click', () => {
+	// 	console.log('teste de click #sidebar ul li')
+	// 	// $("#sidebar ul li a").removeClass('#sidebar ul li a:focus')
+	// 	// $(this).toggleClass('#sidebar ul li a .active');
+	// });
 
 	setInterval(function(){
 
-        $("#header").addClass('animated-middle slideInDown').removeClass('opacity-0');
-        $("#sidebar").addClass('animated-middle slideInUp').removeClass('opacity-0');
-        $(".title").addClass('animated-middle slideInUp').removeClass('opacity-0');
+        $("#header").addClass('animated-quick slideInDown').removeClass('opacity-0');
+        $("#sidebar").addClass('animated-quick slideInUp').removeClass('opacity-0');
+        $(".title").addClass('animated-quick fadeInUp').removeClass('opacity-0');
 
 
     }, 0);
@@ -49,43 +49,43 @@ $(document).ready(function () {
 
 export const fadeInDown = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeInDown').removeClass('opacity-0');
+		$(selector).addClass('animated fadeInDown').removeClass('opacity-0');
 	}, sec * 1000);
 };
 
 export const fadeInUp = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeInUp').removeClass('opacity-0');
+		$(selector).addClass('animated fadeInUp').removeClass('opacity-0');
 	}, sec * 1000);
 }
 export const fadeOutDown = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeOutDown').removeClass('opacity-0');
+		$(selector).addClass('animated fadeOutDown').removeClass('opacity-0');
 	}, sec * 1000);
 }
 export const fadeOutUp = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeOutUp').removeClass('opacity-0');
+		$(selector).addClass('animated fadeOutUp').removeClass('opacity-0');
 	}, sec * 1000);
 }
 export const fadeInLeft = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeInLeft').removeClass('opacity-0');
+		$(selector).addClass('animated fadeInLeft').removeClass('opacity-0');
 	}, sec * 1000);
 }
 export const fadeInRight = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeInRight').removeClass('opacity-0');
+		$(selector).addClass('animated fadeInRight').removeClass('opacity-0');
 	}, sec * 1000);
 }
 export const fadeOutLeft = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeOutLeft').removeClass('opacity-0');
+		$(selector).addClass('animated fadeOutLeft').removeClass('opacity-0');
 	}, sec * 1000);
 }
 export const fadeOutRight = (selector, sec) => {
 	setInterval(() => {
-		$(selector).addClass('animated-middle fadeOutRight').removeClass('opacity-0');
+		$(selector).addClass('animated fadeOutRight').removeClass('opacity-0');
 	}, sec * 1000);
 }
 

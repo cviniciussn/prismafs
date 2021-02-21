@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import SideBar from "./SideBar";
 import Buttons from "./Buttons";
 import Slide from "./Slide";
+import Modal from "./Modal";
 
 export {
     Container,
@@ -14,4 +15,5 @@ export {
     SideBar,
     Buttons,
     Slide,
+    Modal,
 }

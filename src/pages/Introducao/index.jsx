@@ -16,14 +16,32 @@ import {
     fadeOutRight,
     addDisplayNone,
     rmvDisplayNone
-} from '../../js/main'
+} from '../../js/main';
 
 import ArrowRegress from "../../components/ArrowRegress";
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
 import NextPage from "../../components/NextPage";
 
-import 'jquery-smooth-scroll';
+// import 'jquery-smooth-scroll';
+
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+    hidden: {
+        opacity: 0,
+        x: '-100vw',
+    },
+    visible: {
+        opacity: 1,
+        transition: { type: 'spring', delay: 0.5, duration: 1.5, stiffness: 120 },
+        x: 0,
+    },
+    exit: {
+        transition: { ease: 'easeInOut' },
+        x: '100vw',
+    }
+};
 
 function Introducao() {
 
@@ -38,10 +56,10 @@ function Introducao() {
 
         // $('#prog-section-01-sl-01').on('click', () => {
 
-            // fadeOutUp('#section-01', 0)
-            // addDisplayNone('#section-01', 1)
+        // fadeOutUp('#section-01', 0)
+        // addDisplayNone('#section-01', 1)
 
-            // rmvDisplayNone('#section-02', 1)
+        // rmvDisplayNone('#section-02', 1)
 
         //     fadeInUp('#regr-section-02-sl-01', 2)
 
@@ -85,27 +103,30 @@ function Introducao() {
     })
 
     return (
-        <div id="introducao">
+        <motion.div id="introducao"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+        >
 
             <div id="" className="slide-01">
-
                 <section id="section-01">
-
                     <div className="container-fluid">
                         <div className="row justify-content-center">
                             <div className="col-md-6">
-                                <div id="crsl-01-sl-01" class="carousel slide carousel-fade box-shadow-custom rounded-20px my-3 " data-interval="10000" data-ride="carousel">
+                                <div id="crsl-01-sl-01" class="carousel slide carousel-fade box-shadow-custom rounded my-3 " data-interval="10000" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#crsl-01-sl-01" data-slide-to="0" class="active"></li>
                                         <li data-target="#crsl-01-sl-01" data-slide-to="1"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img id="" className="rounded-20px d-block w-100" src={img1} alt="Imagem1" />
+                                            <img id="" className="rounded d-block w-100" src={img1} alt="Imagem1" />
                                             {/* <img class="d-block w-100" src={img1} alt="Primeiro Slide" /> */}
                                         </div>
                                         <div class="carousel-item">
-                                            <img id="" className="rounded-20px d-block w-100" src={img2} alt="Imagem2" />
+                                            <img id="" className="rounded d-block w-100" src={img2} alt="Imagem2" />
                                             {/* <img class="d-block w-100" src={img2} alt="Segundo Slide" /> */}
                                         </div>
                                     </div>
@@ -118,7 +139,6 @@ function Introducao() {
                                         <span class="sr-only">Próximo</span>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -175,9 +195,10 @@ function Introducao() {
                     <ArrowRegress id="" />
 
                     <Paragraph id="item-02-sl-02">
-                        <h1 className="text-center my-3">
+                        <h1 className="text-center">
                             Bem-vindo ao curso<br />
-                            <strong>"Saúde e Segurança do Trabalho:" Módulo 2</strong>
+                            <strong>"Saúde e Segurança do Trabalho:"
+                            <br />Módulo 2</strong>
                         </h1>
                     </Paragraph>
 
@@ -186,6 +207,7 @@ function Introducao() {
                         currentPageId="introducao"
                         nextPagePath="/permissao-de-trabalho"
                     >
+                        <i class="fas fa-play-circle"></i><br />
                         Iniciar Curso
                     </NextPage>
 
@@ -193,7 +215,7 @@ function Introducao() {
 
             </div>
 
-        </div >
+        </motion.div >
     );
 }
 

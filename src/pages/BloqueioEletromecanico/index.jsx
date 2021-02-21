@@ -18,8 +18,6 @@ function BloqueioEletromecanico() {
         <div id="bloqueio-eletromecanico">
             <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-lock"></i></span> Bloqueio Eletromecânico</div>
 
-            <hr />
-
             <div className="slide-06">
 
                 <Paragraph id="item-01-sl-06">
@@ -56,19 +54,12 @@ function BloqueioEletromecanico() {
                     Chegou a hora de refletir...
                 </Paragraph>
 
-
-                <div className="container-fluid" id="">
-                    <div className="row">
-                        <div className="col-md-10">
-                            {/* Texto deve aparecer num balão */}
-                            <p className="my-3" id="">Mas quem será o responsável por solicitar o bloqueio e identificar as energias perigosas dos equipamentos?</p>
-                        </div>
-                    </div>
-                </div>
+                <Paragraph>
+                    Mas quem será o responsável por solicitar o bloqueio e identificar as energias perigosas dos equipamentos?
+                </Paragraph>
 
                 <ArrowProgress />
                 <hr />
-
 
                 <Alert id="">
                     <h2 className="text-center">Fique Atento!</h2>

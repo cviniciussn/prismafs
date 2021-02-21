@@ -20,6 +20,8 @@ export default function SideBar() {
 	// 	});
 	// })
 
+	
+
 
 	return (
 		<nav id="sidebar" className="opacity-0">

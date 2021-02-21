@@ -16,12 +16,12 @@ function NextPage(props) {
             fadeOutLeft("#" + currentPageId, 0)
 
             console.log('HAHAHA')
-            $("#header").addClass('animated-middle slideOutUp');
-            $("#sidebar").addClass('animated-middle slideOutDown');
+            $("#header").addClass('animated-quick slideOutUp');
+            $("#sidebar").addClass('animated-quick slideOutDown');
 
-            $("#sidebar").addClass('animated-middle fadeOut');
+            $("#sidebar").addClass('animated-middle-quick fadeOut');
 
-            setInterval(() => { window.location.href = nextPagePath; }, 1000);
+            setInterval(() => { window.location.href = nextPagePath; }, 3000);
             // setInterval(() => { $('#introducao').addClass('display-none'); }, 2000);
         });
 
