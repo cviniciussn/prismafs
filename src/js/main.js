@@ -1,17 +1,8 @@
 import $ from 'jquery';
-import { useState } from 'react';
 import '../css/animate.css';
 import 'animate.css';
-import {Redirect} from 'react-router-dom'
-
 
 $(window).on('load', function() {
-
-	// $("#sidebar ul li a").on('click', () => {
-	// 	console.log('teste de click #sidebar ul li')
-	// 	// $("#sidebar ul li a").removeClass('#sidebar ul li a:focus')
-	// 	// $(this).toggleClass('#sidebar ul li a .active');
-	// });
 
 	setInterval(function(){
 
@@ -47,7 +38,10 @@ $(document).ready(function () {
 	$('#sidebarCollapse').on('click', function () {
 		$('#sidebar').toggleClass('active');
 	});
+
 });
+
+
 
 // --------------------------------------------------------------------------------------------
 

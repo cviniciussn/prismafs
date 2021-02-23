@@ -31,66 +31,18 @@ import { NavLink } from 'react-router-dom';
 
 function Introducao() {
 
-    $(window).on('load', () => {
+    $(document).ready(() => {
 
+        $("#prog-section-01-sl-01").on("click", () => {
 
-        // fadeInUp('#crsl-01-sl-01', 1)
-
-        // fadeInUp('#item-01-sl-01', 4)
-
-        // fadeInDown('#prog-section-01-sl-01', 5)
-
-        // $('#prog-section-01-sl-01').on('click', () => {
-
-        // fadeOutUp('#section-01', 0)
-        // addDisplayNone('#section-01', 1)
-
-        // rmvDisplayNone('#section-02', 1)
-
-        //     fadeInUp('#regr-section-02-sl-01', 2)
-
-        //     fadeInUp('#item-02-sl-01', 4)
-
-        //     fadeInUp('#hr-02-sl-01', 4.5)
-
-        //     fadeInUp('#item-03-sl-01', 5)
-
-        //     fadeInDown('#prog-section-02-sl-01', 6)
-
-        // });
-
-        // $('#prog-section-02-sl-01').on('click', () => {
-
-
-        //     setInterval(() => { $('#item-01-sl-02').addClass('animated-middle fadeInUp').removeClass(''); }, 1000);
-
-        //     setInterval(() => { $('#hr-01-sl-02').addClass('animated-middle fadeIn').removeClass(''); }, 1500);
-
-        //     setInterval(() => { $('#item-02-sl-02').addClass('animated-middle fadeInUp').removeClass(''); }, 11000);
-
-        //     setInterval(() => { $('#hr-02-sl-02').addClass('animated-middle fadeIn').removeClass(''); }, 11500);
-
-        //     setInterval(() => { $('#btn-02-sl-02').addClass('animated-middle slideInLeft').removeClass(''); }, 14000);
-
-        // });
-
-        // $('#btn-02-sl-02').on('click', () => {
-        //     fadeOutLeft("#introducao", 0)
-
-        //     $("#header").addClass('animated-middle slideOutUp');
-        //     $("#sidebar").addClass('animated-middle slideOutDown');
-
-        //     $("#sidebar").addClass('animated-middle fadeOut');
-
-        //     setInterval(() => { window.location.href = "/permissao-de-trabalho"; }, 2000);
-        //     // setInterval(() => { $('#introducao').addClass('display-none'); }, 2000);
-        // });
+        })
 
     })
 
     return (
         <Topico id="introducao">
             <div id="" className="slide-01">
+
                 <div className="container-fluid">
                     <div className="row justify-content-center">
                         <div className="col-md-6">
@@ -122,18 +74,13 @@ function Introducao() {
 
                 <Paragraph id="item-01-sl-01">
                     Imagens como essas nos chocam e podem gerar um certo receio em você, não é mesmo?
-                    </Paragraph>
+                </Paragraph>
 
-                <ArrowProgress id="prog-section-01-sl-01" />
-
-
-
-                <ArrowRegress id="regr-section-02-sl-01" />
+                <ArrowProgress id="prog-section-01-sl-01" href="#item-03-sl-01" />
 
                 <Paragraph id="item-02-sl-01">
                     Mas lembre-se que está ingressando em uma Empresa que tem a segurança como um valor.
-                    </Paragraph>
-
+                </Paragraph>
 
                 <hr id="hr-02-sl-01" className="" />
 
@@ -146,39 +93,34 @@ function Introducao() {
 
                 <ArrowProgress id="prog-section-02-sl-01" />
 
-
             </div>
 
             <div className="slide-02">
 
-                <section id="section-03" className="">
+                <ArrowRegress id="" />
 
-                    <ArrowRegress id="" />
-
-                    <Paragraph id="item-01-sl-02">
-                        Nesse módulo, você conhecerá <strong>outras informações</strong> sobre o Sistema de Saúde e Segurança do Trabalho da BSBIOS e,
+                <Paragraph id="item-01-sl-02">
+                    Nesse módulo, você conhecerá <strong>outras informações</strong> sobre o Sistema de Saúde e Segurança do Trabalho da BSBIOS e,
                         assim, poderá <strong>se prevenir ainda mais</strong> de acidentes, incidentes, desvios e doenças ocupacionais.
                     </Paragraph>
 
-                    <ArrowProgress id="" />
+                <ArrowProgress id="" />
 
-                    <Paragraph id="item-02-sl-02">
-                        <h1 className="text-center">
-                            Bem-vindo ao curso<br />
-                            <strong>"Saúde e Segurança do Trabalho:"
+                <Paragraph id="item-02-sl-02">
+                    <h1 className="text-center">
+                        Bem-vindo ao curso<br />
+                        <strong>"Saúde e Segurança do Trabalho:"
                             <br />Módulo 2</strong>
-                        </h1>
-                    </Paragraph>
+                    </h1>
+                </Paragraph>
 
-                    <NavLink to="/permissao-de-trabalho">
-                        <div className="container-fluid text-center">
-                            <button className="btn btn-custom my-3 " type="button">
-                                <strong>Iniciar Curso</strong>
-                            </button>
-                        </div>
-                    </NavLink>
-
-                </section>
+                <NavLink to="/permissao-de-trabalho">
+                    <div className="container-fluid text-center">
+                        <button className="btn btn-custom my-3 " type="button">
+                            <strong>Iniciar Curso</strong>
+                        </button>
+                    </div>
+                </NavLink>
 
             </div>
 
