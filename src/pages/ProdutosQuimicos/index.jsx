@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Paragraph from '../../components/Paragraph';
 import ImgZoom from '../../components/ImgZoom';
 
@@ -7,6 +7,7 @@ import img01 from "../../img/img-01-sl-18.jpg";
 import img02 from "../../img/img-02-sl-18.jpg";
 // import img03 from "../../img/img-03-sl-18.jpg";
 import img04 from "../../img/img-01-sl-19.png";
+import img14 from "../../img/img-01-sl-16.png";
 import Topico from '../../components/Topico';
 
 function ProdutosQuimicos() {
@@ -39,6 +40,14 @@ function ProdutosQuimicos() {
                             </Paragraph>
 
                             <hr />
+
+                            <div className="container py-3">
+                                <div className="row d-flex justify-content-center">
+                                    <div className="col-md-6">
+                                        <img className="card-img rounded box-shadow-custom" src={img14} alt="" />
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
 

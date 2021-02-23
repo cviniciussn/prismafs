@@ -12436,3 +12436,13 @@ ul {
   top: -2rem;
   left: -0.95rem;
 }
+
+#circle-sl-16{
+  background: #60b019;
+  height: 80px;
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+}

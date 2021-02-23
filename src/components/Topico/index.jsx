@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Topico(props) {
     const id = props.id
-    
+
     const pageVariants = {
         out: {
             opacity: 0,
@@ -15,12 +15,12 @@ function Topico(props) {
         },
         exit: {
             opacity: 0,
-            x: "100vw",    
+            x: "100vw",
         }
     };
 
     const pageTransition = {
-        type: 'spring', duration: 1, bounce: 0.4
+        type: 'spring', duration: 1, bounce: 0.25
     };
 
     return (

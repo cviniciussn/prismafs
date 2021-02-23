@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import { useState } from 'react';
 import '../css/animate.css';
+import 'animate.css';
 import {Redirect} from 'react-router-dom'
 
 
@@ -14,9 +15,12 @@ $(window).on('load', function() {
 
 	setInterval(function(){
 
-        $("#header").addClass('animated-quick slideInDown').removeClass('opacity-0');
-        $("#sidebar").addClass('animated-quick slideInUp').removeClass('opacity-0');
-        $(".title").addClass('animated-quick fadeInUp').removeClass('opacity-0');
+        $("#header").addClass('animate__animated animate__slideInDown').removeClass('opacity-0');
+        $("#sidebar").addClass('animate__animated animate__flipInX').removeClass('opacity-0');
+		
+		setInterval(() => {
+			$(".title").addClass('animate__animated animate__zoomIn').removeClass('opacity-0');
+		}, 0);
 
 
     }, 0);
