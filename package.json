@@ -1,6 +1,6 @@
 {
-  "homepage": "http://wesleydiogo.github.io/BSBios",
-  "name": "bayer",
+  "homepage": "https://wesleydiogo.github.io/BSBios/",
+  "name": "BSBios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,6 +26,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
