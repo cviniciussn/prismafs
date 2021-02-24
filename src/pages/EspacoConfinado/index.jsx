@@ -10,6 +10,12 @@ import { NavLink } from 'react-router-dom';
 import img01 from '../../img/img-01-sl-11.png';
 import img02 from '../../img/img-01-sl-12.jpg';
 
+import $ from 'jquery'
+
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+  });
+
 function EspacoConfinado() {
 
     return (

@@ -1,6 +1,11 @@
 import React from 'react';
 import '../../css/animate.css';
 import { Topico } from '../../components';
+import $ from 'jquery'
+
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+  });
 
 function Conclusao() {
     return (

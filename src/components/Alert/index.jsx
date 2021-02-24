@@ -22,8 +22,8 @@ function Alert(props) {
 
     return (
         <div id={id} className="py-3">
-            <div className="row justify-content-center">
-                <div className="col-sm-10 alert alert-warning box-shadow-custom">
+            <div className="row justify-content-center text-center">
+                <div className="col-sm-10 alert alert-success box-shadow-custom" style={{borderRadius:"20px"}}>
                     <p className="">
                         <h3 id={idH3} className="text-center"><strong>{props.title}</strong></h3>
                         <h4 id={idH4} className="d-flex justify-content-center">{props.subtitle}</h4>

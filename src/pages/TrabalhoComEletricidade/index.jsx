@@ -22,8 +22,8 @@ function TrabalhoComEletricidade() {
 
                 <hr />
 
-                <div className="container-fluid justify-content-center">
-                    <Card>
+                <div className="justify-content-center row" style={{borderRadius:"30px"}}>
+                    <Card >
                         <small>
                             <ol>
                                 <li>

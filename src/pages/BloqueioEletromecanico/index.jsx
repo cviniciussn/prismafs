@@ -13,8 +13,17 @@ import img01 from '../../img/img-01-sl-06.jpg';
 import img02 from '../../img/img-02-sl-06.jpg';
 import img03 from '../../img/img-03-sl-06.jpg';
 
+
+
+
+
 function BloqueioEletromecanico() {
+    window.onload = function () {
+        window.scrollTo(0, 0);
+    }
     return (
+       
+
         <Topico id="bloqueio-eletromecanico">
             <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-lock"></i></span> Bloqueio Eletromecânico</div>
 

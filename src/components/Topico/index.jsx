@@ -20,7 +20,7 @@ function Topico(props) {
     };
 
     const pageTransition = {
-        type: 'spring', duration: 1, bounce: 0.25
+        type: 'spring', duration: 2, bounce: 0.25
     };
 
     return (
