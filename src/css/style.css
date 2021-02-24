@@ -5268,10 +5268,11 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: whitesmoke;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  opacity: 80%;
 }
 
 .card>hr {
@@ -5294,6 +5295,8 @@ input[type="button"].btn-block {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1rem 0;
+  color: #000 !important;
+
 }
 
 .card-title {
@@ -5307,6 +5310,7 @@ input[type="button"].btn-block {
 
 .card-text:last-child {
   margin-bottom: 0;
+  
 }
 
 .card-link:hover {

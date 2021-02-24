@@ -2,19 +2,19 @@ import $ from 'jquery';
 import '../css/animate.css';
 import 'animate.css';
 
-$(window).on('load', function() {
+$(window).on('load', function () {
 
-	setInterval(function(){
+	setInterval(function () {
 
-        $("#header").addClass('animate__animated animate__slideInDown').removeClass('opacity-0');
-        $("#sidebar").addClass('animate__animated animate__flipInX').removeClass('opacity-0');
-		
+		$("#header").addClass('animate__animated animate__slideInDown').removeClass('opacity-0');
+		$("#sidebar").addClass('animate__animated animate__flipInX').removeClass('opacity-0');
+
 		setInterval(() => {
 			$(".title").addClass('animate__animated animate__zoomIn').removeClass('opacity-0');
 		}, 0);
 
 
-    }, 0);
+	}, 0);
 });
 
 $(document).ready(function () {
@@ -39,8 +39,12 @@ $(document).ready(function () {
 		$('#sidebar').toggleClass('active');
 	});
 
-});
+	$("#teste2").on('load', function () {
+			window.scrollTo(0, 0);
+		})
 
+
+})
 
 
 // --------------------------------------------------------------------------------------------

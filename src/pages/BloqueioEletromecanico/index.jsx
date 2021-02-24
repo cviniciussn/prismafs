@@ -2,6 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import '../../css/animate.css';
 import { Link, NavLink, Redirect } from 'react-router-dom';
+import '../../js/main'
 
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
@@ -18,13 +19,11 @@ import img03 from '../../img/img-03-sl-06.jpg';
 
 
 function BloqueioEletromecanico() {
-    window.onload = function () {
-        window.scrollTo(0, 0);
-    }
+    
     return (
-       
-
+        
         <Topico id="bloqueio-eletromecanico">
+           
             <div className="title text-center opacity-0"><span className="icon"><i class="fas fa-lock"></i></span> Bloqueio Eletromecânico</div>
 
             <div className="slide-06">
@@ -70,7 +69,7 @@ function BloqueioEletromecanico() {
                 <ArrowProgress />
                 <hr />
 
-                <Alert title="Fique atento!" idH4="teste2">
+                <Alert title="Fique atento!" id="teste2">
                     O bloqueio e a identificação das energias perigosas do equipamento em que será realizado o trabalho
                     devem ser realizados por <strong>todos os colaboradores, terceiros, temporários e prestadores de
                     serviço que irão realizar a atividade.</strong>

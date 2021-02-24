@@ -62,6 +62,9 @@ function PermissaoDeTrabalho() {
 
             <div id="slide-03" className="">
 
+
+
+
                 <ParagraphAndImg
                     idItem="item-01-sl-03"
                     idParagraph=""
@@ -70,12 +73,14 @@ function PermissaoDeTrabalho() {
                 >
                     Algumas atividades necessitam de uma <strong>autorização antes da sua execução</strong> devido ao risco
                     que elas podem oferecer ao colaborador. Essa autorização é chamada <strong>Permissão de Trabalho (PT)</strong>.
-                </ParagraphAndImg>
+                    </ParagraphAndImg>
+
+
 
                 <hr />
                 {/* >>> */}
 
-                <Paragraph id="item-02-sl-03">
+                <Paragraph id="item-02-sl-03" >
                     O objetivo da Permissão de Trabalho é a <strong>prevenção de acidentes</strong> por meio da avaliação dos
                     riscos de cada atividade, <strong>de caráter diferenciado (não rotineiro)</strong>, a ser realizada dentro
                     da propriedade da BSBIOS.
