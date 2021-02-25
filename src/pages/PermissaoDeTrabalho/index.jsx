@@ -14,6 +14,8 @@ import img from '../../img/img01.jpg';
 import NextPage from '../../components/NextPage';
 import Topico from '../../components/Topico';
 import { NavLink } from 'react-router-dom';
+import Scroll from '../../components/ScrollTop/ScrolltoTop'
+import { ScrollContainer } from 'react-scroll-motion';
 
 function PermissaoDeTrabalho() {
 
@@ -57,12 +59,11 @@ function PermissaoDeTrabalho() {
     });
 
     return (
+        
         <Topico id="permissao-de-trabalho">
             <div className="title text-center opacity-0"><span className="icon"><i className="fas fa-clipboard-check"></i></span> Permissão de Trabalho</div>
 
             <div id="slide-03" className="">
-
-
 
 
                 <ParagraphAndImg

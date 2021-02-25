@@ -4,23 +4,9 @@ import '../../css/animate.css';
 // import { Link, Redirect } from 'react-router-dom';
 import img1 from '../../img/img01.jpg';
 import img2 from '../../img/img02.jpg';
-import '../../js/main'
+import '../../js/main';
+import { NavLink } from 'react-router-dom';
 
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
-import {
-    fadeInDown,
-    fadeOutDown,
-    fadeInUp,
-    fadeOutUp,
-    fadeInLeft,
-    fadeOutLeft,
-    fadeInRight,
-    fadeOutRight,
-    addDisplayNone,
-    rmvDisplayNone
-} from '../../js/main';
 
 import ArrowRegress from "../../components/ArrowRegress";
 import ArrowProgress from "../../components/ArrowProgress";
@@ -33,23 +19,26 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveI
 
 import { motion } from 'framer-motion';
 import Topico from '../../components/Topico';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { faWindowRestore } from '@fortawesome/free-solid-svg-icons';
 
-function desce() {
 
-    var objDiv = document.getElementById("principal");
-    objDiv.scrollTop = objDiv.scrollHeight;
-}
-
+$(document).ready(function () {
+    $("#btn-1").on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#p2").offset().top
+        }, 2000);
+    });
+});
 
 function Introducao() {
+
 
     const ZoomInScrollOut = batch(FadeIn(), ZoomIn(), Sticky());
     const FadeUp = batch(Fade(), Move(), Sticky());
 
     return (
-        <div id="principal">
+        <div id="principal" className="scrolling-box">
             <Topico id="introducao">
                 <div id="" className="slide-01">
 
@@ -89,9 +78,9 @@ function Introducao() {
 
 
                     <div className="text-center p-0" >
-                        <a id='btn-1' className="btn btn-custom my-3" type="button" data-toggle="collapse" href="#p1" role="button" aria-expanded="false" aria-controls="p1">
-                            CLIQUE AQUI
-                    </a>
+                        <a id='btn-1' className="btn btn-custom my-3 w-30" type="button" data-toggle="collapse" href="#p1" role="button" aria-expanded="false" aria-controls="p1">
+                            <i className="fas fa-angle-double-down"></i>
+                        </a>
                     </div>
 
                     <div className="collapse animate__animated animate__slideInDown" id="p1">
@@ -99,20 +88,20 @@ function Introducao() {
 
                         <Paragraph id="item-02-sl-01">
                             Mas lembre-se que está ingressando em uma Empresa que tem a segurança como um valor.
-                                     </Paragraph>
+                        </Paragraph>
 
 
                         <Paragraph id="item-03-sl-01">
                             E que, sabendo verificar o risco oferecido pelas tarefas a serem executadas e obtendo os
                             cuidados necessários em sua realização, você pode mudar seu comportamento e evitar esses
                             e vários outros acidentes.
-                                     </Paragraph>
+                        </Paragraph>
 
 
                         <div className="text-center">
                             <a className="btn btn-custom my-3" type="button" data-toggle="collapse" href="#p2" role="button" aria-expanded="false" aria-controls="p2">
-                                CLIQUE
-                    </a>
+                                <i className="fas fa-angle-double-down"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -127,8 +116,8 @@ function Introducao() {
 
                         <div className="text-center">
                             <a className="btn btn-custom my-3" type="button" data-toggle="collapse" href="#p3" role="button" aria-expanded="false" aria-controls="p3">
-                                CLIQUE AQUI
-                    </a>
+                                <i className="fas fa-angle-double-down"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -150,13 +139,14 @@ function Introducao() {
 
 
                     <div className="slide-02">
-                        <NavLink to="/permissao-de-trabalho/#">
+                        <NavLink to="/permissao-de-trabalho/">
                             <div className="container-fluid text-center">
                                 <button className="btn btn-custom my-3 " type="button">
                                     <strong>Iniciar Curso</strong>
                                 </button>
                             </div>
                         </NavLink>
+
                     </div>
                 </div>
 

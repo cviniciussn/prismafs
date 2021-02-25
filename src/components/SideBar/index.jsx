@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../js/main';
 import '../../css/style.css';
 
-import logo from '../../img/logo_top4.PNG';
+import logo from '../../img/logo_top4.jpg';
 import $ from 'jquery';
 import '../../js/main';
 

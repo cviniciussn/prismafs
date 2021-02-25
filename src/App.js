@@ -27,7 +27,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation
+  useLocation,
 } from 'react-router-dom'
 
 import { AnimatePresence } from "framer-motion";
@@ -46,11 +46,12 @@ function App() {
           <Content>
 
             <AnimatePresence exitBeforeEnter>
+            
               <Switch location={location} key={location.pathname}>
+              
                   <Route path='/' exact component={Introducao} />
                   <Route path='/permissao-de-trabalho' exact component={PermissaoDeTrabalho} />
-                  <Route path='/bloqueio-eletromecanico' exact component={BloqueioEletromecanico} />
-                  <Route path='/trabalho-com-eletricidade' exact component={TrabalhoComEletricidade} />
+                  <Route path='/bloqueio-eletromecanico' exact component={BloqueioEletromecanico} />                  <Route path='/trabalho-com-eletricidade' exact component={TrabalhoComEletricidade} />
                   <Route path='/trabalho-a-quente' exact component={TrabalhoAQuente} />
                   <Route path='/trabalho-em-altura' exact component={TrabalhoEmAltura} />
                   <Route path='/espaco-confinado' exact component={EspacoConfinado} />
@@ -62,6 +63,7 @@ function App() {
                   <Route path='/testando-conhecimentos' exact component={TestandoConhecimentos} />
                   <Route path='/conclusao' exact component={Conclusao} />
               </Switch>
+              
             </AnimatePresence>
 
           </Content>
