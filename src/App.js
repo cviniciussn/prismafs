@@ -22,6 +22,7 @@ import {
   Conclusao,
 } from "./pages";
 import Modals from "./components/Modals";
+import '../src/css/style.css'
 
 import {
   BrowserRouter as Router,

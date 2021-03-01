@@ -8,7 +8,7 @@ import '../../js/main';
 import { NavLink } from 'react-router-dom';
 
 
-import ArrowRegress from "../../components/ArrowRegress";
+import ArrowRegress from "../../components/ArrowNext";
 import ArrowProgress from "../../components/ArrowProgress";
 import Paragraph from "../../components/Paragraph";
 import Collapse from "../../components/CardCollapsed";

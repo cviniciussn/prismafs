@@ -4,11 +4,11 @@ import logo from '../../img/logo_top4.jpg'
 
 function Header() {
   return (
-  <div id="header" className="container-fluid fixed-top opacity-0">
+    <div id="header" className="container-fluid fixed-top">
       <div className="row">
-        <div className="col w-100 justify-content-left">
+        <div className="col w-100">
           <img className="logotype" src={logo} alt="" />
-          
+
         </div>
       </div>
     </div>

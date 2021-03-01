@@ -4,7 +4,8 @@ import '../../css/animate.css';
 import { Link, NavLink, Redirect } from 'react-router-dom';
 import '../../js/main'
 
-import ArrowProgress from "../../components/ArrowProgress";
+import ArrowNext from "../../components/ArrowNext";
+import DivArrow from '../../components/DivArrowNext'
 import Paragraph from "../../components/Paragraph";
 import Alert from "../../components/Alert";
 import ButtonCollapseImg from "../../components/ButtonCollapseImg";
@@ -19,6 +20,12 @@ import img03 from '../../img/img-03-sl-06.jpg';
 
 
 function BloqueioEletromecanico() {
+    $("#bloqueio-eletromecanico").on('load', () => {
+        setInterval(() => {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        }, 10);
+    });
     
     return (
         
@@ -37,9 +44,14 @@ function BloqueioEletromecanico() {
                     de <strong>TODAS</strong> as energias perigosas de <strong>QUALQUER</strong> equipamento.
                 </Alert>
 
-                <ArrowProgress id="btn-01-sl-06" />
+                {/* < id="btn-01-sl-06" /> */}
+
+                <ArrowNext rr="a"></ArrowNext>
+
+                
                 <hr />
 
+                <DivArrow nm="a">
                 <div className="container-fluid">
                     <div className="row">
 
@@ -49,15 +61,19 @@ function BloqueioEletromecanico() {
 
                     </div>
                 </div>
-            </div>
-
-            <ArrowProgress />
             <hr />
+                <ArrowNext rr="b"></ArrowNext>
+                </DivArrow>
+            </div>
+            
+
 
             <div className='slide-07'>
 
                 {/* SLIDE 7 */}
 
+
+                <DivArrow nm="b">
                 <Paragraph>
                     Chegou a hora de refletir...
                 </Paragraph>
@@ -65,23 +81,27 @@ function BloqueioEletromecanico() {
                 <Paragraph>
                     Mas quem será o responsável por solicitar o bloqueio e identificar as energias perigosas dos equipamentos?
                 </Paragraph>
-
-                <ArrowProgress />
                 <hr />
+                <ArrowNext rr='c'></ArrowNext>
+                </DivArrow>
+            
 
+                <DivArrow nm='c'>
                 <Alert title="Fique atento!" id="teste2">
                     O bloqueio e a identificação das energias perigosas do equipamento em que será realizado o trabalho
                     devem ser realizados por <strong>todos os colaboradores, terceiros, temporários e prestadores de
                     serviço que irão realizar a atividade.</strong>
                 </Alert>
+                
 
-                <NavLink to="/trabalho-com-eletricidade">
+                <Link to="/trabalho-com-eletricidade">
                     <div className="container-fluid text-center">
                         <button className="btn btn-custom my-3 " type="button">
                             <strong>Avançar</strong>
                         </button>
                     </div>
-                </NavLink>
+                </Link>
+                </DivArrow>
             </div>
         </Topico >
     );
