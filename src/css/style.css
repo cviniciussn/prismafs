@@ -5273,7 +5273,7 @@ input[type="button"].btn-block {
   border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   /* opacity: 80%; */
-  background: rgba(46, 204, 113,0.75);
+  background: rgba(255, 255, 255, 0.637);
 }
 
 .card>hr {
@@ -12278,7 +12278,7 @@ ul {
 .bg-transp {
   background-color: #fff;
   /* opacity: 50%; */
-  background: rgba(46, 204, 113,0.75);
+  background: rgba(255, 255, 255, 0.63);
   position: absolute;
   top: 0;
   left: 0;
