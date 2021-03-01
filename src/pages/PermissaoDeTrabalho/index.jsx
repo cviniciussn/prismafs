@@ -67,7 +67,7 @@ function PermissaoDeTrabalho() {
 
 
     return (
-        
+        <motion.div animate={{ y: 65}} initial={false}> 
 
 
         <Topico id="permissao-de-trabalho">
@@ -260,6 +260,8 @@ function PermissaoDeTrabalho() {
                 </NavLink>
             </DivArrow>
         </Topico>
+        </motion.div>
+
     );
 }
 

@@ -7521,9 +7521,9 @@ button.bg-dark:focus {
   background-color: #fff !important;
 }
 
-.bg-transparent {
+/* .bg-transparent {
   background-color: transparent !important;
-}
+} */
 
 .border {
   border: 1px solid #dee2e6 !important;
@@ -12276,7 +12276,8 @@ ul {
 
 .bg-transp {
   background-color: #fff;
-  opacity: 50%;
+  /* opacity: 50%; */
+  background: rgba(46, 204, 113,0.5);
   position: absolute;
   top: 0;
   left: 0;
