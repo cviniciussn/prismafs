@@ -59,7 +59,7 @@ function TrabalhoComEletricidade() {
                     </Card>
                 </div>
 
-                <NavLink to="/trabalho-a-quente">
+                <NavLink to="trabalho-a-quente">
                     <div className="container-fluid text-center">
                         <button className="btn btn-custom my-3 " type="button">
                             <strong>Avançar</strong>

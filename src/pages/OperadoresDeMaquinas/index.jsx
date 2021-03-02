@@ -45,7 +45,7 @@ function OperadoresDeMaquinas() {
                 </Alert>
             </div>
 
-            <NavLink to="/produtos-quimicos">
+            <NavLink to="produtos-quimicos">
                 <div className="container-fluid text-center">
                     <button className="btn btn-custom my-3 " type="button">
                         <strong>Avançar</strong>

@@ -35,7 +35,7 @@ function MovimentacaoDeCargas() {
                     É <strong>proibido</strong> circular ou permanecer <strong>sob peça suspensa</strong>!
                 </Alert>
 
-                <NavLink to="/operadores-de-maquinas">
+                <NavLink to="operadores-de-maquinas">
                     <div className="container-fluid text-center">
                         <button className="btn btn-custom my-3 " type="button">
                             <strong>Avançar</strong>

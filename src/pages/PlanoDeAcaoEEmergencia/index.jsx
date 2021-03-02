@@ -56,7 +56,7 @@ function PlanoDeAcaoEEmergencia() {
                 </Alert>
             </div>
 
-            <NavLink to="/regras-gerais-e-dicas">
+            <NavLink to="regras-gerais-e-dicas">
                 <div className="container-fluid text-center">
                     <button className="btn btn-custom my-3 " type="button">
                         <strong>Avançar</strong>

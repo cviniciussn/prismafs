@@ -9,7 +9,7 @@ function TestandoConhecimentos() {
             <div className="title text-center opacity-0"><span className="icon"><i className="bi bi-book"></i></span> Testando Conhecimentos</div>
 
 
-            <NavLink to="/conclusao">
+            <NavLink to="conclusao">
                 <div className="container-fluid text-center">
                     <button className="btn btn-custom my-3" type="button">
                         <strong>Avançar</strong>

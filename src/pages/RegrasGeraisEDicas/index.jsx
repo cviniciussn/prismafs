@@ -13,7 +13,7 @@ function RegrasGeraisEDicas() {
 
             </div>
 
-            <NavLink to="/testando-conhecimentos">
+            <NavLink to="testando-conhecimentos">
                 <div className="container-fluid text-center">
                     <button className="btn btn-custom my-3 " type="button">
                         <strong>Avançar</strong>

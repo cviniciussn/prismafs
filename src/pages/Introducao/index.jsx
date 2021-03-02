@@ -139,7 +139,7 @@ function Introducao() {
 
 
                     <div className="slide-02">
-                        <NavLink to="/permissao-de-trabalho/">
+                        <NavLink to="permissao-de-trabalho">
                             <div className="container-fluid text-center">
                                 <button className="btn btn-custom my-3 " type="button">
                                     <strong>Iniciar Curso</strong>

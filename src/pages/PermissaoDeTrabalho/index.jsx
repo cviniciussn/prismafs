@@ -22,12 +22,12 @@ import { ScrollContainer } from 'react-scroll-motion';
 function PermissaoDeTrabalho() {
 
 
-    $(window).on('load', () => {
-        setInterval(() => {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-            return false;
-        }, 0);
-    });
+    // $(window).on('load', () => {
+    //     setInterval(() => {
+    //         $("html, body").animate({ scrollTop: 0 }, "slow");
+    //         return false;
+    //     }, 0);
+    // });
 
     //     fadeInDown(".title", 1);
 
@@ -251,7 +251,7 @@ function PermissaoDeTrabalho() {
                 </Alert>
 
 
-                <NavLink to="/bloqueio-eletromecanico">
+                <NavLink to="bloqueio-eletromecanico">
                     <div className="container-fluid text-center">
                         <button className="btn btn-custom my-3 " type="button">
                             <strong>Avançar</strong>

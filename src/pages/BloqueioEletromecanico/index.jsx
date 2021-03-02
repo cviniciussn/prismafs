@@ -20,13 +20,7 @@ import img03 from '../../img/img-03-sl-06.jpg';
 
 
 function BloqueioEletromecanico() {
-    $("#bloqueio-eletromecanico").on('load', () => {
-        setInterval(() => {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-            return false;
-        }, 10);
-    });
-    
+   
     return (
         
         <Topico id="bloqueio-eletromecanico">
@@ -46,7 +40,7 @@ function BloqueioEletromecanico() {
 
                 {/* < id="btn-01-sl-06" /> */}
 
-                <ArrowNext rr="a"></ArrowNext>
+                <ArrowNext rr="a" ></ArrowNext>
 
                 
                 <hr />
@@ -94,7 +88,7 @@ function BloqueioEletromecanico() {
                 </Alert>
                 
 
-                <Link to="/trabalho-com-eletricidade">
+                <Link to="trabalho-com-eletricidade">
                     <div className="container-fluid text-center">
                         <button className="btn btn-custom my-3 " type="button">
                             <strong>Avançar</strong>

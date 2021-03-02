@@ -134,7 +134,7 @@ function ProdutosQuimicos() {
                 </div>
             </div>
 
-            <NavLink to="/plano-de-acao-e-emergencia">
+            <NavLink to="plano-de-acao-e-emergencia">
                 <div className="container-fluid text-center">
                     <button className="btn btn-custom my-3 " type="button">
                         <strong>Avançar</strong>

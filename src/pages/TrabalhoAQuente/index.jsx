@@ -43,7 +43,7 @@ function TrabalhoAQuente() {
                     <small>Passe o mouse sobre a expressão em destaque</small>
                 </Alert>
 
-                <NavLink to="/trabalho-em-altura">
+                <NavLink to="trabalho-em-altura">
                     <div className="container-fluid text-center">
                         <button className="btn btn-custom my-3 " type="button">
                             <strong>Avançar</strong>

@@ -63,7 +63,7 @@ function EspacoConfinado() {
                 </Alert>
             </div>
 
-            <NavLink to="/movimentacao-de-cargas">
+            <NavLink to="movimentacao-de-cargas">
                 <div className="container-fluid text-center">
                     <button className="btn btn-custom my-3 " type="button">
                         <strong>Avançar</strong>
